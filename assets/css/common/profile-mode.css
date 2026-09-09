@@ -23,11 +23,21 @@
 .main .profile .buttons a {
 	text-decoration: none;
 	font-weight: bold;
+	color: var(--code-bg);
+}
+
+.main .profile .buttons a:hover {
+	color: var(--tertiary);
 }
 
 .main .profile .next-section-wrapper a {
 	text-decoration: none;
 	font-weight: bold;
+	color: var(--code-bg);
+}
+
+.main .profile .next-section-wrapper a:hover {
+	color: var(--tertiary);
 }
 
 .profile .profile_inner {
@@ -43,7 +53,7 @@
 
 .profile img {
 	border-radius: 50%;
-	border: 1px solid var(--tertiary);
+	border: 1px solid var(--code-bg);
 }
 
 .buttons {
@@ -64,6 +74,8 @@
 	border-radius: var(--radius);
 	margin: 6px 12px 6px 0px;
 	padding: 10px;
+	font-weight: bold;
+	color: var(--code-bg);
 }
 
 .button-inner {
@@ -72,6 +84,7 @@
 
 .button:hover {
 	background: var(--lightcolor);
+	color: var(--tertiary);
 }
 
 /* "Next" cycle navigation button: home -> papers -> contributions -> teaching -> home */
