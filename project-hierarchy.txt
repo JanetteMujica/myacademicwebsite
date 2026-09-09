@@ -1,0 +1,579 @@
+myacademicwebsite
+├─ .github
+│  └─ workflows
+│     └─ hugo.yml
+├─ .gitignore
+├─ .hugo_build.lock
+├─ archetypes
+│  ├─ course.md
+│  ├─ paper.md
+│  └─ search.md
+├─ assets
+│  └─ css
+│     ├─ common
+│     │  ├─ 404.css
+│     │  ├─ archive.css
+│     │  ├─ footer.css
+│     │  ├─ funding.css
+│     │  ├─ header.css
+│     │  ├─ main.css
+│     │  ├─ post-entry.css
+│     │  ├─ post-single.css
+│     │  ├─ profile-mode.css
+│     │  ├─ search.css
+│     │  └─ terms.css
+│     └─ core
+│        └─ theme-vars.css
+├─ cheatsheet.md
+├─ config.yml
+├─ content
+│  ├─ archive.md
+│  ├─ books
+│  │  ├─ book1
+│  │  │  ├─ book1.png
+│  │  │  ├─ chapter1.pdf
+│  │  │  ├─ chapter2.pdf
+│  │  │  ├─ chapter3.pdf
+│  │  │  └─ index.md
+│  │  └─ _index.md
+│  ├─ courses
+│  │  ├─ course1
+│  │  │  ├─ course1.png
+│  │  │  ├─ index.md
+│  │  │  ├─ lecture1.pdf
+│  │  │  └─ lecture2.pdf
+│  │  ├─ course2
+│  │  │  ├─ course2.png
+│  │  │  ├─ index.md
+│  │  │  ├─ notes1.pdf
+│  │  │  ├─ notes2.pdf
+│  │  │  └─ problemset.pdf
+│  │  └─ _index.md
+│  ├─ data
+│  │  ├─ data1.md
+│  │  └─ _index.md
+│  ├─ location.md
+│  ├─ officehours.md
+│  ├─ papers
+│  │  ├─ paper1
+│  │  │  ├─ appendix1.pdf
+│  │  │  ├─ index.md
+│  │  │  ├─ paper1.pdf
+│  │  │  ├─ paper1.png
+│  │  │  └─ presentation1.pdf
+│  │  ├─ paper2
+│  │  │  ├─ appendix2.pdf
+│  │  │  ├─ index.md
+│  │  │  ├─ paper2.pdf
+│  │  │  ├─ paper2.png
+│  │  │  └─ presentation2.pdf
+│  │  ├─ paper3
+│  │  │  ├─ index.md
+│  │  │  ├─ paper3.pdf
+│  │  │  └─ paper3.png
+│  │  └─ _index.md
+│  └─ tags
+│     └─ _index.md
+├─ layouts
+│  ├─ 404.html
+│  ├─ partials
+│  │  ├─ analytics.html
+│  │  ├─ author.html
+│  │  ├─ edit_post.html
+│  │  ├─ footer.html
+│  │  ├─ funding.html
+│  │  ├─ head.html
+│  │  ├─ header.html
+│  │  ├─ index_profile.html
+│  │  ├─ math.html
+│  │  ├─ post_canonical.html
+│  │  ├─ post_meta.html
+│  │  ├─ post_nav_links.html
+│  │  ├─ search.html
+│  │  ├─ svg.html
+│  │  └─ toc.html
+│  └─ _default
+│     ├─ archives.html
+│     ├─ baseof.html
+│     ├─ list.html
+│     ├─ search.html
+│     ├─ single.html
+│     ├─ terms.html
+│     └─ _markup
+│        └─ render-link.html
+├─ LICENSE.md
+├─ project-hierarchy.txt
+├─ public
+│  ├─ 404.html
+│  ├─ apple-touch-icon.png
+│  ├─ archive
+│  │  └─ index.html
+│  ├─ assets
+│  │  └─ css
+│  │     ├─ stylesheet.36f80613932a17f52077a2185435bb43209d5d047c048e9d0055a4bc3a986bd1.css
+│  │     ├─ stylesheet.58e660b8c878e5dffba821e248b7a59165ee209b40c1488bdafcae582deb8226.css
+│  │     ├─ stylesheet.6d0a6e7f04c69c8140415742658c13c21c5c4aca4c243ade56612335e42b3c36.css
+│  │     ├─ stylesheet.876de78f667273efd431f185c15d8992e09625243355b6434fe7698fe47cf82d.css
+│  │     ├─ stylesheet.ad4e6bb383c8b2f17eceb99346063bc33aafe944a962791b7e92498b8effb1b6.css
+│  │     ├─ stylesheet.beb267643d08430b8f307a631ea44a096dd9cf2c8b59fd9a1bac02e65297ccc6.css
+│  │     ├─ stylesheet.d7b7f3184598672e1e99599bf0cce5ebd00dff9f6de65e2f37b457deaf5607fe.css
+│  │     └─ stylesheet.e45b002e78fb39eaa6f66ddc6c72e9fddb13e890a47004d05d725398a19cd1bc.css
+│  ├─ books
+│  │  ├─ book1
+│  │  │  ├─ book1.png
+│  │  │  ├─ book1_hu_c9b0e4380b57faa.png
+│  │  │  ├─ chapter1.pdf
+│  │  │  ├─ chapter2.pdf
+│  │  │  ├─ chapter3.pdf
+│  │  │  └─ index.html
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  └─ page
+│  │     └─ 1
+│  │        └─ index.html
+│  ├─ courses
+│  │  ├─ course1
+│  │  │  ├─ course1.png
+│  │  │  ├─ course1_hu_5d8892f17dea5e26.png
+│  │  │  ├─ course1_hu_6eac7de9074ec94e.png
+│  │  │  ├─ index.html
+│  │  │  ├─ lecture1.pdf
+│  │  │  ├─ lecture2.pdf
+│  │  │  ├─ ps1.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ quiz1.pdf
+│  │  │  │  └─ index.html
+│  │  │  └─ quiz2.pdf
+│  │  │     └─ index.html
+│  │  ├─ course2
+│  │  │  ├─ course2.png
+│  │  │  ├─ course2_hu_11f0aca07af67292.png
+│  │  │  ├─ course2_hu_182f20bd5cc90d75.png
+│  │  │  ├─ course2_hu_5f235728bfe60acf.png
+│  │  │  ├─ index.html
+│  │  │  ├─ notes1.pdf
+│  │  │  ├─ notes2.pdf
+│  │  │  ├─ notes3.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ notes4.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ problemset.pdf
+│  │  │  ├─ ps3.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ ps4.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ quiz3.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ quiz4.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ slides1.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ slides2.pdf
+│  │  │  │  └─ index.html
+│  │  │  ├─ slides3.pdf
+│  │  │  │  └─ index.html
+│  │  │  └─ slides4.pdf
+│  │  │     └─ index.html
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  └─ page
+│  │     └─ 1
+│  │        └─ index.html
+│  ├─ cv.pdf
+│  ├─ data
+│  │  ├─ data1
+│  │  │  └─ index.html
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  └─ page
+│  │     └─ 1
+│  │        └─ index.html
+│  ├─ favicon-16x16.png
+│  ├─ favicon-32x32.png
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ index.xml
+│  ├─ jmp.pdf
+│  ├─ location
+│  │  └─ index.html
+│  ├─ officehours
+│  │  └─ index.html
+│  ├─ papers
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  ├─ page
+│  │  │  └─ 1
+│  │  │     └─ index.html
+│  │  ├─ paper1
+│  │  │  ├─ appendix1.pdf
+│  │  │  ├─ index.html
+│  │  │  ├─ paper1.pdf
+│  │  │  ├─ paper1.png
+│  │  │  ├─ paper1_hu_4ae0677193e202ff.png
+│  │  │  ├─ paper1_hu_b83f79591c0535f5.png
+│  │  │  └─ presentation1.pdf
+│  │  ├─ paper2
+│  │  │  ├─ appendix2.pdf
+│  │  │  ├─ index.html
+│  │  │  ├─ paper2.pdf
+│  │  │  ├─ paper2.png
+│  │  │  ├─ paper2_hu_50b2508cf0948361.png
+│  │  │  ├─ paper2_hu_76a611950ae35426.png
+│  │  │  ├─ paper2_hu_9b8c24b1730a6837.png
+│  │  │  └─ presentation2.pdf
+│  │  └─ paper3
+│  │     ├─ index.html
+│  │     ├─ paper3.pdf
+│  │     ├─ paper3.png
+│  │     ├─ paper3_hu_1b62edd791080b14.png
+│  │     ├─ paper3_hu_64a56b57777f60b4.png
+│  │     └─ paper3_hu_e78de6910bd687e8.png
+│  ├─ picture.jpeg
+│  ├─ robots.txt
+│  ├─ sitemap.xml
+│  └─ tags
+│     ├─ academia
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ canine-pulmonary-efficiency
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ canine-science
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ celtic-languages
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ dataset
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ experimental-psychology
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ experimental-zoology
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ french
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ history-of-oil
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ index.html
+│     ├─ index.xml
+│     ├─ inner-hedgehog
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ invasive-thoughts
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ irish
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ irregular-verbs
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ italian
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ language-modernization
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ mediterranean-world
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ oleic-science
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ philology
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ portugese
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ portuguese
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ profanity
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ python
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ romance-languages
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ sausage-dogs
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ simulations
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ social-psychology
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     ├─ spanish
+│     │  ├─ index.html
+│     │  ├─ index.xml
+│     │  └─ page
+│     │     └─ 1
+│     │        └─ index.html
+│     └─ zoology
+│        ├─ index.html
+│        ├─ index.xml
+│        └─ page
+│           └─ 1
+│              └─ index.html
+├─ README.md
+├─ resources
+│  └─ _gen
+│     └─ images
+│        ├─ books
+│        │  └─ book1
+│        │     └─ book1_hu_c9b0e4380b57faa.png
+│        ├─ courses
+│        │  ├─ course1
+│        │  │  ├─ course1_hu_5d8892f17dea5e26.png
+│        │  │  └─ course1_hu_6eac7de9074ec94e.png
+│        │  └─ course2
+│        │     ├─ course2_hu_11f0aca07af67292.png
+│        │     ├─ course2_hu_182f20bd5cc90d75.png
+│        │     └─ course2_hu_5f235728bfe60acf.png
+│        └─ papers
+│           ├─ paper1
+│           │  ├─ paper1_hu_4ae0677193e202ff.png
+│           │  └─ paper1_hu_b83f79591c0535f5.png
+│           ├─ paper2
+│           │  ├─ paper2_hu_50b2508cf0948361.png
+│           │  ├─ paper2_hu_76a611950ae35426.png
+│           │  └─ paper2_hu_9b8c24b1730a6837.png
+│           └─ paper3
+│              ├─ paper3_hu_1b62edd791080b14.png
+│              ├─ paper3_hu_64a56b57777f60b4.png
+│              └─ paper3_hu_e78de6910bd687e8.png
+├─ static
+│  ├─ apple-touch-icon.png
+│  ├─ cv.pdf
+│  ├─ favicon-16x16.png
+│  ├─ favicon-32x32.png
+│  ├─ favicon.ico
+│  ├─ jmp.pdf
+│  └─ picture.jpeg
+└─ themes
+   └─ PaperMod
+      ├─ .github
+      │  ├─ ISSUE_TEMPLATE
+      │  │  ├─ bug.yaml
+      │  │  ├─ config.yml
+      │  │  └─ enhancement.yaml
+      │  ├─ PULL_REQUEST_TEMPLATE.md
+      │  └─ workflows
+      │     └─ gh-pages.yml
+      ├─ assets
+      │  ├─ css
+      │  │  ├─ common
+      │  │  │  ├─ 404.css
+      │  │  │  ├─ archive.css
+      │  │  │  ├─ footer.css
+      │  │  │  ├─ header.css
+      │  │  │  ├─ main.css
+      │  │  │  ├─ post-entry.css
+      │  │  │  ├─ post-single.css
+      │  │  │  ├─ profile-mode.css
+      │  │  │  ├─ search.css
+      │  │  │  └─ terms.css
+      │  │  ├─ core
+      │  │  │  ├─ license.css
+      │  │  │  ├─ reset.css
+      │  │  │  ├─ theme-vars.css
+      │  │  │  └─ zmedia.css
+      │  │  ├─ extended
+      │  │  │  └─ blank.css
+      │  │  └─ includes
+      │  │     ├─ chroma-mod.css
+      │  │     ├─ chroma-styles.css
+      │  │     └─ scroll-bar.css
+      │  └─ js
+      │     ├─ fastsearch.js
+      │     ├─ fuse.basic.min.js
+      │     └─ license.js
+      ├─ go.mod
+      ├─ i18n
+      │  ├─ ar.yaml
+      │  ├─ be.yaml
+      │  ├─ bg.yaml
+      │  ├─ bn.yaml
+      │  ├─ ca.yaml
+      │  ├─ ckb.yaml
+      │  ├─ cs.yaml
+      │  ├─ da.yaml
+      │  ├─ de.yaml
+      │  ├─ el.yaml
+      │  ├─ en.yaml
+      │  ├─ eo.yaml
+      │  ├─ es.yaml
+      │  ├─ fa.yaml
+      │  ├─ fr.yaml
+      │  ├─ he.yaml
+      │  ├─ hi.yaml
+      │  ├─ hr.yaml
+      │  ├─ hu.yaml
+      │  ├─ id.yaml
+      │  ├─ it.yaml
+      │  ├─ ja.yaml
+      │  ├─ ko.yaml
+      │  ├─ ku.yaml
+      │  ├─ mn.yaml
+      │  ├─ ms.yaml
+      │  ├─ nl.yaml
+      │  ├─ no.yaml
+      │  ├─ oc.yaml
+      │  ├─ pa.yaml
+      │  ├─ pl.yaml
+      │  ├─ pnb.yaml
+      │  ├─ pt.yaml
+      │  ├─ ro.yaml
+      │  ├─ ru.yaml
+      │  ├─ sk.yaml
+      │  ├─ sv.yaml
+      │  ├─ sw.yaml
+      │  ├─ th.yaml
+      │  ├─ tr.yaml
+      │  ├─ uk.yaml
+      │  ├─ uz.yaml
+      │  ├─ vi.yaml
+      │  ├─ zh-tw.yaml
+      │  └─ zh.yaml
+      ├─ images
+      │  ├─ screenshot.png
+      │  └─ tn.png
+      ├─ layouts
+      │  ├─ 404.html
+      │  ├─ partials
+      │  │  ├─ anchored_headings.html
+      │  │  ├─ author.html
+      │  │  ├─ breadcrumbs.html
+      │  │  ├─ comments.html
+      │  │  ├─ cover.html
+      │  │  ├─ edit_post.html
+      │  │  ├─ extend_footer.html
+      │  │  ├─ extend_head.html
+      │  │  ├─ footer.html
+      │  │  ├─ head.html
+      │  │  ├─ header.html
+      │  │  ├─ home_info.html
+      │  │  ├─ index_profile.html
+      │  │  ├─ post_canonical.html
+      │  │  ├─ post_meta.html
+      │  │  ├─ post_nav_links.html
+      │  │  ├─ share_icons.html
+      │  │  ├─ social_icons.html
+      │  │  ├─ svg.html
+      │  │  ├─ templates
+      │  │  │  ├─ opengraph.html
+      │  │  │  ├─ schema_json.html
+      │  │  │  ├─ twitter_cards.html
+      │  │  │  └─ _funcs
+      │  │  │     └─ get-page-images.html
+      │  │  ├─ toc.html
+      │  │  └─ translation_list.html
+      │  ├─ robots.txt
+      │  ├─ shortcodes
+      │  │  ├─ collapse.html
+      │  │  ├─ figure.html
+      │  │  ├─ inTextImg.html
+      │  │  ├─ ltr.html
+      │  │  ├─ rawhtml.html
+      │  │  └─ rtl.html
+      │  └─ _default
+      │     ├─ archives.html
+      │     ├─ baseof.html
+      │     ├─ index.json
+      │     ├─ list.html
+      │     ├─ rss.xml
+      │     ├─ search.html
+      │     ├─ single.html
+      │     ├─ terms.html
+      │     └─ _markup
+      │        └─ render-image.html
+      ├─ LICENSE
+      ├─ README.md
+      └─ theme.toml

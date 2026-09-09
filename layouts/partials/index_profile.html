@@ -52,7 +52,47 @@
             </a>
             {{- end }}
         </div>
-        {{- end }}
+
+
+
+        <div class="funding-section">
+            <h2>Heartfelt thanks</h2>
+
+            <p class="funding-subtitle">
+                My research would not be possible without the generous support of:
+            </p>
+
+<ul class="heart-list">
+  <li>2026 uOttawa Engineering Doctoral's Admission Scholarship: $36,000 / 48 months</li>
+  <li>2026 <a href="https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=524372&lang=en">PD-TIPS-AI</a> Fellowship, CIHR Funded Research: $110,000 / 48 months
+  </li>
+  <li>2026 <a href="https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-graduate-scholarships/masters-program.aspx">SSHRC Master's Canada Graduate Scholarship</a>: $27,000 / 12 months
+  </li>
+  <li>2025 <a href="https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html">Ontario Graduate Scholarship</a>: $15,000 / 12 months</li>
+  <li>2024 uOttawa Engineering Master's Admission Scholarship: $7,500 / 12 months</li>
+</ul>
+
+        </div>
+
+                <div class="funding-section">
+                  <h2>About me and my research</h2>
+            {{- end }}{{- with .bio }}
+            {{ . | markdownify }}
+            {{- end }}
+            <div class="next-section-wrapper">
+                <a class="button next-section-button" href="{{ "papers/" | absURL }}" rel="noopener" title="Next: Papers">
+                    <span class="button-inner">
+                        Next: Papers
+                        <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+                </div>
+
     </div>
-    {{- end}}
+    {{- end}} 
 </div>

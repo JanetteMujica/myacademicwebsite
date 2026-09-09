@@ -101,6 +101,27 @@
 </footer>
 {{- end }}
 
+{{/* Cycle navigation button: papers -> contributions -> teaching -> home */}}
+{{- $nextSectionMap := dict "papers" "contributions/" "contributions" "teaching/" "teaching" "" }}
+{{- $nextLabelMap := dict "papers" "Contributions" "contributions" "Teaching" "teaching" "Home" }}
+{{- $currentSection := .Section }}
+{{- if isset $nextSectionMap $currentSection }}
+{{- $nextURL := index $nextSectionMap $currentSection }}
+{{- $nextLabel := index $nextLabelMap $currentSection }}
+<div class="next-section-wrapper">
+    <a class="button next-section-button" href="{{ $nextURL | absURL }}" rel="noopener" title="Next: {{ $nextLabel }}">
+        <span class="button-inner">
+            Next: {{ $nextLabel }}
+            <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </span>
+    </a>
+</div>
+{{- end }}
+
 {{- end }}{{/* end profileMode */}}
 
 {{- end }}{{- /* end main */ -}}

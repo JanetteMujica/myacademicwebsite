@@ -1,0 +1,23 @@
+.funding-section {
+	margin-top: 1.5rem;
+}
+
+.funding-section h2 {
+	margin-bottom: 0.5rem;
+}
+
+.funding-subtitle {
+	margin-bottom: 0.75rem;
+}
+
+.heart-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.heart-list li::before {
+	content: '♥';
+	color: #e1477e;
+	margin-right: 0.4em;
+}
