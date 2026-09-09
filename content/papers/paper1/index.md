@@ -1,35 +1,44 @@
 ---
-title: "Unusual Uses For Olive Oil" 
-date: 2013-01-15
-tags: ["philology","oleic science","history of oil","Mediterranean world"]
-author: ["Detlev Amadeus Unterholzer","Moritz-Maria von Igelfeld"]
-description: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013." 
-summary: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil." 
+title: '“What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care'
+date: 2025-10-07
+tags:
+  [
+    'Co-Design',
+    'Self-care Technology',
+    'Parkinson',
+    'Dialogue Interface',
+    'Usage Diary Study',
+  ]
+author:
+  [
+    'Grosjean, Sylvie',
+    'Mujica, Janette',
+    'Saadeh, Nadim',
+    'Grimes, David',
+    'Mestre, Tiago',
+  ]
+description: 'This paper explores personalized goal-setting for Parkinson’s self-care through a dialogue-based digital health technology. Published in the Proceedings of the 10th International Conference on Infrastructures for Healthcare, 2025.'
+summary: 'This paper explores a digital health technology for personalized self-care in Parkinson’s disease. It proposes a dialogue interface to help patients identify care priorities and establish actionable goals.'
 cover:
-    image: "paper1.png"
-    alt: "Some Uses For Olive Oil"
-    relative: true
+  image: 'paper1.png'
+  alt: 'Some Uses For Olive Oil'
+  relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Oleic Science"
-
+  URL: 'https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e'
+  Text: 'Proceedings of the 10th International Conference on Infrastructures for Healthcare of European Society for Socially Embedded Technologies (EUSSET)'
 ---
 
 ---
 
 ##### Download
 
-+ [Paper](paper1.pdf)
-+ [Online appendix](appendix1.pdf)
-+ [Code and data](https://github.com/pmichaillat/feru)
+- [Paper](https://dl.eusset.eu/server/api/core/bitstreams/d50e86ce-aef0-4e94-b3bd-d18e26d95743/content)
 
 ---
 
 ##### Abstract
 
-This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
----
+The aim of this paper is to explore the potential of a digital health technology (eCARE-PDTM) designed to support self-care and assist individuals with Parkinson's disease (PD) in identifying their care needs and establishing personalized goals to enhance self-care. The efficacy of self-care in PD depends on personalized goal setting; however, people with PD (PwPs) struggle to identify care priorities due to fluctuating and unpredictable symptoms. Based on the findings of a usage diary study, we will explore the enhancement of a self-care technology with a dialogue interface to facilitate more personalized goal setting. The usage diary study revealed that PwPs experience uncertainty when selecting care priorities from a predefined list, and they expressed a need for a system that translates their personal experiences into actionable goals. The integration of a dialogue interface within eCARE-PDTM is proposed, engaging users in interactive dialogues that stimulate reflection on recent symptoms and daily challenges, facilitating a collaborative definition of personalized self-care objectives. This direction is further explored through a dialogue interface (CAFY), a prototype designed to help patients articulate their care priorities and translate them into meaningful, actionable goals. CAFY will serve as a design probe in upcoming participatory design workshops to inform the next cycle of co-design, which aims to improve eCARE-PDTM by integrating an AI-based conversational recommendation system.
 
 ##### Figure 6: Some Uses For Olive Oil
 
@@ -39,23 +48,33 @@ This paper reviews unusual uses for olive oil throughout the Mediterranean world
 
 ##### Citation
 
-Unterholzer, Detlev A., and  Moritz-Maria von Igelfeld. 2013. "Unusual Uses For Olive Oil." *Journal of Oleic Science* 34 (1): 449–489. http://www.alexandermccallsmith.com/book/unusual-uses-for-olive-oil.
+Grosjean, Sylvie; Mujica, Janette; Saadeh, Nadim; Grimes, David; Mestre, Tiago (2025). _“What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care_. Proceedings of the 10th International Conference on Infrastructures for Healthcare.
 
-```latex
+ 
+
+```bibtex
+
 @article{UI13,
-author = {Detlev A. Unterholzer and Moritz-Maria von Igelfeld},
-year = {2013},
-title ={Unusual Uses For Olive Oil},
-journal = {Journal of Oleic Science},
-volume = {34},
-number = {1},
-pages = {449--489},
-url = {http://www.alexandermccallsmith.com/book/unusual-uses-for-olive-oil}}
+
+author = {Grosjean, Sylvie and Mujica, Janette and Saadeh, Nadim and Grimes, David and Mestre, Tiago},
+
+year = {2025},
+
+title = {What Should I Focus on Today? Co-Designing a Goal-Setting Dialogue Tool for Parkinson's Self-Care},
+
+journal = {Proceedings of the 10th International Conference on Infrastructures for Healthcare},
+
+doi = {10.48340/ihc2025_p003},
+
+location = {Troyes, France}
+
+}
+
 ```
 
 ---
 
 ##### Related material
 
-+ [Presentation slides](presentation1.pdf)
-+ [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/)
+- [Presentation slides](presentation1.pdf)
+- [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/)
