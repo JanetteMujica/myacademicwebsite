@@ -9,7 +9,7 @@
 	--theme: rgb(255, 255, 255);
 	--entry: rgb(255, 255, 255);
 	--primary: rgb(30, 30, 30);
-	--secondary: rgb(108, 108, 108);
+	--secondary: /*rgb(108, 108, 108);*/ #24292f;
 	--tertiary: /*rgb(214, 214, 214); #f1dfce;*/ #24292fff;
 	--gray: rgb(165, 165, 165);
 	--content: rgb(30, 30, 30);

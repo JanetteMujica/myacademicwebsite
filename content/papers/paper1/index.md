@@ -40,9 +40,9 @@ editPost:
 
 The aim of this paper is to explore the potential of a digital health technology (eCARE-PDTM) designed to support self-care and assist individuals with Parkinson's disease (PD) in identifying their care needs and establishing personalized goals to enhance self-care. The efficacy of self-care in PD depends on personalized goal setting; however, people with PD (PwPs) struggle to identify care priorities due to fluctuating and unpredictable symptoms. Based on the findings of a usage diary study, we will explore the enhancement of a self-care technology with a dialogue interface to facilitate more personalized goal setting. The usage diary study revealed that PwPs experience uncertainty when selecting care priorities from a predefined list, and they expressed a need for a system that translates their personal experiences into actionable goals. The integration of a dialogue interface within eCARE-PDTM is proposed, engaging users in interactive dialogues that stimulate reflection on recent symptoms and daily challenges, facilitating a collaborative definition of personalized self-care objectives. This direction is further explored through a dialogue interface (CAFY), a prototype designed to help patients articulate their care priorities and translate them into meaningful, actionable goals. CAFY will serve as a design probe in upcoming participatory design workshops to inform the next cycle of co-design, which aims to improve eCARE-PDTM by integrating an AI-based conversational recommendation system.
 
-##### Figure 6: Some Uses For Olive Oil
+##### Figure 6: CAFY, a prototype designed to help patients articulate their care priorities
 
-![](paper1.png)
+![CAFY, a prototype designed to help patients articulate their care priorities](paper1.png)
 
 ---
 
@@ -50,31 +50,8 @@ The aim of this paper is to explore the potential of a digital health technology
 
 Grosjean, Sylvie; Mujica, Janette; Saadeh, Nadim; Grimes, David; Mestre, Tiago (2025). _“What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care_. Proceedings of the 10th International Conference on Infrastructures for Healthcare.
 
- 
-
-```bibtex
-
-@article{UI13,
-
-author = {Grosjean, Sylvie and Mujica, Janette and Saadeh, Nadim and Grimes, David and Mestre, Tiago},
-
-year = {2025},
-
-title = {What Should I Focus on Today? Co-Designing a Goal-Setting Dialogue Tool for Parkinson's Self-Care},
-
-journal = {Proceedings of the 10th International Conference on Infrastructures for Healthcare},
-
-doi = {10.48340/ihc2025_p003},
-
-location = {Troyes, France}
-
-}
-
-```
-
----
-
 ##### Related material
 
-- [Presentation slides](presentation1.pdf)
-- [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/)
+- [CAFY Prototype](https://janettemujica.github.io/ecare-pd_prototype/)
+- [eCare-PD GitHub Prototype Repository](https://github.com/JanetteMujica/ecare-pd_prototype)
+- [Conference Paper Website](https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e)
