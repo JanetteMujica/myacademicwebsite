@@ -49,3 +49,8 @@
 .dark.list {
 	background: var(--theme);
 }
+
+table td,
+table th {
+	vertical-align: top;
+}

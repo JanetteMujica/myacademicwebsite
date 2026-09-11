@@ -52,6 +52,6 @@ Grosjean, Sylvie; Mujica, Janette; Saadeh, Nadim; Grimes, David; Mestre, Tiago (
 
 ##### Related material
 
-- [CAFY Prototype](https://janettemujica.github.io/ecare-pd_prototype/)
-- [eCare-PD GitHub Prototype Repository](https://github.com/JanetteMujica/ecare-pd_prototype)
+- [eCare PD - CAFY (Care Assistant For You) - Prototype Website](https://janettemujica.github.io/ecare-pd_prototype/)
+- [eCare-PD - CAFY - GitHub Prototype Repository](https://github.com/JanetteMujica/ecare-pd_prototype)
 - [Conference Paper Website](https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e)
