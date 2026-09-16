@@ -5,7 +5,7 @@ description: 'Presentations, posters, creative outputs, and knowledge mobilizati
 
 # Contributions
 
-This timeline shows my research journey, which includes prototypes, course projects, a peer-reviewed publication, patient workshops, invited talks, and posters. All were developed with an interdisciplinary team at the Com&Tech Innovation Lab. It all started with the redesign of a prototype based on the results of a diary study of eCare-PD, a self-care companion for people living with Parkinson’s.
+This timeline shows my research journey. My contributions were developed with an interdisciplinary team at the Com&Tech Innovation Lab. It all started with the task of redesigning [eCare-PD](https://icare-pd.ca/ecare-pd-a-virtual-coach-to-support-self-care-at-home/), a self-care companion for people living with Parkinson's. Building on research results, I worked with communication specialists, clinicians and engineers to turn patients' everyday self-care experiences into concrete features. I do this because patients' lived experience should directly shape the tools built to support them.
 
 ---
 

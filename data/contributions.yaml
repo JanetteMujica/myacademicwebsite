@@ -41,7 +41,7 @@
 
 - date: May 2025
   type: Presentation
-  description: I presented to the Comm&Tech Innovation Lab, [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) an initial attempt to transition from a traditional medical dashboard toward a task-oriented user flow that guides users, like a virtual assistant, through selecting self-care goals, tracking their progress, and viewing their overall journey. I also integrated a text-to-speech feature. It was agreed that the platformshould be redesigned with the look and feel of a mobile application rather than a website, while redefining its identity with Parkinson Canada colors at the forefront.
+  description: I presented to the Comm&Tech Innovation Lab, [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) an initial attempt to transition from a traditional medical dashboard toward a task-oriented user flow that guides users, like a virtual assistant, through selecting self-care goals, tracking their progress, and viewing their overall journey. I also integrated a text-to-speech feature. It was agreed that the platformshould be redesigned with the look and feel of a mobile application rather than a website, while redefining its identity with [Parkinson Canada](https://www.parkinson.ca/) colors at the forefront.
   img: 4e_CarePD
   link: https://youtu.be/46uR8cW7a4I
   people:
@@ -56,7 +56,7 @@
 - date: May 2025
   type: Creative Output
   description:
-    I created a new visual identity aligned with Parkinson Canada’s branding and color palette.
+    I created a new visual identity aligned with [Parkinson Canada’s](https://www.parkinson.ca/) branding and color palette.
     I employed navigation-inspired visual symbols to represent the navigational work that people living
     with Parkinson’s undertake their self-care journey.
   img: 5e_CarePD
@@ -287,7 +287,7 @@
   link: https://entretiensjacquescartier.com/events/valoriser-et-innover-en-sciences-humaines-et-sociales-pour-relever-les-defis-du-siecle/
 - date: November 20, 2026
   description:
-    'I will present a poster at the Québec Seminar on Parkinson’s Research (Q-Dopa) entitled
+    'I will present a poster at the [Québec Seminar on Parkinson’s Research (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA) by [Parkinson Quebec](https://parkinsonquebec.ca/) entitled
     PD-TIPS.AI: From Needs Identification to a Conversational Recommendation System for People Living
     with Parkinson’s Disease.'
   title:

@@ -30,3 +30,6 @@ The University of Ottawa's [**Certificate in University Teaching**](https://saea
 | ESG5500 | Theory and Practice of Undergraduate University Teaching | Completed — December 2025                              |
 | ESG6500 | Technology and University Teaching                       | Completed — April 2026                                 |
 | ESG8500 | Practicum in University Teaching                         | In progress — to be completed before the end of my PhD |
+
+> "Grâce à une écoute active et des interventions ciblées, Janette a joué un rôle déterminant dans la stimulation des échanges au sein du groupe de patients, favorisant une atmosphère de confiance et d’ouverture. Elle a veillé lors de son animation à ce que tous les participants aient l'espace nécessaire pour partager leur perspective et à ce que les objectifs de chaque session de co-design soient atteints efficacement."
+> — [Sylvie Grosjean, Professeure titulaire](https://uniweb.uottawa.ca/view/profile/members/721)
