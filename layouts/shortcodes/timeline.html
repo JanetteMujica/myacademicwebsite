@@ -1,0 +1,256 @@
+{{/*
+  Vertical contributions timeline.
+  Reads entries from data/contributions.yaml (site.Data.contributions).
+  Usage: put {{< timeline >}} anywhere in a page's content.
+
+  To add a new contribution: open data/contributions.yaml and append a new
+  item at the end of the list (or wherever it belongs chronologically) —
+  no HTML editing needed. Fields (all optional except "date"):
+    date, description, img, title, type, event, institution, location,
+    link, people (a list of names).
+  Images: PNG files go in static/img/contributions/, named to match the
+  "img" field, e.g. img: 1eCarePD -> static/img/contributions/1eCarePD.png
+*/}}
+
+<section class="contrib-timeline">
+  <div class="contrib-rail"></div>
+
+  {{ range $i, $e := site.Data.contributions }}
+  {{ $isPlain := and (not $e.title) (not $e.type) (not $e.img) (not $e.event) (not $e.institution) (not $e.location) }}
+  <div class="contrib-entry">
+    <div class="contrib-dot-col"><div class="contrib-dot"></div></div>
+    <div class="contrib-body">
+      <p class="contrib-date">{{ $e.date }}</p>
+      <div class="contrib-card{{ if $isPlain }} contrib-plain{{ end }}">
+
+        {{ if $e.type }}<span class="contrib-badge">{{ $e.type }}</span>{{ end }}
+        {{ if $e.title }}<h3 class="contrib-title">{{ $e.title }}</h3>{{ end }}
+
+        {{ if $e.description }}
+          {{ $descId := printf "contrib-desc-%d" $i }}
+          {{ $isLong := gt (len $e.description) 220 }}
+          <div class="contrib-desc{{ if $isLong }} contrib-clamped{{ end }}" id="{{ $descId }}">
+            {{ range split $e.description "\n\n" }}<p>{{ . }}</p>{{ end }}
+          </div>
+          {{ if $isLong }}<button type="button" class="contrib-readmore" data-target="{{ $descId }}">Read more</button>{{ end }}
+        {{ end }}
+
+        {{ $ctxParts := slice }}
+        {{ if $e.event }}{{ $ctxParts = $ctxParts | append $e.event }}{{ end }}
+        {{ if $e.institution }}{{ $ctxParts = $ctxParts | append $e.institution }}{{ end }}
+        {{ if $e.location }}{{ $ctxParts = $ctxParts | append $e.location }}{{ end }}
+        {{ if $ctxParts }}<p class="contrib-context">{{ delimit $ctxParts ". " }}.</p>{{ end }}
+
+        {{ if $e.img }}
+        {{ $caption := $e.title | default $e.img }}
+        <div class="contrib-thumb" data-caption="{{ $caption }}" role="button" tabindex="0" aria-label="View image: {{ $caption }}">
+          <div class="contrib-thumb-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>
+            <span>{{ $e.img }}.png</span>
+          </div>
+          <img
+            src="{{ "img/contributions/" | relURL }}{{ $e.img }}.png"
+            alt="{{ $caption }}"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.classList.add('contrib-thumb--missing');">
+        </div>
+        {{ end }}
+
+        {{ if $e.people }}
+        <p class="contrib-people">With {{ delimit $e.people ", " " and " }}</p>
+        {{ end }}
+
+        {{ if $e.link }}
+        <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">View details</a>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<style>
+  .contrib-timeline{ position:relative; margin-top:2rem; }
+  .contrib-rail{
+    position:absolute; left:7px; top:6px; bottom:6px; width:1px;
+    background:var(--border);
+  }
+  .contrib-entry{
+    position:relative; display:grid;
+    grid-template-columns:36px 1fr; column-gap:20px;
+    padding-bottom:4.5rem;
+    opacity:0; transform:translateY(10px);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .contrib-entry.contrib-visible{ opacity:1; transform:translateY(0); }
+  .contrib-entry:last-child{ padding-bottom:0; }
+  .contrib-dot-col{ position:relative; display:flex; justify-content:center; }
+  .contrib-dot{
+    width:15px; height:15px; border-radius:50%;
+    background:var(--theme); border:2px solid var(--primary);
+    margin-top:5px; flex:0 0 auto; z-index:1;
+  }
+  .contrib-date{
+    font-style:italic; font-size:1.02em; color:var(--secondary);
+    margin:0 0 .6rem;
+  }
+  .contrib-badge{
+    display:inline-block; font-size:.72em; font-weight:600;
+    color:var(--secondary); background:var(--tertiary);
+    padding:3px 10px; border-radius:100px; margin-bottom:.6rem;
+  }
+  .contrib-card{
+    background:var(--entry); border:1px solid var(--border);
+    border-radius:8px; padding:1.3rem 1.4rem;
+  }
+  .contrib-card.contrib-plain{ background:transparent; border:none; padding:0; }
+  .contrib-title{ font-size:1.12em; margin:0 0 .5rem; line-height:1.4; }
+  .contrib-desc{ color:var(--content); font-size:.97em; }
+  .contrib-desc p{ margin:0 0 .6rem; }
+  .contrib-desc p:last-child{ margin-bottom:0; }
+  .contrib-desc.contrib-clamped{
+    display:-webkit-box; -webkit-line-clamp:3;
+    -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .contrib-readmore{
+    background:none; border:none; padding:0; margin-top:.5rem;
+    font-size:.85em; color:var(--primary); cursor:pointer;
+    text-decoration:underline; text-underline-offset:2px;
+  }
+  .contrib-readmore:hover{ opacity:.7; }
+  .contrib-context{ font-size:.85em; color:var(--secondary); margin:.8rem 0 0; }
+  .contrib-people{ font-size:.85em; font-style:italic; color:var(--secondary); margin:.9rem 0 0; }
+  .contrib-cta{
+    display:inline-block; margin-top:1rem; font-size:.85em; font-weight:600;
+    color:var(--primary); background:transparent; border:1px solid var(--primary);
+    padding:.5rem 1rem; border-radius:6px; text-decoration:none;
+    transition:background .15s ease, color .15s ease;
+  }
+  .contrib-cta:hover{ background:var(--primary); color:var(--theme); }
+
+  /* image sits under the text, full width, prominent */
+  .contrib-thumb{
+    position:relative; margin-top:1rem; width:100%;
+    aspect-ratio:16/9; border-radius:8px; overflow:hidden;
+    cursor:zoom-in; border:1px solid var(--border);
+    background:var(--tertiary);
+  }
+  .contrib-thumb img{
+    position:relative; z-index:1; width:100%; height:100%;
+    object-fit:cover; display:block; margin:0; max-width:none;
+  }
+  .contrib-thumb-placeholder{
+    position:absolute; inset:0; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:.4rem;
+    color:var(--secondary); text-align:center; padding:.5rem;
+  }
+  .contrib-thumb-placeholder svg{ width:22px; height:22px; opacity:.5; }
+  .contrib-thumb-placeholder span{ font-size:.68em; }
+  .contrib-thumb:not(.contrib-thumb--missing) .contrib-thumb-placeholder{ display:none; }
+
+  @media (max-width:600px){
+    .contrib-entry{ grid-template-columns:22px 1fr; column-gap:12px; }
+    .contrib-rail{ left:4px; }
+    .contrib-dot{ width:11px; height:11px; }
+    .contrib-card{ padding:1rem; }
+  }
+
+  /* Lightbox */
+  .contrib-lightbox{
+    position:fixed; inset:0; background:rgba(0,0,0,.78);
+    display:none; align-items:center; justify-content:center;
+    padding:2rem; z-index:1000;
+  }
+  .contrib-lightbox.contrib-open{ display:flex; }
+  .contrib-lightbox-box{
+    background:var(--entry); border-radius:10px; max-width:640px;
+    width:100%; padding:1.5rem; text-align:center; position:relative;
+  }
+  .contrib-lightbox-visual{
+    width:100%; border-radius:8px; overflow:hidden; margin-bottom:.9rem;
+    background:var(--tertiary); display:flex; align-items:center; justify-content:center;
+    aspect-ratio:4/3;
+  }
+  .contrib-lightbox-visual img{ width:100%; height:100%; object-fit:contain; margin:0; max-width:none; display:block; }
+  .contrib-lightbox-visual svg{ width:36px; height:36px; opacity:.5; color:var(--secondary); }
+  .contrib-lightbox-caption{ font-size:.9em; color:var(--content); margin:0; }
+  .contrib-lightbox-close{
+    position:absolute; top:8px; right:10px; background:none; border:none;
+    font-size:1.3rem; line-height:1; color:var(--secondary); cursor:pointer; padding:6px;
+  }
+</style>
+
+<div class="contrib-lightbox" id="contrib-lightbox">
+  <div class="contrib-lightbox-box">
+    <button type="button" class="contrib-lightbox-close" id="contrib-lightbox-close" aria-label="Close">&times;</button>
+    <div class="contrib-lightbox-visual" id="contrib-lightbox-visual">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>
+    </div>
+    <p class="contrib-lightbox-caption" id="contrib-lightbox-caption"></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root = document.currentScript.closest('body') || document;
+
+  // Read more toggles
+  document.querySelectorAll('.contrib-readmore').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = document.getElementById(btn.dataset.target);
+      var isClamped = target.classList.contains('contrib-clamped');
+      if(isClamped){
+        target.classList.remove('contrib-clamped');
+        btn.textContent = 'Show less';
+      } else {
+        target.classList.add('contrib-clamped');
+        btn.textContent = 'Read more';
+      }
+    });
+  });
+
+  // Lightbox
+  var lightbox = document.getElementById('contrib-lightbox');
+  var visual = document.getElementById('contrib-lightbox-visual');
+  var caption = document.getElementById('contrib-lightbox-caption');
+  var closeBtn = document.getElementById('contrib-lightbox-close');
+
+  function openLightbox(thumb){
+    var img = thumb.querySelector('img');
+    var text = thumb.dataset.caption || '';
+    if(img && img.style.display !== 'none' && img.complete && img.naturalWidth > 0){
+      visual.innerHTML = '<img src="' + img.src + '" alt="' + text.replace(/"/g,'&quot;') + '">';
+    } else {
+      visual.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>';
+    }
+    caption.textContent = text;
+    lightbox.classList.add('contrib-open');
+  }
+  function closeLightbox(){ lightbox.classList.remove('contrib-open'); }
+
+  document.querySelectorAll('.contrib-thumb').forEach(function(t){
+    t.addEventListener('click', function(){ openLightbox(t); });
+    t.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLightbox(t); } });
+  });
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLightbox(); });
+
+  // Reveal on scroll
+  var items = document.querySelectorAll('.contrib-entry');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('contrib-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('contrib-visible'); });
+  }
+})();
+</script>
