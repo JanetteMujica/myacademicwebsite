@@ -8,97 +8,231 @@
   no HTML editing needed. Fields (all optional except "date"):
     date, description, img, title, type, event, institution, location,
     link, people (a list of names).
+
+  "type" can be a single badge:
+    type: Presentation
+  or a list, to show several badges on the same entry:
+    type:
+      - Presentation
+      - Poster
+
+  A filter bar is generated automatically above the timeline, with one
+  button per distinct type found across all entries (styled like the
+  badges themselves), plus an "All" button to show the whole timeline.
   Images: PNG files go in static/img/contributions/, named to match the
   "img" field, e.g. img: 1eCarePD -> static/img/contributions/1eCarePD.png
+
+  Consecutive entries that share the exact same "date" string are grouped
+  under one sticky date label — it stays pinned while you scroll past that
+  group's entries, then releases once you reach the next date.
 */}}
 
+{{ $items := site.Data.contributions }}
+{{ $n := len $items }}
+
+{{ $allTypes := slice }}
+{{ range $items }}
+  {{ if .type }}
+    {{ if reflect.IsSlice .type }}
+      {{ range .type }}
+        {{ if not (in $allTypes .) }}{{ $allTypes = $allTypes | append . }}{{ end }}
+      {{ end }}
+    {{ else }}
+      {{ if not (in $allTypes .type) }}{{ $allTypes = $allTypes | append .type }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $allTypes = sort $allTypes }}
+
+<div class="contrib-filterbar" role="group" aria-label="Filter contributions by type">
+  <button type="button" class="contrib-badge contrib-filter-btn is-active" data-filter="all">All</button>
+  {{ range $allTypes }}
+  <button type="button" class="contrib-badge contrib-filter-btn" data-filter="{{ . }}">{{ . }}</button>
+  {{ end }}
+</div>
+
 <section class="contrib-timeline">
-  <div class="contrib-rail"></div>
+  {{ range $i, $e := $items }}
+    {{ $prevDate := "" }}
+    {{ if gt $i 0 }}{{ $prevDate = (index $items (sub $i 1)).date }}{{ end }}
+    {{ $nextDate := "" }}
+    {{ if lt (add $i 1) $n }}{{ $nextDate = (index $items (add $i 1)).date }}{{ end }}
+    {{ $isFirst := ne $e.date $prevDate }}
+    {{ $isLast := ne $e.date $nextDate }}
 
-  {{ range $i, $e := site.Data.contributions }}
-  {{ $isPlain := and (not $e.title) (not $e.type) (not $e.img) (not $e.event) (not $e.institution) (not $e.location) }}
-  <div class="contrib-entry">
-    <div class="contrib-dot-col"><div class="contrib-dot"></div></div>
-    <div class="contrib-body">
-      <p class="contrib-date">{{ $e.date }}</p>
-      <div class="contrib-card{{ if $isPlain }} contrib-plain{{ end }}">
+    {{ if $isFirst }}
+    <div class="contrib-group">
+      <div class="contrib-group-label">{{ $e.date }}</div>
+      <div class="contrib-group-content">
+    {{ end }}
 
-        {{ if $e.type }}<span class="contrib-badge">{{ $e.type }}</span>{{ end }}
-        {{ if $e.title }}<h3 class="contrib-title">{{ $e.title }}</h3>{{ end }}
-
-        {{ if $e.description }}
-          {{ $descId := printf "contrib-desc-%d" $i }}
-          {{ $isLong := gt (len $e.description) 220 }}
-          <div class="contrib-desc{{ if $isLong }} contrib-clamped{{ end }}" id="{{ $descId }}">
-            {{ range split $e.description "\n\n" }}<p>{{ . }}</p>{{ end }}
-          </div>
-          {{ if $isLong }}<button type="button" class="contrib-readmore" data-target="{{ $descId }}">Read more</button>{{ end }}
+        {{ $types := slice }}
+        {{ if $e.type }}
+          {{ if reflect.IsSlice $e.type }}
+            {{ $types = $e.type }}
+          {{ else }}
+            {{ $types = slice $e.type }}
+          {{ end }}
         {{ end }}
 
-        {{ $ctxParts := slice }}
-        {{ if $e.event }}{{ $ctxParts = $ctxParts | append $e.event }}{{ end }}
-        {{ if $e.institution }}{{ $ctxParts = $ctxParts | append $e.institution }}{{ end }}
-        {{ if $e.location }}{{ $ctxParts = $ctxParts | append $e.location }}{{ end }}
-        {{ if $ctxParts }}<p class="contrib-context">{{ delimit $ctxParts ". " }}.</p>{{ end }}
+        {{ $isPlain := and (not $e.title) (not $types) (not $e.img) (not $e.event) (not $e.institution) (not $e.location) }}
+        <article class="contrib-entry" data-types="{{ delimit $types "|" }}">
+          <aside class="contrib-aside">
+            <div class="contrib-dot"></div>
+            <div class="contrib-line"></div>
+          </aside>
+          <main class="contrib-main">
+            <div class="contrib-card{{ if $isPlain }} contrib-plain{{ end }}">
 
-        {{ if $e.img }}
-        {{ $caption := $e.title | default $e.img }}
-        <div class="contrib-thumb" data-caption="{{ $caption }}" role="button" tabindex="0" aria-label="View image: {{ $caption }}">
-          <div class="contrib-thumb-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>
-            <span>{{ $e.img }}.png</span>
-          </div>
-          <img
-            src="{{ "img/contributions/" | relURL }}{{ $e.img }}.png"
-            alt="{{ $caption }}"
-            loading="lazy"
-            onerror="this.style.display='none';this.parentElement.classList.add('contrib-thumb--missing');">
-        </div>
-        {{ end }}
+              {{ if $types }}
+              <div class="contrib-badges">
+                {{ range $types }}<span class="contrib-badge">{{ . }}</span>{{ end }}
+              </div>
+              {{ end }}
+              {{ if $e.title }}<h3 class="contrib-title">{{ $e.title }}</h3>{{ end }}
 
-        {{ if $e.people }}
-        <p class="contrib-people">With {{ delimit $e.people ", " " and " }}</p>
-        {{ end }}
+              {{ if $e.description }}
+                {{ $descId := printf "contrib-desc-%d" $i }}
+                {{ $isLong := gt (len $e.description) 220 }}
+                <div class="contrib-desc{{ if $isLong }} contrib-clamped{{ end }}" id="{{ $descId }}">
+                  {{ $e.description | markdownify }}
+                </div>
+                {{ if $isLong }}<button type="button" class="contrib-readmore" data-target="{{ $descId }}">Read more</button>{{ end }}
+              {{ end }}
 
-        {{ if $e.link }}
-        <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">View details</a>
-        {{ end }}
+              {{ $ctxParts := slice }}
+              {{ if $e.event }}{{ $ctxParts = $ctxParts | append $e.event }}{{ end }}
+              {{ if $e.institution }}{{ $ctxParts = $ctxParts | append $e.institution }}{{ end }}
+              {{ if $e.location }}{{ $ctxParts = $ctxParts | append $e.location }}{{ end }}
+              {{ if $ctxParts }}<p class="contrib-context">{{ delimit $ctxParts ". " }}.</p>{{ end }}
 
+              {{ if $e.img }}
+              {{ $caption := $e.title | default $e.img }}
+              <div class="contrib-thumb" data-caption="{{ $caption }}" role="button" tabindex="0" aria-label="View image: {{ $caption }}">
+                <div class="contrib-thumb-placeholder">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>
+                  <span>{{ $e.img }}.png</span>
+                </div>
+                <img
+                  src="{{ "img/contributions/" | relURL }}{{ $e.img }}.png"
+                  alt="{{ $caption }}"
+                  loading="lazy"
+                  onerror="this.style.display='none';this.parentElement.classList.add('contrib-thumb--missing');">
+              </div>
+              {{ end }}
+
+              {{ if $e.people }}
+              <p class="contrib-people">With {{ delimit $e.people ", " " and " }}</p>
+              {{ end }}
+
+              {{ if $e.link }}
+              <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">View details</a>
+              {{ end }}
+
+            </div>
+          </main>
+        </article>
+
+    {{ if $isLast }}
       </div>
     </div>
-  </div>
+    {{ end }}
   {{ end }}
 </section>
 
 <style>
-  .contrib-timeline{ position:relative; margin-top:2rem; }
-  .contrib-rail{
-    position:absolute; left:7px; top:6px; bottom:6px; width:1px;
-    background:var(--border);
+  .contrib-timeline{ margin-top:2rem; }
+
+  /* date label + its group of entries, sticky like a section heading */
+  .contrib-group{
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
+    padding-bottom:2.5rem;
   }
+  .contrib-group:last-child{ padding-bottom:0; }
+  .contrib-group-label{
+    position:sticky;
+    top:1.25rem;
+    flex:0 0 auto;
+    width:6.5rem;
+    font-style:italic;
+    font-size:.95em;
+    color:var(--gray);
+    padding-top:.15rem;
+  }
+  .contrib-group-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    min-width:0;
+  }
+
+  /* one entry: dot+line rail on the left, card content on the right */
   .contrib-entry{
-    position:relative; display:grid;
-    grid-template-columns:36px 1fr; column-gap:20px;
-    padding-bottom:4.5rem;
-    opacity:0; transform:translateY(10px);
+    display:flex;
+    gap:20px;
+    width:100%;
+  }
+  .contrib-aside{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex:0 0 auto;
+  }
+  .contrib-dot{
+    width:10px; height:10px;
+    margin:.3rem 0 0;
+    border-radius:50%;
+    background:var(--primary);
+    flex:0 0 auto;
+  }
+  .contrib-line{
+    flex:1 1 auto;
+    width:3px;
+    margin:8px 0;
+    background:var(--primary);
+  }
+  .contrib-main{
+    flex:1;
+    min-width:0;
+    padding-bottom:2rem;
+    opacity:0;
+    transform:translateY(10px);
     transition:opacity .5s ease, transform .5s ease;
   }
-  .contrib-entry.contrib-visible{ opacity:1; transform:translateY(0); }
-  .contrib-entry:last-child{ padding-bottom:0; }
-  .contrib-dot-col{ position:relative; display:flex; justify-content:center; }
-  .contrib-dot{
-    width:15px; height:15px; border-radius:50%;
-    background:var(--theme); border:2px solid var(--primary);
-    margin-top:5px; flex:0 0 auto; z-index:1;
-  }
-  .contrib-date{
-    font-style:italic; font-size:1.02em; color:var(--secondary);
-    margin:0 0 .6rem;
-  }
+  .contrib-main.contrib-visible{ opacity:1; transform:translateY(0); }
+
   .contrib-badge{
     display:inline-block; font-size:.72em; font-weight:600;
-    color:var(--secondary); background:var(--tertiary);
+    color:var(--code-bg); background:var(--tertiary);
     padding:3px 10px; border-radius:100px; margin-bottom:.6rem;
+  }
+  /* --tertiary is a dark, muted chip in light mode (nice against a light
+     page) but in dark mode it sits close in value to --code-bg, so the
+     text would go flat — swap the text to --primary there instead. */
+  .dark .contrib-badge{ color:var(--primary); }
+
+  /* wrapper for one or more badges on the same entry */
+  .contrib-badges{
+    display:flex; flex-wrap:wrap; gap:.4rem .5rem; margin-bottom:.6rem;
+  }
+  .contrib-badges .contrib-badge{ margin-bottom:0; }
+
+  /* filter bar, styled to match the badges so it reads as "the same
+     chips, but clickable" */
+  .contrib-filterbar{
+    display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.8rem;
+  }
+  .contrib-filter-btn{
+    border:1px solid transparent; margin-bottom:0; cursor:pointer;
+    font:inherit; font-size:.75em; font-weight:600;
+    -webkit-appearance:none; appearance:none;
+    transition:background .15s ease, color .15s ease, opacity .15s ease, border-color .15s ease;
+  }
+  .contrib-filter-btn:hover{ opacity:.8; }
+  .contrib-filter-btn.is-active{
+    background:var(--primary); color:var(--theme); border-color:var(--primary);
   }
   .contrib-card{
     background:var(--entry); border:1px solid var(--border);
@@ -109,6 +243,7 @@
   .contrib-desc{ color:var(--content); font-size:.97em; }
   .contrib-desc p{ margin:0 0 .6rem; }
   .contrib-desc p:last-child{ margin-bottom:0; }
+  .contrib-desc a{ color:var(--primary); text-decoration:underline; text-underline-offset:2px; }
   .contrib-desc.contrib-clamped{
     display:-webkit-box; -webkit-line-clamp:3;
     -webkit-box-orient:vertical; overflow:hidden;
@@ -119,8 +254,8 @@
     text-decoration:underline; text-underline-offset:2px;
   }
   .contrib-readmore:hover{ opacity:.7; }
-  .contrib-context{ font-size:.85em; color:var(--secondary); margin:.8rem 0 0; }
-  .contrib-people{ font-size:.85em; font-style:italic; color:var(--secondary); margin:.9rem 0 0; }
+  .contrib-context{ font-size:.85em; color:var(--gray); margin:.8rem 0 0; }
+  .contrib-people{ font-size:.85em; font-style:italic; color:var(--gray); margin:.9rem 0 0; }
   .contrib-cta{
     display:inline-block; margin-top:1rem; font-size:.85em; font-weight:600;
     color:var(--primary); background:transparent; border:1px solid var(--primary);
@@ -134,7 +269,7 @@
     position:relative; margin-top:1rem; width:100%;
     aspect-ratio:16/9; border-radius:8px; overflow:hidden;
     cursor:zoom-in; border:1px solid var(--border);
-    background:var(--tertiary);
+    background:var(--code-bg);
   }
   .contrib-thumb img{
     position:relative; z-index:1; width:100%; height:100%;
@@ -143,16 +278,18 @@
   .contrib-thumb-placeholder{
     position:absolute; inset:0; display:flex; flex-direction:column;
     align-items:center; justify-content:center; gap:.4rem;
-    color:var(--secondary); text-align:center; padding:.5rem;
+    color:var(--gray); text-align:center; padding:.5rem;
   }
   .contrib-thumb-placeholder svg{ width:22px; height:22px; opacity:.5; }
   .contrib-thumb-placeholder span{ font-size:.68em; }
   .contrib-thumb:not(.contrib-thumb--missing) .contrib-thumb-placeholder{ display:none; }
 
   @media (max-width:600px){
-    .contrib-entry{ grid-template-columns:22px 1fr; column-gap:12px; }
-    .contrib-rail{ left:4px; }
-    .contrib-dot{ width:11px; height:11px; }
+    .contrib-group{ gap:14px; }
+    .contrib-group-label{ width:4.4rem; font-size:.85em; }
+    .contrib-entry{ gap:12px; }
+    .contrib-dot{ width:8px; height:8px; }
+    .contrib-line{ width:2px; }
     .contrib-card{ padding:1rem; }
   }
 
@@ -169,11 +306,11 @@
   }
   .contrib-lightbox-visual{
     width:100%; border-radius:8px; overflow:hidden; margin-bottom:.9rem;
-    background:var(--tertiary); display:flex; align-items:center; justify-content:center;
+    background:var(--code-bg); display:flex; align-items:center; justify-content:center;
     aspect-ratio:4/3;
   }
   .contrib-lightbox-visual img{ width:100%; height:100%; object-fit:contain; margin:0; max-width:none; display:block; }
-  .contrib-lightbox-visual svg{ width:36px; height:36px; opacity:.5; color:var(--secondary); }
+  .contrib-lightbox-visual svg{ width:36px; height:36px; opacity:.5; color:var(--gray); }
   .contrib-lightbox-caption{ font-size:.9em; color:var(--content); margin:0; }
   .contrib-lightbox-close{
     position:absolute; top:8px; right:10px; background:none; border:none;
@@ -193,8 +330,6 @@
 
 <script>
 (function(){
-  var root = document.currentScript.closest('body') || document;
-
   // Read more toggles
   document.querySelectorAll('.contrib-readmore').forEach(function(btn){
     btn.addEventListener('click', function(){
@@ -237,8 +372,37 @@
   lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLightbox(); });
 
+  // Type filter bar
+  var filterBtns = document.querySelectorAll('.contrib-filter-btn');
+  var entries = document.querySelectorAll('.contrib-entry');
+  var groups = document.querySelectorAll('.contrib-group');
+
+  function applyFilter(filter){
+    entries.forEach(function(entry){
+      var types = (entry.dataset.types || '').split('|').filter(Boolean);
+      var match = filter === 'all' || types.indexOf(filter) !== -1;
+      entry.style.display = match ? '' : 'none';
+    });
+    // hide a date group entirely once none of its entries match
+    groups.forEach(function(group){
+      var visible = Array.prototype.some.call(
+        group.querySelectorAll('.contrib-entry'),
+        function(entry){ return entry.style.display !== 'none'; }
+      );
+      group.style.display = visible ? '' : 'none';
+    });
+  }
+
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      applyFilter(btn.dataset.filter);
+    });
+  });
+
   // Reveal on scroll
-  var items = document.querySelectorAll('.contrib-entry');
+  var items = document.querySelectorAll('.contrib-main');
   if('IntersectionObserver' in window){
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
