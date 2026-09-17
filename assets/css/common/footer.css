@@ -12,20 +12,32 @@
     background: var(--code-bg);
 }
 
-.footer span {
-    margin-inline-start: 1px;
-    margin-inline-end: 1px;
+.footer-nav {
+    display: inline-block;
 }
 
-.footer span:last-child {
-    white-space: nowrap;
+#footer-menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
 }
 
-.footer a {
+#footer-menu li + li {
+    margin-inline-start: var(--gap);
+}
+
+#footer-menu a {
+    display: inline-block;
+    font-size: var(--footersize);
+    font-weight: 400;
     color: var(--secondary);
 }
 
-.footer a:hover {
+#footer-menu .active {
     border-bottom: 2px solid var(--darkcolor);
 }
 

@@ -1,9 +1,9 @@
-- date: October 2024
+- date: Oct 2024
   description:
     I started working as a Research Assistant at Comm&Tech lab directed by [Professor Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)
     in Fall 2024.
 
-- date: November 2024
+- date: Nov 2024
   description:
     "Sylvie Grosjean, together with [Leylah Alwash](https://www.linkedin.com/in/leyla-alwash-a36245310/) and [Elaine Ho](https://www.linkedin.com/in/elaineho11/), analyzed and presented the results of a diary-based usability study of e-Care PD, an app to track care priorities for people living with Parkinson developed by Macadamian Technologies. The study highlighted the need to improve how people living with Parkinson's disease are supported
     in setting self-care goals, enhance the personalization of recommendations, and improve data visualizations to facilitate self-care and help identify patterns in symptoms."
@@ -12,7 +12,7 @@
     - Sylvie Grosjean
     - Leylah Alwash
     - Elaine Ho
-- date: January 2025
+- date: Jan 2025
   description: I started my master of Science in Digital Transformation & Innovation
 - date: March 2025
   description:
@@ -33,7 +33,7 @@
     - Janette Mujica
     - Nadim Saadeh
 
-- date: April 2025
+- date: Apr 2025
   type: Course project
   description: During the AI Virtual Assistants course taught by [Professor Caroline Barrière](https://uniweb.uottawa.ca/network/profile/members/3857), I prototyped Ember, an assistant designed as a memory aid for people living with Parkinson's. Ember helps users track care priorities through a chatbot, visualize health patterns, and document their experiences to support self-care and informed decision-making.
   img: 3e_Ember
@@ -82,7 +82,7 @@
     - Wen Qi
     - Anna Shatlova
     - Janette Mujica
-- date: June 2025-December 1
+- date: June-Dec 2025
   description:
     Through an iterative design process at the lab, Sylvie Grosjean wrote the CAFY conversation
     to help select self-care priorites, while Nadim Saadeh and the team, including Mae Slabinski and Maryse,
@@ -100,7 +100,7 @@
     - Nadim Saadeh
     - Mae Slabinski
     - Maryse Kavwahirehi
-- date: November 2025
+- date: Nov 2025
   title: Launch of the PD-AI Tips project
   description:
     I participated in the launch of the PD-AI Tips project and became a member of its steering
@@ -116,7 +116,7 @@
     - Jeffrey Jutai
     - Lysanne Lessard
     - Four patient partners
-- date: October 7, 2025
+- date: Oct 2025
   description:
     We published a conference paper entitled “What Should I Focus on Today? Co-Designing a
     Goal-Setting Dialogue Tool for Parkinson’s Self-Care,” which was presented at the European Society
@@ -132,7 +132,7 @@
     - Nadim Saadeh
     - David Grimes
     - Tiago Mestre
-- date: December 1–2, 2025
+- date: Dec 2025
   description:
     We facilitated patient workshops at The Ottawa Hospital Civic Campus to evaluate CAFY (Care
     Assistant For You), a structured chatbot that helps people living with Parkinson's identify their
@@ -148,9 +148,9 @@
     - Nadim Saadeh
     - Mae Slabinski
     - Janette Mujica
-- date: January 2026
+- date: Jan 2026
   description: I was fast-tracked from master to PhD in Digital Transformation and innovation
-- date: March 12, 2026
+- date: March 2026
   description:
     I presented preliminary findings from patient workshops about CAFY at the University of
     Ottawa Engineering & Computer Science Graduate Poster Competition.
@@ -168,7 +168,7 @@
     - Nadim Saadeh
     - Sylvie Grosjean
     - Tiago Mestre
-- date: March 18, 2026
+- date: March 2026
   description:
     We facilitated a workshop where participants simulated the decision-making logic of the
     PD-TIPS.AI conversational recommender system, translating clinical and lived-experience knowledge
@@ -182,7 +182,7 @@
   people:
     - Sylvie Grosjean
     - Mackenson Joseph
-- date: April 15, 2026
+- date: Apr 2026
   description:
     We facilitated patient workshops to evaluate the actionability of self-care tips tailored
     to different patient personas and self-care data visualizations.
@@ -198,7 +198,7 @@
     - Joseph Mackenson
     - Johémie Délinois
     - Yéroséo Aris Kusiélé Somba
-- date: June 22, 2026
+- date: June 2026
   description:
     'I facilitated an ideation session based on preliminary findings of data visualizations
     patient workshop to redesign journey page of e-Care PD. Thanks to the participants: Luc Bonneville,
@@ -219,7 +219,7 @@
     - Johémie Délinois
     - Mackenson Joseph
     - Sylvie Grosjean
-- date: June 24, 2026
+- date: June 2026
   description:
     'I presented the preliminary findings of a systematic review, Computing Patient Knowledge
     in AI Chatbots, conducted as part of the DTI Seminar taught by [Professor Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot), at the uOttawa
@@ -232,7 +232,7 @@
   location: Ottawa, Canada
   link: https://canva.link/j01147sobyiflia
 
-- date: Summer 2026
+- date: June-August 2026
   description:
     I conducted online interviews with people living with Parkinson’s disease to develop personas
     and usage scenarios for a self-care recommendation system.
@@ -244,7 +244,7 @@
   location: Ottawa, Canada
   people:
     - Sylvie Grosjean
-- date: July 21, 2026
+- date: July 2026
   description:
     Based on patient workshop and ideation session, I developped a low-fidelity prototype for
     visualising self-care journeys that was implemented in the e-Care PD by Wen Qui.
@@ -257,7 +257,7 @@
     - Wen Qi
     - David Devaux
   img: lowFiPrototype
-- date: September 2026
+- date: Sept 2026
   description:
     Wen Qi integrated front-end and back-end enhancements, including the care-tips logic engine,
     into a new version of e-Care PD. This demo will be developed with enhanced security support and other
@@ -268,7 +268,7 @@
   people:
     - Wen Qi
     - Sylvie Grosjean
-- date: November 11, 2026
+- date: Nov 2026
   description:
     'I will participate in a panel on emerging researchers’ perspectives in social innovation,
     presenting the e-Care PD project, Transforming Care, Strengthening Communities: The Evolution and
@@ -285,7 +285,7 @@
   institution: UQAM
   location: Montréal, Canada
   link: https://entretiensjacquescartier.com/events/valoriser-et-innover-en-sciences-humaines-et-sociales-pour-relever-les-defis-du-siecle/
-- date: November 20, 2026
+- date: Nov 2026
   description:
     'I will present a poster at the [Québec Seminar on Parkinson’s Research (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA) by [Parkinson Quebec](https://parkinsonquebec.ca/) entitled
     PD-TIPS.AI: From Needs Identification to a Conversational Recommendation System for People Living

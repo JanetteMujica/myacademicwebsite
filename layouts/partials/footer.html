@@ -1,23 +1,28 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-    {{- if not site.Params.footer.hideCopyright }}
-    {{- if site.Copyright }}
-    <span>{{ site.Copyright | markdownify }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Year }} {{ site.Title }}</span>
-    {{- end }}
-    {{- print " · "}}
-    {{- end }}
-
-    {{- with site.Params.footer.text }}
-    {{ . | markdownify }}
-    {{- print " · "}}
-    {{- end }}    
-    <span>
-    Made with 
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">hugo</a>, <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">papermod</a>, &amp;
-        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">hugo-website</a>.
-    </span>
+    <nav class="footer-nav" aria-label="Footer navigation">
+        <ul id="footer-menu">
+            {{- $currentPage := . }}
+            {{- $page_url := $currentPage.Permalink | absLangURL }}
+            {{- range site.Menus.main }}
+            {{- $menu_url := .URL | absLangURL }}
+            {{- $menu_url = (cond (strings.HasSuffix $menu_url "/") $menu_url (printf "%s/" $menu_url)) }}
+            {{- $is_root := eq .URL "/" }}
+            {{- $is_active := cond $is_root (eq $menu_url $page_url) (or (eq $menu_url $page_url) (strings.HasPrefix $page_url $menu_url)) }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if $is_active }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
 </footer>
 {{- end }}
 

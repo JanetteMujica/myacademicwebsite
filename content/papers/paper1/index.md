@@ -11,14 +11,14 @@ tags:
   ]
 author:
   [
-    'Grosjean, Sylvie',
-    'Mujica, Janette',
-    'Saadeh, Nadim',
-    'Grimes, David',
-    'Mestre, Tiago',
+    'Sylvie Grosjean',
+    '<strong>Janette Mujica</strong>',
+    'Nadim Saadeh',
+    'David Grimes',
+    'Tiago Mestre',
   ]
 description: 'This paper explores personalized goal-setting for Parkinson’s self-care through a dialogue-based digital health technology. Published in the Proceedings of the 10th International Conference on Infrastructures for Healthcare, 2025.'
-summary: 'This paper explores a digital health technology for personalized self-care in Parkinson’s disease. It proposes a dialogue interface to help patients identify care priorities and establish actionable goals.'
+summary: 'This paper proposes a dialogue interface to help patients identify care priorities and establish actionable goals.'
 cover:
   image: 'paper1.png'
   alt: 'Some Uses For Olive Oil'
