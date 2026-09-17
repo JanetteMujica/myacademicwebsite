@@ -56,6 +56,8 @@ myacademicwebsite
 │  │  └─ _index.md
 │  └─ teaching
 │     └─ _index.md
+├─ data
+│  └─ contributions.yaml
 ├─ layouts
 │  ├─ 404.html
 │  ├─ partials
@@ -73,6 +75,8 @@ myacademicwebsite
 │  │  ├─ search.html
 │  │  ├─ svg.html
 │  │  └─ toc.html
+│  ├─ shortcodes
+│  │  └─ timeline.html
 │  └─ _default
 │     ├─ archives.html
 │     ├─ baseof.html
@@ -236,6 +240,19 @@ myacademicwebsite
 │  ├─ favicon-16x16.png
 │  ├─ favicon-32x32.png
 │  ├─ favicon.ico
+│  ├─ img
+│  │  └─ contributions
+│  │     ├─ 1eCarePD.png
+│  │     ├─ 2eCarePD.png
+│  │     ├─ 3e_Ember.png
+│  │     ├─ 4e_CarePD.png
+│  │     ├─ 5e_CarePD.png
+│  │     ├─ 6e_CarePD.png
+│  │     ├─ 7e_CarePD.png
+│  │     ├─ CAFY_CRS.png
+│  │     ├─ DataToAction_PreliminaryFindings.png
+│  │     ├─ lowFiPrototype.png
+│  │     └─ posterCAFY.png
 │  ├─ index.html
 │  ├─ index.xml
 │  ├─ jmp.pdf
@@ -544,6 +561,19 @@ myacademicwebsite
 │  ├─ favicon-16x16.png
 │  ├─ favicon-32x32.png
 │  ├─ favicon.ico
+│  ├─ img
+│  │  └─ contributions
+│  │     ├─ 1eCarePD.png
+│  │     ├─ 2eCarePD.png
+│  │     ├─ 3e_Ember.png
+│  │     ├─ 4e_CarePD.png
+│  │     ├─ 5e_CarePD.png
+│  │     ├─ 6e_CarePD.png
+│  │     ├─ 7e_CarePD.png
+│  │     ├─ CAFY_CRS.png
+│  │     ├─ DataToAction_PreliminaryFindings.png
+│  │     ├─ lowFiPrototype.png
+│  │     └─ posterCAFY.png
 │  ├─ jmp.pdf
 │  └─ picture.jpeg
 └─ themes
