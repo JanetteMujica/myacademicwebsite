@@ -39,6 +39,7 @@
 
 #footer-menu .active {
     border-bottom: 2px solid var(--darkcolor);
+    font-weight: var(--semibold);
 }
 
 .top-link {

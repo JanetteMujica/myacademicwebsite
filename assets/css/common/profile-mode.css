@@ -11,14 +11,9 @@
 	padding: var(--gap);
 }
 
-.main .profile a {
-	text-decoration: underline;
-}
-
-.main .profile a:hover {
-	text-decoration: underline;
-	font-weight: bold;
-}
+/* In-text link styling for the profile/home page now lives in
+   main.css (".profile a"), so it stays consistent with paper/teaching
+   pages. Don't re-add color/text-decoration/font-weight rules here. */
 
 .main .profile .buttons a {
 	text-decoration: none;

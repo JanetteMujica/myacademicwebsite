@@ -6,6 +6,33 @@
     padding: var(--gap);
 }
 
+/* ==========================================================================
+   In-text (prose) links — single source of truth for the whole site.
+   Covers: home page bio (.profile), paper/teaching/post bodies (.post-content),
+   and citation/byline links (.post-meta), e.g. venue links in a paper's meta line.
+   Does NOT cover buttons, menu links, tags, pagination, or share icons —
+   those are styled separately on purpose and are untouched by this block.
+   To change how content links look everywhere, edit --link-color and
+   --link-weight in theme-vars.css. Do not add color/weight/text-decoration
+   for links to .profile, .post-content, or .post-meta anywhere else —
+   put it here instead.
+   ========================================================================== */
+.post-content a,
+.post-meta a,
+.profile a {
+    color: var(--link-color);
+    font-weight: var(--link-weight);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    box-shadow: none;
+}
+
+.post-content a:hover,
+.post-meta a:hover,
+.profile a:hover {
+    color: var(--darkcolor);
+}
+
 .page-header h1 {
     font-size: var(--h1size);
 }

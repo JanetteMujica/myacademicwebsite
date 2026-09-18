@@ -68,6 +68,7 @@ body:not(.dark) #sun {
 
 #menu .active {
     border-bottom: 2px solid var(--darkcolor);
+    font-weight: var(--semibold);
 }
 
 .lang-switch li,

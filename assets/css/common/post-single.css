@@ -72,8 +72,11 @@
     color: var(--secondary);
 }
 
-.post-content a,
-.post-meta a,
+/* .post-content a and .post-meta a styling now live in main.css,
+   alongside the home-page profile links, so citation/byline links
+   match the rest of the site's prose links. Only the table-of-contents
+   hover keeps its own distinct pink underline here, since it's a
+   navigation element, not prose. */
 .toc a:hover {
     box-shadow: 0 2px 0 var(--darkcolor);
     color: currentColor; 
@@ -341,15 +344,26 @@
 
 .post-tags a {
     display: block;
-    padding: 0 10px;
-    color: var(--secondary);
-    font-size: 16px;
+    padding: 3px 10px;
+    color: var(--code-bg);
+    background: var(--tertiary);
+    font-size: .72em;
+    font-weight: 600;
     line-height: 32px;
-    background: var(--code-bg);
+    border-radius: 100px;
+}
+
+/* --tertiary is a dark chip in light mode but sits close to --code-bg
+   in dark mode, so flip the text color there too — same reasoning as
+   .contrib-badge in the timeline shortcode, which this is matched to. */
+.dark .post-tags a {
+    color: var(--primary);
 }
 
 .post-tags a:hover {
     background: var(--lightcolor);
+    color: var(--primary);
+    font-weight: var(--semibold);
 }
 
 .paginav a:hover {

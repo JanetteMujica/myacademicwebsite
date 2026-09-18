@@ -3,12 +3,12 @@
     <nav class="footer-nav" aria-label="Footer navigation">
         <ul id="footer-menu">
             {{- $currentPage := . }}
-            {{- $page_url := $currentPage.Permalink | absLangURL }}
+            {{- $section_url := $currentPage.CurrentSection.Permalink }}
+            {{- $section_url = cond (strings.HasSuffix $section_url "/") $section_url (printf "%s/" $section_url) }}
             {{- range site.Menus.main }}
             {{- $menu_url := .URL | absLangURL }}
-            {{- $menu_url = (cond (strings.HasSuffix $menu_url "/") $menu_url (printf "%s/" $menu_url)) }}
-            {{- $is_root := eq .URL "/" }}
-            {{- $is_active := cond $is_root (eq $menu_url $page_url) (or (eq $menu_url $page_url) (strings.HasPrefix $page_url $menu_url)) }}
+            {{- $menu_url = cond (strings.HasSuffix $menu_url "/") $menu_url (printf "%s/" $menu_url) }}
+            {{- $is_active := eq $section_url $menu_url }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"

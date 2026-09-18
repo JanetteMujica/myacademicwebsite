@@ -28,6 +28,11 @@
 	--lineheight: 1.45;
 	--lineclamp: 8;
 	--marginleft: 26px;
+
+	/* Single source of truth for in-text (prose) links, used in main.css.
+	   Change these two values to restyle every content link site-wide. */
+	--link-color: var(--primary);
+	--link-weight: var(--semibold);
 }
 
 .dark {
@@ -42,11 +47,11 @@
 	--border: rgb(51, 51, 51);
 }
 
-.list {
+html body {
 	background: var(--code-bg);
 }
 
-.dark.list {
+.dark body {
 	background: var(--theme);
 }
 
