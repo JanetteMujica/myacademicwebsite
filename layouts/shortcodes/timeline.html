@@ -1,11 +1,14 @@
 {{/*
   Vertical contributions timeline.
-  Reads entries from data/contributions.yaml (site.Data.contributions).
+  Reads entries from data/contributions/<lang>.yaml
+  (site.Data.contributions.en / site.Data.contributions.fr), picking the
+  one matching the current page's language, with English as a fallback.
   Usage: put {{< timeline >}} anywhere in a page's content.
 
-  To add a new contribution: open data/contributions.yaml and append a new
-  item at the end of the list (or wherever it belongs chronologically) —
-  no HTML editing needed. Fields (all optional except "date"):
+  To add a new contribution: open data/contributions/en.yaml (and its
+  data/contributions/fr.yaml translation) and append a new item at the
+  end of the list (or wherever it belongs chronologically) — no HTML
+  editing needed. Fields (all optional except "date"):
     date, description, img, title, type, event, institution, location,
     link, people (a list of names).
 
@@ -21,13 +24,15 @@
   badges themselves), plus an "All" button to show the whole timeline.
   Images: PNG files go in static/img/contributions/, named to match the
   "img" field, e.g. img: 1eCarePD -> static/img/contributions/1eCarePD.png
+  (shared automatically between languages, no need to duplicate them.)
 
   Consecutive entries that share the exact same "date" string are grouped
   under one sticky date label — it stays pinned while you scroll past that
   group's entries, then releases once you reach the next date.
 */}}
 
-{{ $items := site.Data.contributions }}
+{{ $items := index site.Data.contributions .Page.Lang }}
+{{ if not $items }}{{ $items = site.Data.contributions.en }}{{ end }}
 {{ $n := len $items }}
 
 {{ $allTypes := slice }}

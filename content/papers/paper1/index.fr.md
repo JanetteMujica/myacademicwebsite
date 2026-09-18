@@ -17,8 +17,8 @@ author:
     'David Grimes',
     'Tiago Mestre',
   ]
-description: 'This paper explores personalized goal-setting for Parkinson’s self-care through a dialogue-based digital health technology. Published in the Proceedings of the 10th International Conference on Infrastructures for Healthcare, 2025.'
-summary: 'Cet article propose une interface conversationnelle pour aider les patients vivant avec la maladie de Parkinson à définir leurs objectifs d’autosoins'
+description: 'Cet article explore la définition d’objectifs personnalisés pour l’autogestion de la maladie de Parkinson au moyen d’une technologie de santé numérique fondée sur une approche conversationnelle. Il a été publié dans les Proceedings of the 10th International Conference on Infrastructures for Healthcare, 2025.'
+summary: 'Cet article propose une interface conversationnelle pour aider les patients vivant avec la maladie de Parkinson à définir leurs objectifs d’autosoins.'
 cover:
   image: 'paper1.png'
   alt: 'CAFY: Care assistant for you'
@@ -30,19 +30,23 @@ editPost:
 
 ---
 
-##### Download
+##### Télécharger
 
-- [Paper](https://dl.eusset.eu/server/api/core/bitstreams/d50e86ce-aef0-4e94-b3bd-d18e26d95743/content)
+- [Article (en anglais)](https://dl.eusset.eu/server/api/core/bitstreams/d50e86ce-aef0-4e94-b3bd-d18e26d95743/content)
 
 ---
 
-##### Abstract
+##### RÉSUMÉ
 
-The aim of this paper is to explore the potential of a digital health technology (eCARE-PDTM) designed to support self-care and assist individuals with Parkinson's disease (PD) in identifying their care needs and establishing personalized goals to enhance self-care. The efficacy of self-care in PD depends on personalized goal setting; however, people with PD (PwPs) struggle to identify care priorities due to fluctuating and unpredictable symptoms. Based on the findings of a usage diary study, we will explore the enhancement of a self-care technology with a dialogue interface to facilitate more personalized goal setting. The usage diary study revealed that PwPs experience uncertainty when selecting care priorities from a predefined list, and they expressed a need for a system that translates their personal experiences into actionable goals. The integration of a dialogue interface within eCARE-PDTM is proposed, engaging users in interactive dialogues that stimulate reflection on recent symptoms and daily challenges, facilitating a collaborative definition of personalized self-care objectives. This direction is further explored through a dialogue interface (CAFY), a prototype designed to help patients articulate their care priorities and translate them into meaningful, actionable goals. CAFY will serve as a design probe in upcoming participatory design workshops to inform the next cycle of co-design, which aims to improve eCARE-PDTM by integrating an AI-based conversational recommendation system.
+L’objectif de cet article est d’explorer le potentiel d’une technologie de santé numérique (eCARE-PD™) conçue pour soutenir l’autogesoin et aider les personnes atteintes de la maladie de Parkinson à identifier leurs besoins en matière de soins et à définir des objectifs personnalisés visant à améliorer leur autosoin.
 
-##### Figure 6: CAFY, a prototype designed to help patients articulate their care priorities
+L’efficacité de l’autosoin dans le cadre de la maladie de Parkinson repose sur la définition d’objectifs personnalisés ; toutefois, les personnes atteintes de la maladie de Parkinson éprouvent des difficultés à déterminer leurs priorités en matière de soins en raison de symptômes fluctuants et imprévisibles. À partir des résultats d’une étude fondée sur des journaux d’utilisation, nous explorerons l’amélioration d’une technologie d’autosoin par l’intégration d’une interface conversationnelle destinée à faciliter une définition plus personnalisée des objectifs. L’étude des journaux d’utilisation a révélé que les personnes atteintes de la maladie de Parkinson éprouvent de l’incertitude lorsqu’elles doivent sélectionner leurs priorités de soins à partir d’une liste prédéfinie. Elles ont également exprimé le besoin d’un système capable de traduire leurs expériences personnelles en objectifs concrets et réalisables.
 
-![CAFY, a prototype designed to help patients articulate their care priorities](paper1.png)
+L’intégration d’une interface conversationnelle au sein d’eCARE-PD™ est proposée afin d’engager les utilisateurs dans des dialogues interactifs favorisant la réflexion sur leurs symptômes récents et les difficultés rencontrées au quotidien, et de faciliter une définition collaborative d’objectifs personnalisés d’autosoin. Cette orientation est approfondie au moyen d’une interface conversationnelle, CAFY, un prototype conçu pour aider les patients à exprimer leurs priorités en matière de soins et à les traduire en objectifs pertinents et réalisables. CAFY servira de dispositif exploratoire (« design probe ») lors de prochains ateliers de conception participative afin d’alimenter le prochain cycle de co-conception. Celui-ci vise à améliorer eCARE-PD™ par l’intégration d’un système conversationnel de recommandation fondé sur l’intelligence artificielle.
+
+##### Figure 6: CAFY, un prototype conçu pour aider les patients à exprimer leurs priorités en matière de soins.
+
+![CAFY, un prototype conçu pour aider les patients à exprimer leurs priorités en matière de soins.](paper1.png)
 
 ---
 
@@ -52,6 +56,6 @@ Grosjean, Sylvie; Mujica, Janette; Saadeh, Nadim; Grimes, David; Mestre, Tiago (
 
 ##### Related material
 
-- [eCare PD - CAFY (Care Assistant For You) - Prototype Website](https://janettemujica.github.io/ecare-pd_prototype/)
-- [eCare-PD - CAFY - GitHub Prototype Repository](https://github.com/JanetteMujica/ecare-pd_prototype)
-- [Conference Paper Website](https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e)
+- [eCare PD – CAFY (Assistant de soins pour vous) – Prototype](https://janettemujica.github.io/ecare-pd_prototype/)
+- [eCare-PD – CAFY – Dépôt GitHub du prototype](https://github.com/JanetteMujica/ecare-pd_prototype)
+- [Article](https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e)
