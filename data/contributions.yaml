@@ -1,9 +1,12 @@
 - date: Oct 2024
+  type: Involvement
   description:
     I started working as a Research Assistant at Comm&Tech lab directed by [Professor Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)
     in Fall 2024.
 
 - date: Nov 2024
+  type: Involvement
+  title: e-Care PD Usability Study Results
   description:
     "Sylvie Grosjean, together with [Leylah Alwash](https://www.linkedin.com/in/leyla-alwash-a36245310/) and [Elaine Ho](https://www.linkedin.com/in/elaineho11/), analyzed and presented the results of a diary-based usability study of e-Care PD, an app to track care priorities for people living with Parkinson developed by Macadamian Technologies. The study highlighted the need to improve how people living with Parkinson's disease are supported
     in setting self-care goals, enhance the personalization of recommendations, and improve data visualizations to facilitate self-care and help identify patterns in symptoms."
@@ -12,7 +15,9 @@
     - Sylvie Grosjean
     - Leylah Alwash
     - Elaine Ho
+
 - date: Jan 2025
+  type: Involvement
   description: I started my master of Science in Digital Transformation & Innovation
 - date: March 2025
   description:
@@ -35,12 +40,14 @@
 
 - date: Apr 2025
   type: Course project
+  title: Ember - A memory aid for people living with Parkinson's
   description: During the AI Virtual Assistants course taught by [Professor Caroline Barrière](https://uniweb.uottawa.ca/network/profile/members/3857), I prototyped Ember, an assistant designed as a memory aid for people living with Parkinson's. Ember helps users track care priorities through a chatbot, visualize health patterns, and document their experiences to support self-care and informed decision-making.
   img: 3e_Ember
   link: https://www.youtube.com/watch?v=Iu58T5tMdtc
 
 - date: May 2025
   type: Presentation
+  title: CAFY - a virtual assistant for living well with Parkinson's
   description: I presented to the Comm&Tech Innovation Lab, [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) an initial attempt to transition from a traditional medical dashboard toward a task-oriented user flow that guides users, like a virtual assistant, through selecting self-care goals, tracking their progress, and viewing their overall journey. I also integrated a text-to-speech feature. It was agreed that the platformshould be redesigned with the look and feel of a mobile application rather than a website, while redefining its identity with [Parkinson Canada](https://www.parkinson.ca/) colors at the forefront.
   img: 4e_CarePD
   link: https://youtu.be/46uR8cW7a4I
@@ -55,6 +62,7 @@
 
 - date: May 2025
   type: Creative Output
+  title: Visual Identity for CAFY
   description:
     I created a new visual identity aligned with [Parkinson Canada’s](https://www.parkinson.ca/) branding and color palette.
     I employed navigation-inspired visual symbols to represent the navigational work that people living
@@ -63,6 +71,7 @@
 
 - date: May 2025
   type: Creative Output
+  title: e-Care PD Structure Redesign
   description:
     Sylvie Grosjean, together with Mae Slabinski, Nadim Saadeh, and me, restructured the app
     based on a middle-range theory of self-care for chronic conditions. Professor [Fabienne Martin-Juchat](https://www.univ-grenoble-alpes.fr/fabienne-martin-juchat-539593.kjsp), as visiting professor, participated in our working sessions and provided valuable feedback on the design of the app.
@@ -75,6 +84,7 @@
     - Fabienne Martin-Juchat
 - date: July 2025
   type: Course project
+  title: CAFY - a self-care conversational recommendation system for people living with Parkinson's
   description: During the Data Science Applications course taught by [Professor Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar), Wen Qi, Anna Shatlova, and I prototyped CAFY, a self-care conversational recommendation system designed for people living with Parkinson.
   img: CAFY_CRS
   link: https://canva.link/pr2gsf4512ywaik
@@ -149,6 +159,7 @@
     - Mae Slabinski
     - Janette Mujica
 - date: Jan 2026
+  type: Involvement
   description: I was fast-tracked from master to PhD in Digital Transformation and innovation
 - date: March 2026
   description:
@@ -232,7 +243,7 @@
   location: Ottawa, Canada
   link: https://canva.link/j01147sobyiflia
 
-- date: June-August 2026
+- date: June-Aug 2026
   description:
     I conducted online interviews with people living with Parkinson’s disease to develop personas
     and usage scenarios for a self-care recommendation system.
@@ -268,6 +279,7 @@
   people:
     - Wen Qi
     - Sylvie Grosjean
+    - Janette Mujica
 - date: Nov 2026
   description:
     'I will participate in a panel on emerging researchers’ perspectives in social innovation,
@@ -285,6 +297,7 @@
   institution: UQAM
   location: Montréal, Canada
   link: https://entretiensjacquescartier.com/events/valoriser-et-innover-en-sciences-humaines-et-sociales-pour-relever-les-defis-du-siecle/
+
 - date: Nov 2026
   description:
     'I will present a poster at the [Québec Seminar on Parkinson’s Research (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA) by [Parkinson Quebec](https://parkinsonquebec.ca/) entitled
@@ -301,5 +314,7 @@
   location: Montréal, Canada
   people:
     - Sylvie Grosjean
+    - Janette Mujica
+    - Blaise Millingen
     - Arya Rahgozar
     - Tiago Mestre
