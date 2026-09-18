@@ -40,11 +40,11 @@ languages:
     title: Janette Mujica
     menu:
       main:
-        - name: papers
-          url: papers/
+        - name: publication
+          url: publication/
           weight: 1
-        - name: contributions
-          url: contributions/
+        - name: contribution
+          url: contribution/
           weight: 2
         - name: teaching
           url: teaching/
@@ -65,35 +65,35 @@ languages:
         imageWidth: 160
         imageHeight: 160
         buttons:
-          - name: papers
-            url: papers/
-          - name: contributions
-            url: contributions/
+          - name: publication
+            url: publication/
+          - name: contribution
+            url: contribution/
           - name: teaching
             url: teaching/
-        aboutTitle: "About me and my research"
+        aboutTitle: 'About me and my research'
         funding:
-          title: "Heartfelt thanks"
-          subtitle: "My research is made possible through the support of:"
+          title: 'Heartfelt thanks'
+          subtitle: 'My research is made possible through the support of:'
           items:
             - year: 2026
               name: "uOttawa Engineering Doctoral's Admission Scholarship"
-              amount: "$36,000 / 48 months"
+              amount: '$36,000 / 48 months'
             - year: 2026
-              name: "PD-TIPS-AI Fellowship, CIHR Funded Research"
-              url: "https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=524372&lang=en"
-              amount: "$110,000 / 48 months"
+              name: 'PD-TIPS-AI Fellowship, CIHR Funded Research'
+              url: 'https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=524372&lang=en'
+              amount: '$110,000 / 48 months'
             - year: 2026
               name: "SSHRC Master's Canada Graduate Scholarship"
-              url: "https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-graduate-scholarships/masters-program.aspx"
-              amount: "$27,000 / 12 months"
+              url: 'https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-graduate-scholarships/masters-program.aspx'
+              amount: '$27,000 / 12 months'
             - year: 2025
-              name: "Ontario Graduate Scholarship"
-              url: "https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html"
-              amount: "$15,000 / 12 months"
+              name: 'Ontario Graduate Scholarship'
+              url: 'https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html'
+              amount: '$15,000 / 12 months'
             - year: 2024
               name: "uOttawa Engineering Master's Admission Scholarship"
-              amount: "$7,500 / 12 months"
+              amount: '$7,500 / 12 months'
 
   fr:
     languageName: Français
@@ -102,23 +102,21 @@ languages:
     title: Janette Mujica
     menu:
       main:
-        - name: articles
-          url: papers/
+        - name: publication
+          url: publication/
           weight: 1
-        - name: contributions
-          url: contributions/
+        - name: contribution
+          url: contribution/
           weight: 2
         - name: enseignement
-          url: teaching/
+          url: enseignement/
           weight: 3
     params:
-      # TODO (Janette) : relis/ajuste cette meta-description, je l'ai
-      # rédigée moi-même car elle n'était pas dans ta traduction.
-      description: "Ce site présente les articles de recherche, les contributions et l'expérience d'enseignement de Janette Mujica."
+      description: "Ce site présente les publications, les contributions et l'expérience d'enseignement de Janette Mujica."
       profileMode:
         enabled: true
         title: Janette Mujica
-        subtitle: Je suis étudiante au doctorat en transformation numérique et innovation à l'Université d'Ottawa. J'étudie la manière dont les patients, les cliniciens et les ingénieurs cocréent des chatbots d'IA destinés à l'autosoin des maladies chroniques. Je cherche à éclaircir la manière dont les développeurs des technologies d'IA peuvent inclure les utilisateurs finaux afin que celles-ci répondent à leurs meilleurs intérêts. <br><br> J'ai la chance d'être supervisée par la professeure [Sylvie Grosjean](https://uniweb.uottawa.ca/view/profile/members/721), et de compter parmi les membres de mon comité les professeurs [Lysanne Lessard](https://telfer.uottawa.ca/en/directory/lysanne-lessard/) et [Mayur Joshi](https://telfer.uottawa.ca/en/directory/mayur-joshi/). Leurs expertises couvrent la conception sociotechnique et des services numériques ainsi que les liens technologies & organisations.
+        subtitle: Je suis étudiante au [doctorat en transformation numérique et innovation](https://www.uottawa.ca/graduate-studies/programs/doctoral-programs/digital-transformation-and-innovation) à l'Université d'Ottawa. J'étudie la manière dont les patients, les cliniciens et les ingénieurs cocréent des chatbots d'IA destinés à l'autosoin des maladies chroniques. Je cherche à éclaircir la manière dont les développeurs des technologies d'IA peuvent inclure les utilisateurs finaux afin que celles-ci répondent à leurs meilleurs intérêts. <br><br> J'ai la chance d'être supervisée par la professeure [Sylvie Grosjean](https://uniweb.uottawa.ca/view/profile/members/721), et de compter parmi les membres de mon comité les professeurs [Lysanne Lessard](https://telfer.uottawa.ca/en/directory/lysanne-lessard/) et [Mayur Joshi](https://telfer.uottawa.ca/en/directory/mayur-joshi/). Leurs expertises couvrent la conception sociotechnique et des services numériques ainsi que les liens technologies & organisations.
         bio:
           Depuis l'automne 2024, je travaille comme assistante de recherche au Com&Tech Innovation Lab, dirigé par la professeure [Sylvie Grosjean](https://uniweb.uottawa.ca/view/profile/members/721), où je participe au codesign de technologies d'autosoin destinées aux personnes vivant avec la maladie de Parkinson. J'ai développé des compétences en recherche qualitative, en conception participative et en prototypage pouvant transformer les enseignements-clés issus de la recherche en résultats concrets.<br><br> Avant mes études en transformation numérique et innovation, j'ai étudié la gestion de l'innovation à HEC Montréal et les humanités numériques et l'informatique à l'Université de Montréal. J'ai également travaillé pendant plus de dix ans comme adjointe de direction dans le secteur de la consultation en management, droit et finance, ce qui m'a permis de développer ma capacité à collaborer avec des professionnels aux priorités parfois divergentes dans des cultures organisationnelles différentes.<br><br>
 
@@ -129,39 +127,39 @@ languages:
         imageWidth: 160
         imageHeight: 160
         buttons:
-          - name: articles
-            url: papers/
-          - name: contributions
-            url: contributions/
+          - name: publication
+            url: publication/
+          - name: contribution
+            url: contribution/
           - name: enseignement
-            url: teaching/
-        aboutTitle: "À propos de moi et ma recherche"
+            url: enseignement/
+        aboutTitle: 'À propos de moi et ma recherche'
         funding:
-          title: "Merci"
-          subtitle: "Mes recherches sont rendues possibles grâce au soutien de :"
+          title: 'Merci'
+          subtitle: 'Mes recherches sont rendues possibles grâce au soutien de :'
           items:
             - year: 2026
               name: "Bourse d'admission au doctorat en génie de l'Université d'Ottawa"
-              amount: "36 000 $ / 48 mois"
+              amount: '36 000 $ / 48 mois'
             - year: 2026
-              name: "Bourse PD-TIPS-AI, financée par les IRSC"
-              url: "https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=524372&lang=en"
-              amount: "110 000 $ / 48 mois"
+              name: 'Bourse PD-TIPS-AI, financée par les IRSC'
+              url: 'https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=524372&lang=en'
+              amount: '110 000 $ / 48 mois'
             - year: 2026
               name: "Bourse d'études supérieures du Canada de maîtrise du CRSH"
               # TODO (Janette) : ta traduction Word ne contenait pas de lien pour
               # cette bourse-ci — j'ai repris le lien de la version anglaise.
               # Remplace-le si tu as une version française de cette page.
-              url: "https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-graduate-scholarships/masters-program.aspx"
-              amount: "27 000 $ / 12 mois"
+              url: 'https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-graduate-scholarships/masters-program.aspx'
+              amount: '27 000 $ / 12 mois'
             - year: 2025
               name: "Bourse d'études supérieures de l'Ontario"
               # TODO (Janette) : idem, lien anglais repris tel quel.
-              url: "https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html"
-              amount: "15 000 $ / 12 mois"
+              url: 'https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html'
+              amount: '15 000 $ / 12 mois'
             - year: 2024
               name: "Bourse d'admission à la maîtrise en génie de l'Université d'Ottawa"
-              amount: "7 500 $ / 12 mois"
+              amount: '7 500 $ / 12 mois'
 
 # --------------------------------------------------------------------------
 # Shared / language-agnostic params (identical for every language unless
@@ -181,7 +179,7 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowAllPagesInArchive: false
-  MainSections: [papers, contributions, teaching]
+  MainSections: [publication, contribution, teaching, enseignement]
   ShowToc: false
   disableScrollToTop: true
   TocOpen: true

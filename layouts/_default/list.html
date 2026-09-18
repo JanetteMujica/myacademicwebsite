@@ -92,19 +92,37 @@ if $term }} {{- $class = "post-entry tag-entry" }} {{- end }}
 		{{- end }}
 	</nav>
 </footer>
-{{- end }} {{/* Cycle navigation button: papers -> contributions -> teaching ->
-home */}} {{- $nextSectionMap := dict "papers" "contributions/" "contributions"
-"teaching/" "teaching" "" }} {{- $nextLabelMap := dict "papers" "contributions"
-"contributions" "teaching" "teaching" "Home" }} {{- $currentSection := .Section
-}} {{- if isset $nextSectionMap $currentSection }} {{- $nextURL := index
-$nextSectionMap $currentSection }} {{- $nextLabel := index $nextLabelMap
-$currentSection }}
+{{- end }} {{/* Cycle navigation button: reads the current site.Menus.main (in the
+current language, already correctly localized in config.yml) instead of
+a hardcoded English section map. This means renaming a section in
+config.yml is now enough on its own — nothing to touch here ever again.
+Cycles through the menu in weight order, then wraps to Home. */}}
+{{- $menuItems := site.Menus.main }}
+{{- $currentSection := .Section }}
+{{- $nextURL := "" }}
+{{- $nextLabel := "" }}
+{{- $found := false }}
+{{- range $i, $m := $menuItems }}
+	{{- $menuSection := strings.TrimSuffix "/" $m.URL }}
+	{{- if eq $menuSection $currentSection }}
+		{{- $found = true }}
+		{{- if lt (add $i 1) (len $menuItems) }}
+			{{- $next := index $menuItems (add $i 1) }}
+			{{- $nextURL = $next.URL | absLangURL }}
+			{{- $nextLabel = $next.Name }}
+		{{- else }}
+			{{- $nextURL = "" | absLangURL }}
+			{{- $nextLabel = i18n "homeLabel" }}
+		{{- end }}
+	{{- end }}
+{{- end }}
+{{- if $found }}
 <div class="next-section-wrapper">
 	<a
 		class="button next-section-button"
-		href="{{ $nextURL | absURL }}"
+		href="{{ $nextURL }}"
 		rel="noopener"
-		title="Next: {{ $nextLabel }}"
+		title="{{ i18n "nextSectionTitlePrefix" }} {{ $nextLabel }}"
 	>
 		<span class="button-inner">
 			{{ $nextLabel }}

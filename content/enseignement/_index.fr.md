@@ -1,5 +1,6 @@
 ---
 title: "Enseignement"
+translationKey: teaching-section
 ---
 
 <!--

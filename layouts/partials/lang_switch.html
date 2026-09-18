@@ -1,25 +1,36 @@
 {{- /*
-  Language switcher used both in the site header (layouts/partials/header.html)
-  and directly under the name on the profile-mode home page
-  (layouts/partials/index_profile.html).
+  Language switcher used in the site header (layouts/partials/header.html).
 
-  Unlike the original PaperMod behaviour (a single link to "the other"
-  language), this always shows BOTH languages, in a fixed order — French
-  first, then English — and marks the active one with the same "active"
-  look as the main navigation (see .lang-switch .active in header.css),
-  instead of it being a plain, easy-to-miss link.
+  v3: switches to the TRANSLATION OF THE CURRENT PAGE (so you stay on the
+  same article/section when you change language), falling back to that
+  language's home page only if the current page has no translation yet
+  (e.g. a placeholder .fr.md hasn't been filled in / doesn't exist).
 
-  Expects "." to be the current Page (so .Lang works). Always call it as:
+  Always shows BOTH languages, in a fixed order — French first, then
+  English — and marks the active one with the same "active" class as the
+  active item in the main navigation.
+
+  Expects "." to be the current Page (so .Lang / .AllTranslations work).
+  Always call it as:
       {{ partial "lang_switch.html" . }}
   or, from inside a "with" block where "." has changed, capture the page
   first: {{- $page := . -}} ... {{ partial "lang_switch.html" $page }}
 */ -}}
-{{- $current := .Lang -}}
+{{- $page := . -}}
+{{- $current := $page.Lang -}}
 {{- $frPage := "" -}}
 {{- $enPage := "" -}}
-{{- range site.Home.AllTranslations }}
+{{- range $page.AllTranslations }}
     {{- if eq .Lang "fr" }}{{ $frPage = . }}{{ end }}
     {{- if eq .Lang "en" }}{{ $enPage = . }}{{ end }}
+{{- end }}
+{{- /* Fallback to that language's home page if this exact page has no
+     translation yet, instead of showing no link at all. */ -}}
+{{- if not $frPage }}
+    {{- range site.Home.AllTranslations }}{{ if eq .Lang "fr" }}{{ $frPage = . }}{{ end }}{{ end }}
+{{- end }}
+{{- if not $enPage }}
+    {{- range site.Home.AllTranslations }}{{ if eq .Lang "en" }}{{ $enPage = . }}{{ end }}{{ end }}
 {{- end }}
 <ul class="lang-switch">
     {{- with $frPage }}

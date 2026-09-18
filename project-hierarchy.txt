@@ -26,25 +26,35 @@ myacademicwebsite
 ├─ cheatsheet.md
 ├─ config.yml
 ├─ content
+│  ├─ archive.fr.md
 │  ├─ archive.md
-│  ├─ contributions
+│  ├─ contribution
+│  │  ├─ _index.fr.md
 │  │  └─ _index.md
-│  ├─ location.md
-│  ├─ officehours.md
-│  ├─ papers
-│  │  ├─ paper1
-│  │  │  ├─ appendix1.pdf
+│  ├─ enseignement
+│  │  └─ _index.fr.md
+│  ├─ publication
+│  │  ├─ publication1
+│  │  │  ├─ index.fr.md
 │  │  │  ├─ index.md
-│  │  │  ├─ paper1.pdf
-│  │  │  ├─ paper1.png
-│  │  │  └─ presentation1.pdf
+│  │  │  └─ paper1.png
+│  │  ├─ _index.fr.md
 │  │  └─ _index.md
 │  ├─ tags
+│  │  ├─ _index.fr.md
 │  │  └─ _index.md
 │  └─ teaching
 │     └─ _index.md
 ├─ data
-│  └─ contributions.yaml
+│  └─ contributions
+│     ├─ en.yaml
+│     └─ fr.yaml
+├─ i18n
+│  ├─ en.yaml
+│  ├─ fr.yaml
+│  └─ i18n
+│     ├─ en.yaml
+│     └─ fr.yaml
 ├─ layouts
 │  ├─ 404.html
 │  ├─ partials
@@ -55,13 +65,15 @@ myacademicwebsite
 │  │  ├─ head.html
 │  │  ├─ header.html
 │  │  ├─ index_profile.html
+│  │  ├─ lang_switch.html
 │  │  ├─ math.html
 │  │  ├─ post_canonical.html
 │  │  ├─ post_meta.html
 │  │  ├─ post_nav_links.html
 │  │  ├─ search.html
 │  │  ├─ svg.html
-│  │  └─ toc.html
+│  │  ├─ toc.html
+│  │  └─ translation_list.html
 │  ├─ shortcodes
 │  │  └─ timeline.html
 │  └─ _default
@@ -82,7 +94,16 @@ myacademicwebsite
 │  │  └─ index.html
 │  ├─ assets
 │  │  └─ css
-│  │     └─ stylesheet.b99bb107120eccd96496d0eb15a5e8b4af1012f9613c76433480c224f54ee298.css
+│  │     ├─ stylesheet.4fe4748204a025c04ff03aa16b0d6cad9c84733038b7b0a70960c16335e26416.css
+│  │     ├─ stylesheet.531135b0511ba35a342abb7f5a6552e6094705bd05f58cba478f55f0dc42319e.css
+│  │     ├─ stylesheet.b99bb107120eccd96496d0eb15a5e8b4af1012f9613c76433480c224f54ee298.css
+│  │     └─ stylesheet.cdbaf0e8b619532e1f61c527d4909f1fd5cc2666a2e3897a6dd1a344b6f037d4.css
+│  ├─ contribution
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  └─ page
+│  │     └─ 1
+│  │        └─ index.html
 │  ├─ contributions
 │  │  ├─ index.html
 │  │  ├─ index.xml
@@ -90,9 +111,96 @@ myacademicwebsite
 │  │     └─ 1
 │  │        └─ index.html
 │  ├─ cv.pdf
+│  ├─ en
+│  │  ├─ index.html
+│  │  └─ sitemap.xml
 │  ├─ favicon-16x16.png
 │  ├─ favicon-32x32.png
 │  ├─ favicon.ico
+│  ├─ fr
+│  │  ├─ 404.html
+│  │  ├─ archive
+│  │  │  └─ index.html
+│  │  ├─ contribution
+│  │  │  ├─ index.html
+│  │  │  ├─ index.xml
+│  │  │  └─ page
+│  │  │     └─ 1
+│  │  │        └─ index.html
+│  │  ├─ contributions
+│  │  │  ├─ index.html
+│  │  │  ├─ index.xml
+│  │  │  └─ page
+│  │  │     └─ 1
+│  │  │        └─ index.html
+│  │  ├─ enseignement
+│  │  │  ├─ index.html
+│  │  │  ├─ index.xml
+│  │  │  └─ page
+│  │  │     └─ 1
+│  │  │        └─ index.html
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  ├─ location
+│  │  │  └─ index.html
+│  │  ├─ officehours
+│  │  │  └─ index.html
+│  │  ├─ papers
+│  │  │  ├─ index.html
+│  │  │  ├─ index.xml
+│  │  │  ├─ page
+│  │  │  │  └─ 1
+│  │  │  │     └─ index.html
+│  │  │  └─ paper1
+│  │  │     └─ index.html
+│  │  ├─ publication
+│  │  │  ├─ index.html
+│  │  │  ├─ index.xml
+│  │  │  ├─ page
+│  │  │  │  └─ 1
+│  │  │  │     └─ index.html
+│  │  │  └─ publication1
+│  │  │     └─ index.html
+│  │  ├─ sitemap.xml
+│  │  ├─ tags
+│  │  │  ├─ co-design
+│  │  │  │  ├─ index.html
+│  │  │  │  ├─ index.xml
+│  │  │  │  └─ page
+│  │  │  │     └─ 1
+│  │  │  │        └─ index.html
+│  │  │  ├─ dialogue-interface
+│  │  │  │  ├─ index.html
+│  │  │  │  ├─ index.xml
+│  │  │  │  └─ page
+│  │  │  │     └─ 1
+│  │  │  │        └─ index.html
+│  │  │  ├─ index.html
+│  │  │  ├─ index.xml
+│  │  │  ├─ parkinson
+│  │  │  │  ├─ index.html
+│  │  │  │  ├─ index.xml
+│  │  │  │  └─ page
+│  │  │  │     └─ 1
+│  │  │  │        └─ index.html
+│  │  │  ├─ self-care-technology
+│  │  │  │  ├─ index.html
+│  │  │  │  ├─ index.xml
+│  │  │  │  └─ page
+│  │  │  │     └─ 1
+│  │  │  │        └─ index.html
+│  │  │  └─ usage-diary-study
+│  │  │     ├─ index.html
+│  │  │     ├─ index.xml
+│  │  │     └─ page
+│  │  │        └─ 1
+│  │  │           └─ index.html
+│  │  └─ teaching
+│  │     ├─ index.html
+│  │     ├─ index.xml
+│  │     └─ page
+│  │        └─ 1
+│  │           └─ index.html
 │  ├─ img
 │  │  └─ contributions
 │  │     ├─ 1eCarePD.png
@@ -127,6 +235,15 @@ myacademicwebsite
 │  │     ├─ paper1_hu_8ff464393dee4b9e.png
 │  │     └─ presentation1.pdf
 │  ├─ picture.jpeg
+│  ├─ publication
+│  │  ├─ index.html
+│  │  ├─ index.xml
+│  │  ├─ page
+│  │  │  └─ 1
+│  │  │     └─ index.html
+│  │  └─ publication1
+│  │     ├─ index.html
+│  │     └─ paper1.png
 │  ├─ robots.txt
 │  ├─ sitemap.xml
 │  ├─ tags

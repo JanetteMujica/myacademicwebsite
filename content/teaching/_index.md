@@ -1,5 +1,6 @@
 ---
 title: 'Teaching'
+ranslationKey: teaching-section
 description: 'Teaching philosophy, experience, and pedagogical training of Janette Mujica.'
 ---
 

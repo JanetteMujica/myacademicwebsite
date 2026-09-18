@@ -1,6 +1,6 @@
 ---
-title: 'Papers'
+title: 'Publication'
 description: 'Preprints and articles by Janette Mujica.'
 ---
 
-# Papers
+# Publication
