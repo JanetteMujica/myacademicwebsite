@@ -45,7 +45,7 @@
 {{ $allTypes = sort $allTypes }}
 
 <div class="contrib-filterbar" role="group" aria-label="Filter contributions by type">
-  <button type="button" class="contrib-badge contrib-filter-btn is-active" data-filter="all">All</button>
+  <button type="button" class="contrib-badge contrib-filter-btn is-active" data-filter="all">{{ i18n "allFilter" }}</button>
   {{ range $allTypes }}
   <button type="button" class="contrib-badge contrib-filter-btn" data-filter="{{ . }}">{{ . }}</button>
   {{ end }}
@@ -97,7 +97,7 @@
                 <div class="contrib-desc{{ if $isLong }} contrib-clamped{{ end }}" id="{{ $descId }}">
                   {{ $e.description | markdownify }}
                 </div>
-                {{ if $isLong }}<button type="button" class="contrib-readmore" data-target="{{ $descId }}">Read more</button>{{ end }}
+                {{ if $isLong }}<button type="button" class="contrib-readmore" data-target="{{ $descId }}">{{ i18n "readMore" }}</button>{{ end }}
               {{ end }}
 
               {{ $ctxParts := slice }}
@@ -122,11 +122,11 @@
               {{ end }}
 
               {{ if $e.people }}
-              <p class="contrib-people">With {{ delimit $e.people ", " " and " }}</p>
+              <p class="contrib-people">{{ i18n "contribWithPrefix" }} {{ delimit $e.people ", " (printf " %s " (i18n "andSeparator")) }}</p>
               {{ end }}
 
               {{ if $e.link }}
-              <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">View details</a>
+              <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">{{ i18n "viewDetails" }}</a>
               {{ end }}
 
             </div>
@@ -332,6 +332,10 @@
 
 <script>
 (function(){
+  // i18n strings (resolved server-side by Hugo, per current site language)
+  var i18nReadMore = {{ i18n "readMore" | jsonify }};
+  var i18nShowLess = {{ i18n "showLess" | jsonify }};
+
   // Read more toggles
   document.querySelectorAll('.contrib-readmore').forEach(function(btn){
     btn.addEventListener('click', function(){
@@ -339,10 +343,10 @@
       var isClamped = target.classList.contains('contrib-clamped');
       if(isClamped){
         target.classList.remove('contrib-clamped');
-        btn.textContent = 'Show less';
+        btn.textContent = i18nShowLess;
       } else {
         target.classList.add('contrib-clamped');
-        btn.textContent = 'Read more';
+        btn.textContent = i18nReadMore;
       }
     });
   });

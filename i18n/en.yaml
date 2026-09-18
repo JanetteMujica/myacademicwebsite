@@ -1,0 +1,17 @@
+# UI text used by our custom layouts (layouts/partials/index_profile.html)
+# and shortcodes (layouts/shortcodes/timeline.html) that isn't already
+# covered by PaperMod's own i18n files. Keyed strings only — no plurals
+# needed here.
+profileImageAlt: "profile image"
+nextPapers: "papers"
+nextPapersTitle: "Next: Papers"
+allFilter: "All"
+readMore: "Read more"
+showLess: "Show less"
+viewDetails: "View details"
+contribWithPrefix: "With"
+andSeparator: "and"
+# Language-switcher labels (see layouts/partials/lang_switch.html).
+# Always shown as "FR / ENG" — French label first, then English.
+frenchLabel: "FR"
+englishLabel: "ENG"

@@ -5,9 +5,7 @@ myacademicwebsite
 ├─ .gitignore
 ├─ .hugo_build.lock
 ├─ archetypes
-│  ├─ course.md
 │  ├─ paper.md
-│  ├─ search.md
 │  └─ teaching.md
 ├─ assets
 │  └─ css
@@ -29,18 +27,7 @@ myacademicwebsite
 ├─ config.yml
 ├─ content
 │  ├─ archive.md
-│  ├─ books
-│  │  ├─ book1
-│  │  │  ├─ book1.png
-│  │  │  ├─ chapter1.pdf
-│  │  │  ├─ chapter2.pdf
-│  │  │  ├─ chapter3.pdf
-│  │  │  └─ index.md
-│  │  └─ _index.md
 │  ├─ contributions
-│  │  └─ _index.md
-│  ├─ data
-│  │  ├─ data1.md
 │  │  └─ _index.md
 │  ├─ location.md
 │  ├─ officehours.md
@@ -95,148 +82,14 @@ myacademicwebsite
 │  │  └─ index.html
 │  ├─ assets
 │  │  └─ css
-│  │     ├─ stylesheet.02f67e5e0141fe59f1882178a494fb0a2ff02dc9c85f74fd21ac1f578c49ffb3.css
-│  │     ├─ stylesheet.03d32666bed63f984346af172ba2538a23ac3cec95afc7c3a87eed4b7dd8b759.css
-│  │     ├─ stylesheet.0efea0ef6088de871cd7a856285cc624525826b262334dd7c53f64671ba196df.css
-│  │     ├─ stylesheet.11283f65625313c65573831168a80cc9640a03eccd7504627c95cb2867899a35.css
-│  │     ├─ stylesheet.14c35af4744a8ed0c2a2de186797adcd59222b62d1c1e2f8f3a6be067baddd20.css
-│  │     ├─ stylesheet.18f12294ef2f164d6cdca3eda45d9a480fdb8fe51d0293ad04a55d2feecb1648.css
-│  │     ├─ stylesheet.1ab22aacf4362505c699e6927bb6bcfb9c42a8ff5962331ff02e71697d56575a.css
-│  │     ├─ stylesheet.1c017e9882bda637cf9872ec08a6b7481d720a599966d549b88518f97eebe344.css
-│  │     ├─ stylesheet.1c038bbe8eb9d7038c707f0dff82bfa35a9c43581c986d7a7a4ac160463506df.css
-│  │     ├─ stylesheet.2216392d2d2a8fe1936cdecc28c756ed4b80c58fdee51eb1af34b081c8fd6c67.css
-│  │     ├─ stylesheet.2931b0e4df57345633754a478e26e3709fb9b418557ce03fb0ffb8314dbec7cb.css
-│  │     ├─ stylesheet.2a71e938a9924723c92d6b3caf624901b44e5061103b1213f3f16afcafcdb3f1.css
-│  │     ├─ stylesheet.2bf2f03465dea5c47b96a4f60cee0bba6155feb14e06382616ef671c033a1d5f.css
-│  │     ├─ stylesheet.2d90675052243e86b41d3b2e67e172604c43c9e34d32484c454723a3f2c1864d.css
-│  │     ├─ stylesheet.2e14af546dbc97d60189bd18440adee42aceb26291aecddc386b691cc6345498.css
-│  │     ├─ stylesheet.33b25916af37d183b7c62f98f7a5595a4af401eed2737a503c53253f8475fbb4.css
-│  │     ├─ stylesheet.36f80613932a17f52077a2185435bb43209d5d047c048e9d0055a4bc3a986bd1.css
-│  │     ├─ stylesheet.44e78069bf0d4018b8fe6651f38f8498c365d492c459c9241ce7585ae32e00b7.css
-│  │     ├─ stylesheet.565b1112d782b306b8f0d33a3cdf080d0c526cfae405246b89aea609d59260ce.css
-│  │     ├─ stylesheet.58e660b8c878e5dffba821e248b7a59165ee209b40c1488bdafcae582deb8226.css
-│  │     ├─ stylesheet.5a4ec831e803640e7be5a74d6588c0244d5a458a1f85f60b46b63ea9ddffbf84.css
-│  │     ├─ stylesheet.5c0c354fc77d0686189bed959da84c963b277b3c5aedf84e788d18ef983eddaf.css
-│  │     ├─ stylesheet.5cc85a123d6bb96cb5d0c29dbabf17b39b5522b013327194b18af30d3b535009.css
-│  │     ├─ stylesheet.5db11adfcb8959d304005af15fbeb47786a4087f4c4180002b063fb082dc9be3.css
-│  │     ├─ stylesheet.62321dcb9f5bc7a4ec5f8085b3929ca4a5d1b1b18adb0bd42a85a24243efa322.css
-│  │     ├─ stylesheet.63e1f299a756415fcaff28b79229667d1c2ddd16357a3c9807d0d6f3541ba015.css
-│  │     ├─ stylesheet.65fce30f38887fc475526f03a8ab5b437eb308f381245789b49ba9bf8a0eedb6.css
-│  │     ├─ stylesheet.660f7fbabf11f6d8f3e5ff7281a19dd636121528575dddd3d789f1adcd8d7337.css
-│  │     ├─ stylesheet.6d0a6e7f04c69c8140415742658c13c21c5c4aca4c243ade56612335e42b3c36.css
-│  │     ├─ stylesheet.6db5ff462f9d2e028bb6188e453cb499f16d89139a48be48075837a3ebc76a6f.css
-│  │     ├─ stylesheet.71bd12a4115952c684beda692e75f5abc124c80cdb09e0ad62b6ef4f4b6a6941.css
-│  │     ├─ stylesheet.7af52142ddaab891d951b742a07aedadab64ea1ce3d537233c03f70b01e56e6b.css
-│  │     ├─ stylesheet.7b6129e4f65633ef54c60e8698dde2c46e66dcc3f1f378cac3d1570b218757ed.css
-│  │     ├─ stylesheet.7ee7cdd5a7836ef9c97a9579010ba6bc53a2fc605b36f9edb99075d413d3ed85.css
-│  │     ├─ stylesheet.854175bf3ed8ed2f0ac6c11ee6d11281cd043fe5b57c0b1c1ae1d3d0142ee3e5.css
-│  │     ├─ stylesheet.86acc1389ec99c3027e210ce4752ae0b12fa9c88f0e3167294b0aba191230bd2.css
-│  │     ├─ stylesheet.876de78f667273efd431f185c15d8992e09625243355b6434fe7698fe47cf82d.css
-│  │     ├─ stylesheet.98d4753a3b17ff3f2c867f17982ac603bae97ccc5a423908758189cc5fda31a2.css
-│  │     ├─ stylesheet.9acafb52c4f92c1f512c8c1fb4516424fbe34a8e4a234a8c9d11392fa5b95044.css
-│  │     ├─ stylesheet.9f993d71308066f4de100b2a675c7f13288a9a284439aaf5bee1995a60d38c73.css
-│  │     ├─ stylesheet.a0dc2f205624a5f383fb1ee4b8f9ec6a968fc0552b357c14d929639f2faa5542.css
-│  │     ├─ stylesheet.a179212285e4daa99891f09ff4884563a026d9b8126565b3d4a1ac28834287ed.css
-│  │     ├─ stylesheet.a313eb176f2fd9cefdd6f9951090886ce10c83b713cd09b4d828f1f594384195.css
-│  │     ├─ stylesheet.a4ba1c7667701a113b0b0e947768c09f5953426cd71a035c805148722c0aff64.css
-│  │     ├─ stylesheet.a9fb53d60334505d2c61d582f626102e86b2c4c953d971420b01b8b4d496f771.css
-│  │     ├─ stylesheet.ad4e6bb383c8b2f17eceb99346063bc33aafe944a962791b7e92498b8effb1b6.css
-│  │     ├─ stylesheet.ad841c74bfbbdfeffa69fb0a1eedf30d3983ae6a3cb91d81d53c070c3125573c.css
-│  │     ├─ stylesheet.beb267643d08430b8f307a631ea44a096dd9cf2c8b59fd9a1bac02e65297ccc6.css
-│  │     ├─ stylesheet.beeba3197f541cd677ba35810fa4b3c11534087abb279341c3a390dee471f196.css
-│  │     ├─ stylesheet.bf1d388b1ad39a19c9e4e8481fd4ae7d78e7abfc282137776ec66d1820e93f1c.css
-│  │     ├─ stylesheet.c03b5e23c18c274f1e4fbe3926b9410d5d884a606026431a2db4637723f9335c.css
-│  │     ├─ stylesheet.c2edba4b4f6c0b7ce70e76679ef368d743405a46350f79d4fc40453b31d46626.css
-│  │     ├─ stylesheet.c92eabf31f557fb2b3c202c026e8149723e98a8f5d5233de461be064030e21d1.css
-│  │     ├─ stylesheet.c94d34c299f0ee57768239bec9269f4045a74bd808a06339b9353380c0e38465.css
-│  │     ├─ stylesheet.cc5161b8161ce7f20a6c1090d31fdff49532e174de4aa9bc26ffc51016ae9b47.css
-│  │     ├─ stylesheet.cd3771c36f14ca83e3f5f6ae1725d96420aa8bc3cb41396d7248ad2a48c9ccb2.css
-│  │     ├─ stylesheet.ce7a7d47b94dd0819c5dd152886af5d15f0ccc1ac5b23767f041c7e366767b37.css
-│  │     ├─ stylesheet.d1575ddf7e60c3b481a8d43e57ddefe17d3e18c271263913c57a5215a781f5f1.css
-│  │     ├─ stylesheet.d197d2e333a63d97a295f8e8984e4b841ea7bda2d29fb04d9b2a4a7bbbc5a2c3.css
-│  │     ├─ stylesheet.d2e67c3e6e161ca52ff914cb2094b8db31fbd4d6db5fc2f76121a2ea3f283c48.css
-│  │     ├─ stylesheet.d7b7f3184598672e1e99599bf0cce5ebd00dff9f6de65e2f37b457deaf5607fe.css
-│  │     ├─ stylesheet.df9653ab1f390052f39ab112248da84ac73dc84b40e33103d236ff066df9cf48.css
-│  │     ├─ stylesheet.e45b002e78fb39eaa6f66ddc6c72e9fddb13e890a47004d05d725398a19cd1bc.css
-│  │     ├─ stylesheet.e7195dae60b906b3f2b10342395c48ef1db8adfb550580de2324c4a17c935778.css
-│  │     ├─ stylesheet.ec2abe44bb62c25614852a79592ecc9c31ce68af1e5bf65dfac10920117c9136.css
-│  │     └─ stylesheet.effc8eb5ad2123540d415f8d1b54324d72cf22438d3eeccf1d19d9d034f4376d.css
-│  ├─ books
-│  │  ├─ book1
-│  │  │  ├─ book1.png
-│  │  │  ├─ book1_hu_c9b0e4380b57faa.png
-│  │  │  ├─ chapter1.pdf
-│  │  │  ├─ chapter2.pdf
-│  │  │  ├─ chapter3.pdf
-│  │  │  └─ index.html
-│  │  ├─ index.html
-│  │  ├─ index.xml
-│  │  └─ page
-│  │     └─ 1
-│  │        └─ index.html
+│  │     └─ stylesheet.b99bb107120eccd96496d0eb15a5e8b4af1012f9613c76433480c224f54ee298.css
 │  ├─ contributions
 │  │  ├─ index.html
 │  │  ├─ index.xml
 │  │  └─ page
 │  │     └─ 1
 │  │        └─ index.html
-│  ├─ courses
-│  │  ├─ course1
-│  │  │  ├─ course1.png
-│  │  │  ├─ course1_hu_5d8892f17dea5e26.png
-│  │  │  ├─ course1_hu_6eac7de9074ec94e.png
-│  │  │  ├─ index.html
-│  │  │  ├─ lecture1.pdf
-│  │  │  ├─ lecture2.pdf
-│  │  │  ├─ ps1.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ quiz1.pdf
-│  │  │  │  └─ index.html
-│  │  │  └─ quiz2.pdf
-│  │  │     └─ index.html
-│  │  ├─ course2
-│  │  │  ├─ course2.png
-│  │  │  ├─ course2_hu_11f0aca07af67292.png
-│  │  │  ├─ course2_hu_182f20bd5cc90d75.png
-│  │  │  ├─ course2_hu_5f235728bfe60acf.png
-│  │  │  ├─ index.html
-│  │  │  ├─ notes1.pdf
-│  │  │  ├─ notes2.pdf
-│  │  │  ├─ notes3.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ notes4.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ problemset.pdf
-│  │  │  ├─ ps3.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ ps4.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ quiz3.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ quiz4.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ slides1.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ slides2.pdf
-│  │  │  │  └─ index.html
-│  │  │  ├─ slides3.pdf
-│  │  │  │  └─ index.html
-│  │  │  └─ slides4.pdf
-│  │  │     └─ index.html
-│  │  ├─ index.html
-│  │  ├─ index.xml
-│  │  └─ page
-│  │     └─ 1
-│  │        └─ index.html
 │  ├─ cv.pdf
-│  ├─ data
-│  │  ├─ data1
-│  │  │  └─ index.html
-│  │  ├─ index.html
-│  │  ├─ index.xml
-│  │  └─ page
-│  │     └─ 1
-│  │        └─ index.html
 │  ├─ favicon-16x16.png
 │  ├─ favicon-32x32.png
 │  ├─ favicon.ico
@@ -255,7 +108,6 @@ myacademicwebsite
 │  │     └─ posterCAFY.png
 │  ├─ index.html
 │  ├─ index.xml
-│  ├─ jmp.pdf
 │  ├─ location
 │  │  └─ index.html
 │  ├─ officehours
@@ -266,77 +118,19 @@ myacademicwebsite
 │  │  ├─ page
 │  │  │  └─ 1
 │  │  │     └─ index.html
-│  │  ├─ paper1
-│  │  │  ├─ appendix1.pdf
-│  │  │  ├─ index.html
-│  │  │  ├─ paper1 (1).png
-│  │  │  ├─ paper1.pdf
-│  │  │  ├─ paper1.png
-│  │  │  ├─ paper1_1.png
-│  │  │  ├─ paper1_hu_4ae0677193e202ff.png
-│  │  │  ├─ paper1_hu_b83f79591c0535f5.png
-│  │  │  └─ presentation1.pdf
-│  │  ├─ paper2
-│  │  │  ├─ appendix2.pdf
-│  │  │  ├─ index.html
-│  │  │  ├─ paper2.pdf
-│  │  │  ├─ paper2.png
-│  │  │  ├─ paper2_hu_50b2508cf0948361.png
-│  │  │  ├─ paper2_hu_76a611950ae35426.png
-│  │  │  ├─ paper2_hu_9b8c24b1730a6837.png
-│  │  │  └─ presentation2.pdf
-│  │  ├─ paper2-back-up
-│  │  │  ├─ appendix2.pdf
-│  │  │  ├─ index.html
-│  │  │  ├─ paper2.pdf
-│  │  │  ├─ paper2.png
-│  │  │  └─ presentation2.pdf
-│  │  ├─ paper3
-│  │  │  ├─ index.html
-│  │  │  ├─ paper3.pdf
-│  │  │  ├─ paper3.png
-│  │  │  ├─ paper3_hu_1b62edd791080b14.png
-│  │  │  ├─ paper3_hu_64a56b57777f60b4.png
-│  │  │  └─ paper3_hu_e78de6910bd687e8.png
-│  │  └─ paper3-back-up
+│  │  └─ paper1
+│  │     ├─ appendix1.pdf
 │  │     ├─ index.html
-│  │     ├─ paper3.pdf
-│  │     └─ paper3.png
+│  │     ├─ paper1.pdf
+│  │     ├─ paper1.png
+│  │     ├─ paper1_hu_33161f93f9444a9b.png
+│  │     ├─ paper1_hu_8ff464393dee4b9e.png
+│  │     └─ presentation1.pdf
 │  ├─ picture.jpeg
 │  ├─ robots.txt
 │  ├─ sitemap.xml
 │  ├─ tags
-│  │  ├─ academia
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ canine-pulmonary-efficiency
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ canine-science
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ celtic-languages
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
 │  │  ├─ co-design
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ dataset
 │  │  │  ├─ index.html
 │  │  │  ├─ index.xml
 │  │  │  └─ page
@@ -348,123 +142,9 @@ myacademicwebsite
 │  │  │  └─ page
 │  │  │     └─ 1
 │  │  │        └─ index.html
-│  │  ├─ experimental-psychology
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ experimental-zoology
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ french
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ history-of-oil
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
 │  │  ├─ index.html
 │  │  ├─ index.xml
-│  │  ├─ inner-hedgehog
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ invasive-thoughts
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ irish
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ irregular-verbs
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ italian
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ language-modernization
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ mediterranean-world
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ oleic-science
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
 │  │  ├─ parkinson
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ philology
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ portugese
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ portuguese
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ profanity
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ python
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ romance-languages
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ sausage-dogs
 │  │  │  ├─ index.html
 │  │  │  ├─ index.xml
 │  │  │  └─ page
@@ -476,85 +156,26 @@ myacademicwebsite
 │  │  │  └─ page
 │  │  │     └─ 1
 │  │  │        └─ index.html
-│  │  ├─ simulations
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ social-psychology
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ spanish
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  ├─ usage-diary-study
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
-│  │  └─ zoology
+│  │  └─ usage-diary-study
 │  │     ├─ index.html
 │  │     ├─ index.xml
 │  │     └─ page
 │  │        └─ 1
 │  │           └─ index.html
 │  └─ teaching
-│     ├─ course1
-│     │  ├─ course1.png
-│     │  ├─ index.html
-│     │  ├─ lecture1.pdf
-│     │  └─ lecture2.pdf
-│     ├─ course2
-│     │  ├─ course2.png
-│     │  ├─ index.html
-│     │  ├─ notes1.pdf
-│     │  ├─ notes2.pdf
-│     │  └─ problemset.pdf
 │     ├─ index.html
 │     ├─ index.xml
-│     ├─ page
-│     │  └─ 1
-│     │     └─ index.html
-│     ├─ teaching_index
-│     │  └─ index.html
-│     ├─ _index-1
-│     │  └─ index.html
-│     └─ _index.md.bak
+│     └─ page
+│        └─ 1
+│           └─ index.html
 ├─ README.md
 ├─ resources
 │  └─ _gen
 │     └─ images
-│        ├─ books
-│        │  └─ book1
-│        │     └─ book1_hu_c9b0e4380b57faa.png
-│        ├─ courses
-│        │  ├─ course1
-│        │  │  ├─ course1_hu_5d8892f17dea5e26.png
-│        │  │  └─ course1_hu_6eac7de9074ec94e.png
-│        │  └─ course2
-│        │     ├─ course2_hu_11f0aca07af67292.png
-│        │     ├─ course2_hu_182f20bd5cc90d75.png
-│        │     └─ course2_hu_5f235728bfe60acf.png
 │        └─ papers
-│           ├─ paper1
-│           │  ├─ paper1_hu_4ae0677193e202ff.png
-│           │  └─ paper1_hu_b83f79591c0535f5.png
-│           ├─ paper2
-│           │  ├─ paper2_hu_50b2508cf0948361.png
-│           │  ├─ paper2_hu_76a611950ae35426.png
-│           │  └─ paper2_hu_9b8c24b1730a6837.png
-│           └─ paper3
-│              ├─ paper3_hu_1b62edd791080b14.png
-│              ├─ paper3_hu_64a56b57777f60b4.png
-│              └─ paper3_hu_e78de6910bd687e8.png
+│           └─ paper1
+│              ├─ paper1_hu_33161f93f9444a9b.png
+│              └─ paper1_hu_8ff464393dee4b9e.png
 ├─ static
 │  ├─ apple-touch-icon.png
 │  ├─ cv.pdf
@@ -574,7 +195,6 @@ myacademicwebsite
 │  │     ├─ DataToAction_PreliminaryFindings.png
 │  │     ├─ lowFiPrototype.png
 │  │     └─ posterCAFY.png
-│  ├─ jmp.pdf
 │  └─ picture.jpeg
 └─ themes
    └─ PaperMod

@@ -19,7 +19,16 @@
 }
 
 .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: normal;
+    margin-block: 8px;
+}
+
+.logo-top {
+    display: flex;
     flex-wrap: inherit;
+    align-items: center;
 }
 
 .logo a {
@@ -72,8 +81,7 @@ body:not(.dark) #sun {
 }
 
 .lang-switch li,
-.lang-switch ul,
-.logo-switches {
+.lang-switch ul {
     display: inline-flex;
     margin: auto 4px;
 }
@@ -81,14 +89,32 @@ body:not(.dark) #sun {
 .lang-switch {
     display: flex;
     flex-wrap: inherit;
+    margin-block-start: 2px;
+}
+
+.lang-switch li:first-child {
+    margin-inline-start: 0;
+}
+
+.lang-switch-divider {
+    color: var(--gray);
+    margin: auto 1px;
+}
+
+.lang-switch a,
+.lang-switch .active {
+    margin: auto 3px;
+    font-size: 14px;
+    text-transform: lowercase;
 }
 
 .lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.logo-switches {
-    flex-wrap: inherit;
+/* Active language: bold + the same pink underline as the active item in
+   the main nav (see #menu .active above). */
+.lang-switch .active {
+    font-weight: var(--semibold);
+    border-bottom: 2px solid var(--darkcolor);
 }

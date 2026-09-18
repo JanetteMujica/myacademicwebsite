@@ -1,0 +1,46 @@
+{{- /*
+  Language switcher used both in the site header (layouts/partials/header.html)
+  and directly under the name on the profile-mode home page
+  (layouts/partials/index_profile.html).
+
+  Unlike the original PaperMod behaviour (a single link to "the other"
+  language), this always shows BOTH languages, in a fixed order — French
+  first, then English — and marks the active one with the same "active"
+  look as the main navigation (see .lang-switch .active in header.css),
+  instead of it being a plain, easy-to-miss link.
+
+  Expects "." to be the current Page (so .Lang works). Always call it as:
+      {{ partial "lang_switch.html" . }}
+  or, from inside a "with" block where "." has changed, capture the page
+  first: {{- $page := . -}} ... {{ partial "lang_switch.html" $page }}
+*/ -}}
+{{- $current := .Lang -}}
+{{- $frPage := "" -}}
+{{- $enPage := "" -}}
+{{- range site.Home.AllTranslations }}
+    {{- if eq .Lang "fr" }}{{ $frPage = . }}{{ end }}
+    {{- if eq .Lang "en" }}{{ $enPage = . }}{{ end }}
+{{- end }}
+<ul class="lang-switch">
+    {{- with $frPage }}
+    <li>
+        {{- if eq $current "fr" }}
+        <span class="active" aria-current="page">{{ i18n "frenchLabel" }}</span>
+        {{- else }}
+        <a href="{{ .Permalink }}" title="{{ .Language.LanguageName | default "Français" }}" aria-label="{{ .Language.LanguageName | default "Français" }}">{{ i18n "frenchLabel" }}</a>
+        {{- end }}
+    </li>
+    {{- end }}
+    {{- if and $frPage $enPage }}
+    <li class="lang-switch-divider" aria-hidden="true">/</li>
+    {{- end }}
+    {{- with $enPage }}
+    <li>
+        {{- if eq $current "en" }}
+        <span class="active" aria-current="page">{{ i18n "englishLabel" }}</span>
+        {{- else }}
+        <a href="{{ .Permalink }}" title="{{ .Language.LanguageName | default "English" }}" aria-label="{{ .Language.LanguageName | default "English" }}">{{ i18n "englishLabel" }}</a>
+        {{- end }}
+    </li>
+    {{- end }}
+</ul>

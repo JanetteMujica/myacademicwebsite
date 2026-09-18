@@ -1,0 +1,16 @@
+# Traductions françaises des textes d'interface utilisés par nos layouts
+# personnalisés (layouts/partials/index_profile.html) et shortcodes
+# (layouts/shortcodes/timeline.html).
+profileImageAlt: "photo de profil"
+nextPapers: "articles"
+nextPapersTitle: "Suivant : Articles"
+allFilter: "Tout"
+readMore: "Lire la suite"
+showLess: "Réduire"
+viewDetails: "Voir les détails"
+contribWithPrefix: "Avec"
+andSeparator: "et"
+# Libellés du sélecteur de langue (voir layouts/partials/lang_switch.html).
+# Toujours affiché "FR / ANG" — libellé français en premier, puis anglais.
+frenchLabel: "FR"
+englishLabel: "ANG"
