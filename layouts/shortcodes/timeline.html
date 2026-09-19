@@ -127,7 +127,7 @@
               {{ end }}
 
               {{ if $e.people }}
-              <p class="contrib-people">{{ i18n "contribWithPrefix" }} {{ delimit $e.people ", " (printf " %s " (i18n "andSeparator")) }}</p>
+              <p class="contrib-people">{{ i18n "contribWithPrefix" }} {{ delimit $e.people ", " (printf " %s " (i18n "andSeparator")) | safeHTML }}</p>
               {{ end }}
 
               {{ if $e.link }}
