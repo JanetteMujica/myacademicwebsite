@@ -1,8 +1,6 @@
 - date: Oct 2024
   type: Involvement
-  description:
-    I started working as a Research Assistant at Comm&Tech lab directed by [Professor Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)
-    in Fall 2024.
+  description: I started working as a Research Assistant at Comm&Tech Innovation lab directed by [Professor Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).
 
 - date: Nov 2024
   type: Involvement
@@ -18,21 +16,18 @@
 
 - date: Jan 2025
   type: Involvement
-  description: I started my master of Science in Digital Transformation & Innovation
+  description: I started my M.Sc. in Digital Transformation & Innovation.
 - date: March 2025
   description:
-    Based on the results of the diary study, I developed a first prototype of CAFY, an assistant
-    designed to help people living with Parkinson’s select self-care priorities. Integrated into a medical
-    dashboard, similar to the previous version, the prototype includes a basic self-care priorities selector
-    as well as WikiPD, the knowledge base structure that would underpin the app. Sylvie Grosjean presented
-    the diary study results and this first iteration of CAFY at Destination Recherche et Innovation Montfort.
+    'Based on the results of the diary study, I developed a first prototype of CAFY, an assistant
+    designed to help people living with Parkinson’s select self-care priorities. Integrated into a medical dashboard, similar to the previous version, the prototype includes a basic self-care priorities selector as well as WikiPD, the knowledge base structure that would underpin the app. Sylvie Grosjean presented the diary study results and this first iteration of CAFY at Destination Recherche et Innovation Montfort.'
   img: 2eCarePD
   title:
     'L’autosoin équipé et alimenté par l’Intelligence Artificielle (IA) : Explorer les usages pour
     créer un « compagnon numérique'
   type: Presentation
   event: Destination Recherche et Innovation Montfort
-  location: Hopital Montfort, Ottawa, Canada
+  location: Montfort Hospital, Ottawa, Canada
   people:
     - Sylvie Grosjean
     - Janette Mujica
@@ -72,9 +67,7 @@
 - date: May 2025
   type: Creative Output
   title: e-Care PD Structure Redesign
-  description:
-    Sylvie Grosjean, together with Mae Slabinski, Nadim Saadeh, and me, restructured the app
-    based on a middle-range theory of self-care for chronic conditions. Professor [Fabienne Martin-Juchat](https://www.univ-grenoble-alpes.fr/fabienne-martin-juchat-539593.kjsp), as visiting professor, participated in our working sessions and provided valuable feedback on the design of the app.
+  description: Sylvie Grosjean, together with M[Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/), [Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/), and me, restructured the app based on a [*middle range theory of self-care for chronic conditions*](https://www.ovid.com/jnls/advancesinnursingscience/abstract/10.1097/ans.0b013e318261b1ba~a-middle-range-theory-of-self-care-of-chronic-illness?redirectionsource=fulltextview). Professor [Fabienne Martin-Juchat](https://www.univ-grenoble-alpes.fr/fabienne-martin-juchat-539593.kjsp), as visiting professor, participated in our working sessions and provided feedback on the design of the app.
   img: 6e_CarePD
   people:
     - Sylvie Grosjean
@@ -85,7 +78,7 @@
 - date: July 2025
   type: Course project
   title: CAFY - a self-care conversational recommendation system for people living with Parkinson's
-  description: During the Data Science Applications course taught by [Professor Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar), Wen Qi, Anna Shatlova, and I prototyped CAFY, a self-care conversational recommendation system designed for people living with Parkinson.
+  description: During the Data Science Applications course taught by [Professor Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar), [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/), [Anna Shatalova](https://www.linkedin.com/in/anna-shatalova-309b77167/), and I prototyped CAFY, a self-care conversational recommendation system designed for people living with Parkinson.
   img: CAFY_CRS
   link: https://canva.link/pr2gsf4512ywaik
   people:
@@ -94,8 +87,8 @@
     - Janette Mujica
 - date: June-Dec 2025
   description:
-    Through an iterative design process at the lab, Sylvie Grosjean wrote the CAFY conversation
-    to help select self-care priorites, while Nadim Saadeh and the team, including Mae Slabinski and Maryse,
+    Through an iterative design process, Sylvie Grosjean wrote the CAFY conversation
+    to help select self-care priorites, while Nadim Saadeh and the team, including Mae Slabinski and  Maryse Kavwahirehi,
     created care tips ranging from basic to advanced levels of self-care, based on a taxonomy comprising
     five categories. I focused on bringing these elements together into a new prototype a first complete
     user flow, enabling users to identify self-care priorities, track their progress, visualize their
@@ -161,11 +154,9 @@
     - Janette Mujica
 - date: Jan 2026
   type: Involvement
-  description: I was fast-tracked from master to PhD in Digital Transformation and innovation
+  description: I was fast-tracked from MSc to PhD in Digital Transformation and innovation
 - date: March 2026
-  description:
-    I presented preliminary findings from patient workshops about CAFY at the University of
-    Ottawa Engineering & Computer Science Graduate Poster Competition.
+  description: I presented preliminary findings from patient workshops about CAFY and self-care taxonomy at the University of Ottawa Engineering & Computer Science Graduate Poster Competition.
   img: posterCAFY
   title:
     Testing a co-designed structured chatbot to guide people living with Parkinson's selecting their
