@@ -34,7 +34,7 @@
     - '<a href="https://www.linkedin.com/in/nadim-saadeh/">Nadim Saadeh</a>'
 
 - date: Apr 2025
-  type: Course project
+  type: Course Project
   title: Ember - A memory aid for people living with Parkinson's
   description: During the AI Virtual Assistants course taught by [Professor Caroline Barrière](https://uniweb.uottawa.ca/network/profile/members/3857), I prototyped Ember, an assistant designed as a memory aid for people living with Parkinson's. Ember helps users track care priorities through a chatbot, visualize health patterns, and document their experiences to support self-care and informed decision-making.
   img: 3e_Ember
@@ -76,7 +76,7 @@
     - '<a href="https://www.linkedin.com/in/janettemujica/">Janette Mujica</a>'
     - '<a href="https://www.univ-grenoble-alpes.fr/fabienne-martin-juchat-539593.kjsp">Fabienne Martin-Juchat</a>'
 - date: July 2025
-  type: Course project
+  type: Course Project
   title: CAFY - a self-care conversational recommendation system for people living with Parkinson's
   description: During the Data Science Applications course taught by [Professor Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar), [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/), [Anna Shatalova](https://www.linkedin.com/in/anna-shatalova-309b77167/), and I prototyped CAFY, a self-care conversational recommendation system designed for people living with Parkinson.
   img: CAFY_CRS
@@ -201,27 +201,14 @@
     - '<a href="https://www.linkedin.com/in/mackenson-joseph-5407b4a6/">Joseph Mackenson</a>'
     - '<a href="https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/">Johémie Délinois</a>'
     - '<a href="https://www.linkedin.com/in/yeroseo-aris/">Yéroséo Aris Kusiélé Somba</a>'
-- date: June 2026
-  description:
-    'I facilitated an ideation session based on preliminary findings of data visualizations
-    patient workshop to redesign journey page of e-Care PD. Thanks to the participants: [Luc Bonneville](https://savoirmontfort.ca/scientifiques/luc-bonneville-phd),
-    [François Kajiramugabi](https://www.linkedin.com/in/fran%C3%A7ois-kajiramugabi-ba9453a1/), [David Devaux](https://www.linkedin.com/in/david-d-812063118/), [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/), [Felicia Bielser](https://www.linkedin.com/in/f%C3%A9licia-bielser-949a5871/?locale=en), [Johémie Délinois](https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/), [Mackenson Joseph](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/) &
-    [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).'
-  img: DataToAction_PreliminaryFindings
-  title: 'Self-care journey: Ideation session on patient data visualisation workshop preliminary findings'
-  type: Facilitation
-  institution: Com&Tech Innovations Lab, University of Ottawa
+- date: Apr 2026
+  type: Course Project
+  description: 'Course Project'
+  img: 13_ChatbotEnvisioning
+  title: 'Patient Partners Ways of Knowing in Codesigning an AI Conversational Recommender System'
+  institution: MGT 7302 - Qualitative Research thaught by Professor [Samia Chreim](https://telfer.uottawa.ca/en/directory/samia-chreim/) at University of Ottawa
   location: Ottawa, Canada
-  link: https://canva.link/frw2kog8rq5l3cq
-  people:
-    - '<a href="https://savoirmontfort.ca/scientifiques/luc-bonneville-phd">Luc Bonneville</a>'
-    - '<a href="https://www.linkedin.com/in/fran%C3%A7ois-kajiramugabi-ba9453a1/">François Kajiramugabi</a>'
-    - '<a href="https://www.linkedin.com/in/david-d-812063118/">David Devaux</a>'
-    - '<a href="https://www.linkedin.com/in/wenqi-debugging/">Wen Qi</a>'
-    - '<a href="https://www.linkedin.com/in/f%C3%A9licia-bielser-949a5871/?locale=en">Felicia Bielser</a>'
-    - '<a href="https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/">Johémie Délinois</a>'
-    - '<a href="https://www.linkedin.com/in/mackenson-joseph-5407b4a6/">Mackenson Joseph</a>'
-    - '<a href="https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie">Sylvie Grosjean</a>'
+  link: https://canva.link/ppfkujpq4sk2c0d
 - date: June 2026
   description:
     'I presented the preliminary findings of a systematic review, Computing Patient Knowledge
@@ -229,6 +216,7 @@
     research seminar De l’engagement des patient·es à la simulation : Regards croisés sur la recherche
     et la formation en santé (French).'
   title: Computing patient knowledge in AI chatbots
+  img: 12_ComputingPatientKnowledge
   type: Presentation
   event: Séminaire de recherche — De l'engagement des patient·es à la simulation
   institution: University of Ottawa
@@ -307,6 +295,6 @@
   people:
     - '<a href="https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie">Sylvie Grosjean</a>'
     - '<a href="https://www.linkedin.com/in/janettemujica/">Janette Mujica</a>'
-    - Blaise Millingen
+    - '<strong><u>Blaise Millingen</u></strong>'
     - '<a href="https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar">Arya Rahgozar</a>'
     - '<a href="https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre">Tiago Mestre</a>'

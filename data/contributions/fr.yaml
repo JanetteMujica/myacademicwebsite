@@ -123,7 +123,7 @@
   description: Nous avons facilité des ateliers avec des patients au campus Civic de L’Hôpital d’Ottawa afin d’évaluer CAFY (Care Assistant For You), un chatbot structuré qui aide les personnes vivant avec la maladie de Parkinson à identifier leurs priorités et à formuler des objectifs d’autosoins personnalisés. Nous utilisons CAFY comme sonde de conception afin d’orienter le développement futur d’un système conversationnel de recommandation basé sur l’IA.
   title: 'Facilitation d’ateliers avec des patients : évaluer CAFY et la taxonomie des autosoins'
   type: Facilitation
-  institution: The Ottawa Hospital Civic Campus
+  institution: Campus Civic de l'Hôpital d’Ottawa
   location: Ottawa, Canada
   people:
     - '<a href="https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie">Sylvie Grosjean</a>'
@@ -137,11 +137,10 @@
 - date: Mars 2026
   description: J’ai présenté les résultats préliminaires des ateliers avec des patients portant sur CAFY et la taxonomie des autosoins lors du concours d’affiches pour les étudiants des cycles supérieurs en génie et en informatique de l’Université d’Ottawa.
   img: posterCAFY
-  title:
-    Testing a co-designed structured chatbot to guide people living with Parkinson's selecting their
-    self-care goals
+  title: Tester un chatbot structuré destiné à aider les personnes vivant avec la maladie de Parkinson à choisir leurs objectifs d’autosoin
   type: Affiche
-  event: Université d'Ottawa Engineering & Computer Science Graduate Poster Competition
+  event: Compétition d’affiches des études supérieures en génie et en informatique
+  institution: Université d'Ottawa
   location: Ottawa, Canada
   link: https://janettemujica.github.io/ecare-pd-PosterCompetition2026/
   people:
@@ -172,6 +171,14 @@
     - '<a href="https://www.linkedin.com/in/mackenson-joseph-5407b4a6/">Mackenson Joseph</a>'
     - '<a href="https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/">Johémie Délinois</a>'
     - '<a href="https://www.linkedin.com/in/yeroseo-aris/">Yéroséo Aris Kusiélé Somba</a>'
+- date: Avr 2026
+  type: Projet de session
+  description: 'Course project'
+  img: 13_ChatbotEnvisioning
+  title: 'Patient Partners Ways of Knowing in Codesigning an AI Conversational Recommender System'
+  institution: MGT 7302 - Qualitative Research thaught by Professor [Samia Chreim](https://telfer.uottawa.ca/en/directory/samia-chreim/) at University of Ottawa
+  location: Ottawa, Canada
+  link: https://canva.link/ppfkujpq4sk2c0d
 - date: Juin 2026
   description: 'J’ai facilité une séance d’idéation à partir des résultats préliminaires de l’atelier avec des patients sur les visualisations de données, afin de repenser la page « Parcours » d’e-Care PD. Merci aux participants : [Luc Bonneville](https://savoirmontfort.ca/scientifiques/luc-bonneville-phd), [François Kajiramugabi](https://www.linkedin.com/in/fran%C3%A7ois-kajiramugabi-ba9453a1/), [David Devaux](https://www.linkedin.com/in/david-d-812063118/), [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/), [Felicia Bielser](https://www.linkedin.com/in/f%C3%A9licia-bielser-949a5871/?locale=en), [Johémie Délinois](https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/), [Mackenson Joseph](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/) et [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).'
   img: DataToAction_PreliminaryFindings
@@ -200,6 +207,7 @@
   event: Séminaire de recherche — De l'engagement des patient·es à la simulation
   institution: Université d'Ottawa
   location: Ottawa, Canada
+  img: 12_ComputingPatientKnowledge
   link: https://canva.link/j01147sobyiflia
 
 - date: Juin-Aug 2026
@@ -274,6 +282,6 @@
   people:
     - '<a href="https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie">Sylvie Grosjean</a>'
     - '<a href="https://www.linkedin.com/in/janettemujica/">Janette Mujica</a>'
-    - Blaise Millingen
+    - '<strong><u>Blaise Millingen</u></strong>'
     - '<a href="https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar">Arya Rahgozar</a>'
     - '<a href="https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre">Tiago Mestre</a>'
