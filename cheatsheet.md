@@ -36,12 +36,12 @@ If successful, Hugo will display:
 
 ```text
 Web Server is available at:
-http://localhost:1313/myacademicwebsite/
+http://localhost:1313/
 ```
 
 Open this URL in your browser:
 
-http://localhost:1313/myacademicwebsite/
+http://localhost:1313/
 
 ---
 
@@ -76,7 +76,7 @@ Contains:
 Current URL:
 
 ```yaml
-baseURL: 'https://janettemujica.github.io/myacademicwebsite/'
+baseURL: 'https://janettemujica.ca
 ```
 
 ---

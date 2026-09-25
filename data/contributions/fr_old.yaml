@@ -1,6 +1,6 @@
 - date: Oct 2024
   type: Implication
-  description: 'J’ai débuté mon emploi d’assistante de recherche au sein du Com&Tech Innovations Lab, dirigé par la professeure [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).'
+  description: 'J’ai débuté mon emploi d’assistante de recherche au sein Comm&Tech Innovation Lab, dirigé par la professeure [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).'
 
 - date: Nov 2024
   type: Implication
@@ -24,7 +24,7 @@
     créer un « compagnon numérique'
   type: Présentation
   event: Destination Recherche et Innovation Montfort
-  location: Hôpital Montfort, Ottawa, Canada
+  location: Hopital Montfort, Ottawa, Canada
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
     - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
@@ -33,15 +33,14 @@
 - date: Avr 2025
   type: Projet de session
   title: Ember - Un outil d’aide-mémoire pour les personnes vivant avec la maladie de Parkinson
-  description: J’ai conçu un prototype d’Ember, un assistant pensé comme un outil d’aide-mémoire pour les personnes vivant avec la maladie de Parkinson. Ember aide les utilisateurs à suivre leurs priorités en matière d’autosoins au moyen d’un chatbot, à visualiser des tendances liées à leur santé et à documenter leurs expériences afin de favoriser l’autosoin et une prise de décision éclairée.
-  institution: 'CSI5180X - Sujets en IA : assistants virtuels, enseigné par la [professeure Caroline Barrière](https://uniweb.uottawa.ca/network/profile/members/3857) à l’Université d’Ottawa'
+  description: Dans le cadre du cours sur les assistants virtuels basés sur l’IA, enseigné par la professeure [Professor Caroline Barrière](https://uniweb.uottawa.ca/network/profile/members/3857), j’ai conçu un prototype d’Ember, un assistant pensé comme un outil d’aide-mémoire pour les personnes vivant avec la maladie de Parkinson. Ember aide les utilisateurs à suivre leurs priorités en matière d’autosoins au moyen d’un chatbot, à visualiser des tendances liées à leur santé et à documenter leurs expériences afin de favoriser l’autosoin et une prise de décision éclairée.
   img: 3e_Ember
   link: https://www.youtube.com/watch?v=Iu58T5tMdtc
 
 - date: Mai 2025
   type: Présentation
   title: CAFY - un assistant virtuel pour mieux vivre avec la maladie de Parkinson
-  description: J’ai présenté au laboratoire et au [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) un premier prototype visant à remplacer le tableau de bord médical traditionnel par un parcours utilisateur guidé, à la manière d’un assistant virtuel, pour définir des objectifs d’autosoins, suivre les progrès et visualiser le parcours global. J’ai également intégré une fonctionnalité de synthèse vocale. À la suite de cette présentation, il a été convenu de repenser la plateforme comme une application mobile, en mettant de l’avant l’identité visuelle et les couleurs de [Parkinson Canada](https://www.parkinson.ca/).
+  description: J’ai présenté au laboratoire et au [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) un premier prototype visant à remplacer le tableau de bord médical traditionnel par un parcours utilisateur guidé, à la manière d’un assistant virtuel, pour définir des objectifs d’autosoins, suivre les progrès et visualiser le parcours global. J’ai également intégré une fonctionnalité de synthèse vocale. À la suite de cette présentation, il a été convenu de repenser la plateforme comme une application mobile, en mettant de l’avant l’identité visuelle et les couleurs de [Parkinson Canada](https://www.parkinson.ca/) .
   img: 4e_CarePD
   link: https://youtu.be/46uR8cW7a4I
   institution: Com&Tech Innovations Lab, Université d'Ottawa
@@ -57,7 +56,7 @@
 - date: Mai 2025
   type: Création
   title: Identité visuelle d'e-Care PD et de CAFY
-  description: J’ai créé une nouvelle identité visuelle alignée sur l’image de marque et la palette de couleurs de [Parkinson Canada](https://www.parkinson.ca/). J’ai utilisé des symboles visuels inspirés de la navigation pour représenter le cheminement des patients dans leur parcours d’autosoins.
+  description: J’ai créé une nouvelle identité visuelle alignée sur l’image de marque et la palette de couleurs de [Parkinson Canada’s](https://www.parkinson.ca/). J’ai utilisé des symboles visuels inspirés de la navigation pour représenter le cheminement des patients dans leur parcours d’autosoins.
   img: 5e_CarePD
 
 - date: Mai 2025
@@ -75,15 +74,14 @@
 - date: Juil 2025
   type: Projet de session
   title: CAFY - un système conversationnel de recommandation en matière d’autosoins pour les personnes vivant avec la maladie de Parkinson
-  description: Nous avons conçu un prototype de CAFY, un système conversationnel de recommandation en matière d’autosoins destiné aux personnes vivant avec la maladie de Parkinson.
+  description: Dans le cadre du cours sur les applications de la science des données, enseigné par le  [professeur Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar), [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/), [Anna Shatalova](https://www.linkedin.com/in/anna-shatalova-309b77167/), et moi avons conçu un prototype de CAFY, un système conversationnel de recommandation en matière d’autosoins destiné aux personnes vivant avec la maladie de Parkinson.
   img: CAFY_CRS
   link: https://canva.link/pr2gsf4512ywaik
-  institution: 'DTI5125 - Applications de la science des données, enseigné par le [professeur Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar) à l’Université d’Ottawa'
   people:
     - '[Wen Qi](https://www.linkedin.com/in/wenqi-debugging/)'
-    - '[Anna Shatalova](https://www.linkedin.com/in/anna-shatalova-309b77167/)'
+    - '[Anna Shatlova](https://www.linkedin.com/in/anna-shatalova-309b77167/)'
     - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
-- date: Juin-Déc 2025
+- date: Juin-Dec 2025
   description: À travers un processus de conception itératif, [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie) a développé la conversation de CAFY pour aider les utilisateurs à sélectionner leurs priorités en matière d’autosoins. [Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/) et l’équipe, notamment [Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/) et [Maryse Kavwahirehi](https://www.linkedin.com/in/marysek/), ont créé des conseils de soins allant des niveaux de base aux niveaux avancés, selon une taxonomie composée de cinq catégories. Pour ma part, j’ai travaillé à réunir ces éléments dans un nouveau prototype, constituant un premier parcours utilisateur complet permettant d’identifier les priorités d’autosoins, de suivre les progrès, de visualiser le parcours et d’accéder aux ressources.
   img: 7e_CarePD
   title: 'Prototype eCare-PD — Une application compagnon pour mieux vivre avec la maladie de Parkinson : CAFY (Care Assistant For You)'
@@ -93,19 +91,6 @@
     - '[Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/)'
     - '[Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/)'
     - '[Maryse Kavwahirehi](https://www.linkedin.com/in/marysek/)'
-- date: Oct 2025
-  description: Nous avons publié un article de conférence intitulé « Sur quoi devrais-je me concentrer aujourd’hui? Co-conception d’un outil conversationnel d’établissement d’objectifs pour l’autosoin de la maladie de Parkinson », qui a été présenté lors de la conférence de la European Society for Socially Embedded Technologies (EUSSET).
-  title: “What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care
-  type: Publication évaluée par les pairs
-  event: European Society for Socially Embedded Technologies (EUSSET)
-  institution: Com&Tech Innovations Lab, Université d'Ottawa
-  link: https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e
-  people:
-    - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
-    - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
-    - '[Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/)'
-    - '[David Grimes](https://ohri.ca/en/find-researcher/david-grimes)'
-    - '[Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre)'
 - date: Nov 2025
   type: Implication
   title: Lancement du projet PD-AI Tips
@@ -120,12 +105,25 @@
     - '[David Grimes](https://ohri.ca/en/find-researcher/david-grimes)'
     - '[Jeffrey Jutai](https://www.uottawa.ca/faculty-health-sciences/interdisciplinary/our-professors/jeffrey-w-jutai)'
     - '[Lysanne Lessard](https://telfer.uottawa.ca/en/directory/lysanne-lessard/)'
-    - Quatre patients partenaires
-- date: Déc 2025
-  description: Nous avons animé des ateliers avec des patients au campus Civic de L’Hôpital d’Ottawa afin d’évaluer CAFY (Care Assistant For You), un chatbot structuré qui aide les personnes vivant avec la maladie de Parkinson à identifier leurs priorités et à formuler des objectifs d’autosoins personnalisés. Nous utilisons CAFY comme sonde de conception afin d’orienter le développement futur d’un système conversationnel de recommandation basé sur l’IA.
-  title: 'Animation d’ateliers avec des patients : évaluer CAFY et la taxonomie des autosoins'
+    - Four patient partners
+- date: Oct 2025
+  description: Nous avons publié un article de conférence intitulé « Sur quoi devrais-je me concentrer aujourd’hui? Co-conception d’un outil conversationnel d’établissement d’objectifs pour l’autosoin de la maladie de Parkinson », qui a été présenté lors de la conférence de la European Society for Socially Embedded Technologies (EUSSET).
+  title: “What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care
+  type: Publication évaluée par les pairs
+  event: European Society for Socially Embedded Technologies (EUSSET)
+  location: Ottawa, Canada
+  link: https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e
+  people:
+    - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
+    - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
+    - '[Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/)'
+    - '[David Grimes](https://ohri.ca/en/find-researcher/david-grimes)'
+    - '[Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre)'
+- date: Dec 2025
+  description: Nous avons facilité des ateliers avec des patients au campus Civic de L’Hôpital d’Ottawa afin d’évaluer CAFY (Care Assistant For You), un chatbot structuré qui aide les personnes vivant avec la maladie de Parkinson à identifier leurs priorités et à formuler des objectifs d’autosoins personnalisés. Nous utilisons CAFY comme sonde de conception afin d’orienter le développement futur d’un système conversationnel de recommandation basé sur l’IA.
+  title: 'Facilitation d’ateliers avec des patients : évaluer CAFY et la taxonomie des autosoins'
   type: Facilitation
-  institution: Campus Civic de L’Hôpital d’Ottawa
+  institution: Campus Civic de l'Hôpital d’Ottawa
   location: Ottawa, Canada
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
@@ -157,16 +155,15 @@
   type: Facilitation
   event: DH Toolbox Workshop
   institution: Labo de données en sciences humaines, Université d'Ottawa
-  location: Ottawa, Canada
   link: https://dhsite.org/dh-toolbox-winter-2026/
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
     - '[Mackenson Joseph](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/)'
 - date: Avr 2026
-  description: Nous avons animé des ateliers avec des patients afin d’évaluer l’applicabilité concrète des conseils d’autosoins adaptés à différents profils de patients ainsi que des visualisations de données sur les autosoins.
-  title: 'Animation d’ateliers avec des patients : évaluer l’applicabilité des conseils d’autosoins et des visualisations de données sur les autosoins'
+  description: Nous avons animé des ateliers avec des patients afin d’évaluer la pertinence des conseils d’autosoins adaptés à différents profils de patients ainsi que des visualisations de données sur les autosoins.
+  title: 'Ateliers avec des patients : évaluation des conseils d’autosoins et des visualisations de données'
   type: Facilitation
-  institution: Campus Civic de L’Hôpital d’Ottawa
+  institution: Le campus de l'Hopital Civic d'Ottawa
   location: Ottawa, Canada
   link: https://youtu.be/Hbvma-GG2jQ
   people:
@@ -176,25 +173,10 @@
     - '[Yéroséo Aris Kusiélé Somba](https://www.linkedin.com/in/yeroseo-aris/)'
 - date: Avr 2026
   type: Projet de session
-  description: 'J’ai réalisé une revue exploratoire de la littérature (scoping review) afin de déterminer comment les savoirs des patients sont modélisés et exploités dans les chatbots d’IA. En collaboration avec des pairs et avec l’appui de la bibliothèque, j’ai appris à mener une revue de la littérature, notamment à élaborer une stratégie de recherche, à sélectionner les articles et à synthétiser les résultats.'
-  img: ScopingReview
-  title: 'Modéliser les savoirs des patients dans les chatbots d’IA : une revue exploratoire (scoping review)'
-  institution: 'DTI 8102 - Séminaire doctoral interdisciplinaire, enseigné par le [professeur Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot) à l’Université d’Ottawa'
-  location: Ottawa, Canada
-  link: https://canva.link/j01147sobyiflia
-  people:
-    - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
-    - '[Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot)'
-    - '[Lisa Shin](https://www.linkedin.com/in/lisa-shin/)'
-    - '[Fiona He](https://www.linkedin.com/in/fionahe0928/)'
-    - '[Mari Teitelbaum](https://www.linkedin.com/in/mariteitelbaum/)'
-    - '[Yasaman Shahrasbi](https://www.linkedin.com/in/yasamanshahrasbi/)'
-- date: Avr 2026
-  type: Projet de session
-  description: 'J’ai mené des entretiens avec quatre patients partenaires afin de comprendre leurs façons de connaître et la manière dont ils envisagent un chatbot d’IA pour l’autosoin.'
+  description: 'Course project'
   img: 13_ChatbotEnvisioning
-  title: 'Les façons de connaître des patients partenaires dans la co-conception d’un chatbot d’IA pour l’autosoin'
-  institution: 'MGT 7302 - Méthodes de recherche qualitative, enseigné par la [professeure Samia Chreim](https://telfer.uottawa.ca/en/directory/samia-chreim/) à l’Université d’Ottawa'
+  title: 'Patient Partners Ways of Knowing in Codesigning an AI Conversational Recommender System'
+  institution: MGT 7302 - Qualitative Research taught by Professor [Samia Chreim](https://telfer.uottawa.ca/en/directory/samia-chreim/) at University of Ottawa
   location: Ottawa, Canada
   link: https://canva.link/ppfkujpq4sk2c0d
 - date: Juin 2026
@@ -216,12 +198,11 @@
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
 - date: Juin 2026
   description:
-    'J’ai présenté les résultats préliminaires d’une revue exploratoire sur la modélisation des savoirs
-    des patients dans les chatbots d’IA, réalisée dans le cadre du séminaire DTI donné par le
-    [professeur Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot),
-    lors du séminaire de recherche de l’Université d’Ottawa « De l’engagement des patient·es à la
-    simulation : Regards croisés sur la recherche et la formation en santé ».'
-  title: Modéliser les savoirs des patients dans les chatbots d’IA
+    'I presented the preliminary findings of a systematic review, Computing Patient Knowledge
+    in AI Chatbots, conducted as part of the DTI Seminar taught by [Professor Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot), at the uOttawa
+    research seminar De l’engagement des patient·es à la simulation : Regards croisés sur la recherche
+    et la formation en santé (French).'
+  title: Computing patient knowledge in AI chatbots
   type: Présentation
   event: Séminaire de recherche — De l'engagement des patient·es à la simulation
   institution: Université d'Ottawa
@@ -229,14 +210,13 @@
   img: 12_ComputingPatientKnowledge
   link: https://canva.link/j01147sobyiflia
 
-- date: Juin-Août 2026
+- date: Juin-Aug 2026
   description:
-    J’ai mené des entretiens en ligne avec des personnes vivant avec la maladie de Parkinson afin
-    d’élaborer des personas et des scénarios d’utilisation pour un système de recommandation en
-    matière d’autosoins.
+    I conducted online interviews with people living with Parkinson’s disease to develop personas
+    and usage scenarios for a self-care recommendation system.
   title:
-    'Entretiens en ligne avec des personnes vivant avec la maladie de Parkinson : création de personas
-    et de scénarios d’utilisation pour un système de recommandation en matière d’autosoins'
+    "Online interviews with people living with Parkinson's: Creating personas and usage scenarios
+    for a self-care recommendation system"
   type: Facilitation
   institution: Com&Tech Innovations Lab, Université d'Ottawa
   location: Ottawa, Canada
@@ -244,10 +224,9 @@
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
 - date: Juil 2026
   description:
-    'À partir des résultats de l’atelier avec des patients et de la séance d’idéation, j’ai développé
-    un prototype basse fidélité pour visualiser les parcours d’autosoins, qui a été intégré à e-Care PD
-    par [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/).'
-  title: 'Traduire les résultats des ateliers : un prototype basse fidélité pour visualiser les parcours d’autosoins'
+    Based on patient workshop and ideation session, I developped a low-fidelity prototype for
+    visualising self-care journeys that was implemented in the e-Care PD by Wen Qui.
+  title: 'Translating workshop results: A low-fidelity prototype for visualising self-care journeys'
   type: Création
   institution: Com&Tech Innovations Lab, Université d'Ottawa
   location: Ottawa, Canada
@@ -258,11 +237,10 @@
   img: lowFiPrototype
 - date: Sept 2026
   description:
-    '[Wen Qi](https://www.linkedin.com/in/wenqi-debugging/) a intégré des améliorations front-end et
-    back-end, notamment le moteur logique des conseils d’autosoins, dans une nouvelle version d’e-Care PD.
-    Cette démo sera développée avec un soutien renforcé en matière de sécurité et d’autres exigences
-    fournies par un fournisseur externe.'
-  title: 'Prototype e-Care PD : parcours utilisateur complet'
+    '[Wen Qi](https://www.linkedin.com/in/wenqi-debugging/) integrated front-end and back-end enhancements, including the care-tips logic engine,
+    into a new version of e-Care PD. This demo will be developed with enhanced security support and other
+    requirements provided by an external vendor.'
+  title: e-Care PD Prototype full workflow
   type: Création
   institution: Com&Tech Innovations Lab, Université d'Ottawa
   link: https://ecare-pd-frontend.onrender.com/
@@ -272,14 +250,13 @@
     - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
 - date: Nov 2026
   description:
-    'Je participerai à une table ronde sur les perspectives de la relève en innovation sociale, où je
-    présenterai le projet e-Care PD, « Transformer les soins, renforcer les communautés : l’évolution et
-    les retombées d’e-Care PD (2018–2026) », lors des Entretiens Jacques Cartier organisés par l’UQAM.'
+    'I will participate in a panel on emerging researchers’ perspectives in social innovation,
+    presenting the e-Care PD project, Transforming Care, Strengthening Communities: The Evolution and Impact of e-Care PD (2018–2026), at the Entretiens Jacques Cartier hosted by UQAM.'
   title:
     'Perspectives de la relève en innovation sociale : former les actrices et acteurs de demain face
     aux défis sociétaux'
   type:
-    - Panéliste
+    - Paneliste
     - Affiche
   event:
     "Transformer les soins, renforcer les communautés : l'évolution et les retombées d'e-Care PD
@@ -290,17 +267,16 @@
 
 - date: Nov 2026
   description:
-    'Je présenterai une affiche au [Séminaire québécois de recherche en Parkinson (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA)
-    de [Parkinson Québec](https://parkinsonquebec.ca/), intitulée « PD-TIPS.AI : de l’identification
-    des besoins à un système conversationnel de recommandation pour les personnes vivant avec la
-    maladie de Parkinson ».'
+    'I will present a poster at the [Québec Seminar on Parkinson’s Research (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA) by [Parkinson Quebec](https://parkinsonquebec.ca/) entitled
+    PD-TIPS.AI: From Needs Identification to a Conversational Recommendation System for People Living
+    with Parkinson’s Disease.'
   title:
     "PD-TIPS.AI: de l'identification des besoins à un système conversationnel de recommandation
     pour les personnes vivant avec la maladie de Parkinson"
   type:
     - Affiche
     - Résumé
-  event: 'Q-Dopa : Séminaire québécois de recherche en Parkinson'
+  event: "Q-Dopa: Québec Seminar on Parkinson's Research"
   institution: Parkinson Québec
   location: Montréal, Canada
   people:

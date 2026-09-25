@@ -1,6 +1,6 @@
 - date: Oct 2024
   type: Involvement
-  description: I started working as a Research Assistant at the Com&Tech Innovations Lab directed by [Professor Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).
+  description: I started working as a Research Assistant at Comm&Tech Innovation lab directed by [Professor Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).
 
 - date: Nov 2024
   type: Involvement
@@ -9,7 +9,6 @@
     "[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie), together with [Leylah Alwash](https://www.linkedin.com/in/leyla-alwash-a36245310/) and [Elaine Ho](https://www.linkedin.com/in/elaineho11/), analyzed and presented the results of a diary-based usability study of e-Care PD, an app to track care priorities for people living with Parkinson developed by Macadamian Technologies. The study highlighted the need to improve how people living with Parkinson's disease are supported
     in setting self-care goals, enhance the personalization of recommendations, and improve data visualizations to facilitate self-care and help identify patterns in symptoms."
   img: 1eCarePD
-  institution: Com&Tech Innovations Lab, University of Ottawa
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
     - '[Leylah Alwash](https://www.linkedin.com/in/leyla-alwash-a36245310/)'
@@ -45,10 +44,9 @@
 - date: May 2025
   type: Presentation
   title: CAFY - a virtual assistant for living well with Parkinson's
-  description: I presented to the Com&Tech Innovations Lab and [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) an initial attempt to transition from a traditional medical dashboard toward a task-oriented user flow that guides users, like a virtual assistant, through selecting self-care goals, tracking their progress, and viewing their overall journey. I also integrated a text-to-speech feature. It was agreed that the platform should be redesigned with the look and feel of a mobile application rather than a website, while redefining its identity with [Parkinson Canada](https://www.parkinson.ca/) colors at the forefront.
+  description: I presented to the Comm&Tech Innovation Lab, [Dr. Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre) an initial attempt to transition from a traditional medical dashboard toward a task-oriented user flow that guides users, like a virtual assistant, through selecting self-care goals, tracking their progress, and viewing their overall journey. I also integrated a text-to-speech feature. It was agreed that the platformshould be redesigned with the look and feel of a mobile application rather than a website, while redefining its identity with [Parkinson Canada](https://www.parkinson.ca/) colors at the forefront.
   img: 4e_CarePD
   link: https://youtu.be/46uR8cW7a4I
-  institution: Com&Tech Innovations Lab, University of Ottawa
   people:
     - '[Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre)'
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
@@ -60,19 +58,18 @@
 
 - date: May 2025
   type: Creative Output
-  title: Visual Identity for e-Care PD and CAFY
+  title: Visual Identity for CAFY
   description:
     I created a new visual identity aligned with [Parkinson Canada’s](https://www.parkinson.ca/) branding and color palette.
     I employed navigation-inspired visual symbols to represent the navigational work that people living
-    with Parkinson’s undertake in their self-care journey.
+    with Parkinson’s undertake their self-care journey.
   img: 5e_CarePD
 
 - date: May 2025
   type: Creative Output
   title: e-Care PD Structure Redesign
-  description: '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie), together with [Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/), [Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/), and me, restructured the app based on a [*middle range theory of self-care for chronic conditions*](https://www.ovid.com/jnls/advancesinnursingscience/abstract/10.1097/ans.0b013e318261b1ba~a-middle-range-theory-of-self-care-of-chronic-illness?redirectionsource=fulltextview). Professor [Fabienne Martin-Juchat](https://www.univ-grenoble-alpes.fr/fabienne-martin-juchat-539593.kjsp), as visiting professor, participated in our working sessions and provided feedback on the design of the app.'
+  description: '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie), together with M[Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/), [Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/), and me, restructured the app based on a [*middle range theory of self-care for chronic conditions*](https://www.ovid.com/jnls/advancesinnursingscience/abstract/10.1097/ans.0b013e318261b1ba~a-middle-range-theory-of-self-care-of-chronic-illness?redirectionsource=fulltextview). Professor [Fabienne Martin-Juchat](https://www.univ-grenoble-alpes.fr/fabienne-martin-juchat-539593.kjsp), as visiting professor, participated in our working sessions and provided feedback on the design of the app.'
   img: 6e_CarePD
-  institution: Com&Tech Innovations Lab, University of Ottawa
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
     - '[Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/)'
@@ -88,12 +85,12 @@
   institution: 'DTI5125 - Data Science Applications taught by [Professor Arya Rahgozar](https://www.uottawa.ca/faculty-engineering/school-engineering-design-teaching-innovation/directory/arya-rahgozar) at University of Ottawa'
   people:
     - '[Wen Qi](https://www.linkedin.com/in/wenqi-debugging/)'
-    - '[Anna Shatalova](https://www.linkedin.com/in/anna-shatalova-309b77167/)'
+    - '[Anna Shatlova](https://www.linkedin.com/in/anna-shatalova-309b77167/)'
     - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
 - date: June-Dec 2025
   description:
     Through an iterative design process, [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie) wrote the CAFY conversation
-    to help select self-care priorities, while [Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/) and the team, including [Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/) and [Maryse Kavwahirehi](https://www.linkedin.com/in/marysek/),
+    to help select self-care priorites, while [Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/) and the team, including [Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/) and  [Maryse Kavwahirehi](https://www.linkedin.com/in/marysek/),
     created care tips ranging from basic to advanced levels of self-care, based on a taxonomy comprising
     five categories. I focused on bringing these elements together into a new prototype a first complete
     user flow, enabling users to identify self-care priorities, track their progress, visualize their
@@ -108,22 +105,6 @@
     - '[Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/)'
     - '[Mae Slabinski](https://www.linkedin.com/in/mae-slabinski-166a412a/)'
     - '[Maryse Kavwahirehi](https://www.linkedin.com/in/marysek/)'
-- date: Oct 2025
-  description:
-    We published a conference paper entitled “What Should I Focus on Today? Co-Designing a
-    Goal-Setting Dialogue Tool for Parkinson’s Self-Care,” which was presented at the European Society
-    for Socially Embedded Technologies (EUSSET) conference.
-  title: “What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care
-  type: Peer-Reviewed Publication
-  event: European Society for Socially Embedded Technologies (EUSSET)
-  institution: Com&Tech Innovations Lab, University of Ottawa
-  link: https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e
-  people:
-    - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
-    - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
-    - '[Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/)'
-    - '[David Grimes](https://ohri.ca/en/find-researcher/david-grimes)'
-    - '[Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre)'
 - date: Nov 2025
   type: Involvement
   title: Launch of the PD-AI Tips project
@@ -141,6 +122,22 @@
     - '[Jeffrey Jutai](https://www.uottawa.ca/faculty-health-sciences/interdisciplinary/our-professors/jeffrey-w-jutai)'
     - '[Lysanne Lessard](https://telfer.uottawa.ca/en/directory/lysanne-lessard/)'
     - Four patient partners
+- date: Oct 2025
+  description:
+    We published a conference paper entitled “What Should I Focus on Today? Co-Designing a
+    Goal-Setting Dialogue Tool for Parkinson’s Self-Care,” which was presented at the European Society
+    for Socially Embedded Technologies (EUSSET) conference.
+  title: “What Should I Focus on Today?” Co-Designing a Goal-Setting Dialogue Tool for Parkinson’s Self-Care
+  type: Peer-Reviewed Publication
+  institution: Com&Tech Innovations Lab, University of Ottawa
+  location: Ottawa, Canada
+  link: https://dl.eusset.eu/items/266f8547-afe5-4f7b-a6e7-58707334a89e
+  people:
+    - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
+    - '[Janette Mujica](https://www.linkedin.com/in/janettemujica/)'
+    - '[Nadim Saadeh](https://www.linkedin.com/in/nadim-saadeh/)'
+    - '[David Grimes](https://ohri.ca/en/find-researcher/david-grimes)'
+    - '[Tiago Mestre](https://www.uottawa.ca/faculty-medicine/directory/dr-tiago-mestre)'
 - date: Dec 2025
   description:
     We facilitated patient workshops at The Ottawa Hospital Civic Campus to evaluate CAFY (Care
@@ -168,7 +165,6 @@
     self-care goals
   type: Poster
   event: University of Ottawa Engineering & Computer Science Graduate Poster Competition
-  institution: University of Ottawa
   location: Ottawa, Canada
   link: https://janettemujica.github.io/ecare-pd-PosterCompetition2026/
   people:
@@ -204,20 +200,20 @@
   link: https://youtu.be/Hbvma-GG2jQ
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
-    - '[Mackenson Joseph](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/)'
+    - '[Joseph Mackenson](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/)'
     - '[Johémie Délinois](https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/)'
     - '[Yéroséo Aris Kusiélé Somba](https://www.linkedin.com/in/yeroseo-aris/)'
 - date: Apr 2026
   type: Course Project
-  description: 'I conducted a scoping review of the literature to identify how patient knowledge is computed in AI chatbots. In collaboration with peers and a librarian, I learned how to conduct a review, including developing a search strategy, screening articles, and synthesizing findings.'
+  description: 'I conducted a scoping review of the literature to identify how patient knowledge is computed in AI chatbots. In collaboration with peers and librarian, I learned how to conduct a a review, including developing a search strategy, screening articles, and synthesizing findings.'
   img: ScopingReview
-  title: 'Computing Patient Knowledge in AI Chatbots: A Scoping Review'
+  title: 'Computing Patient Knowledge in AI chatbot: A Systematic Review'
   institution: 'DTI 8102 -  Interdisciplinary Doctoral Seminar taught by [Professor Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot) at University of Ottawa'
   location: Ottawa, Canada
   link: https://canva.link/j01147sobyiflia
   people:
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
-    - '[Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot)'
+    - '[Professor Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot)'
     - '[Lisa Shin](https://www.linkedin.com/in/lisa-shin/)'
     - '[Fiona He](https://www.linkedin.com/in/fionahe0928/)'
     - '[Mari Teitelbaum](https://www.linkedin.com/in/mariteitelbaum/)'
@@ -232,25 +228,8 @@
   location: Ottawa, Canada
   link: https://canva.link/ppfkujpq4sk2c0d
 - date: June 2026
-  description: 'I facilitated an ideation session based on the preliminary findings of the patient workshop on data visualizations, in order to redesign the “Journey” page of e-Care PD. Thanks to the participants: [Luc Bonneville](https://savoirmontfort.ca/scientifiques/luc-bonneville-phd), [François Kajiramugabi](https://www.linkedin.com/in/fran%C3%A7ois-kajiramugabi-ba9453a1/), [David Devaux](https://www.linkedin.com/in/david-d-812063118/), [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/), [Felicia Bielser](https://www.linkedin.com/in/f%C3%A9licia-bielser-949a5871/?locale=en), [Johémie Délinois](https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/), [Mackenson Joseph](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/) and [Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie).'
-  img: DataToAction_PreliminaryFindings
-  title: 'Self-care journeys: Ideation session based on preliminary findings from the patient workshop on data visualization'
-  type: Facilitation
-  institution: Com&Tech Innovations Lab, University of Ottawa
-  location: Ottawa, Canada
-  link: https://canva.link/frw2kog8rq5l3cq
-  people:
-    - '[Luc Bonneville](https://savoirmontfort.ca/scientifiques/luc-bonneville-phd)'
-    - '[François Kajiramugabi](https://www.linkedin.com/in/fran%C3%A7ois-kajiramugabi-ba9453a1/)'
-    - '[David Devaux](https://www.linkedin.com/in/david-d-812063118/)'
-    - '[Wen Qi](https://www.linkedin.com/in/wenqi-debugging/)'
-    - '[Felicia Bielser](https://www.linkedin.com/in/f%C3%A9licia-bielser-949a5871/?locale=en)'
-    - '[Johémie Délinois](https://www.linkedin.com/in/joh%C3%A9mie-d%C3%A9linois-742a62297/)'
-    - '[Mackenson Joseph](https://www.linkedin.com/in/mackenson-joseph-5407b4a6/)'
-    - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
-- date: June 2026
   description:
-    'I presented the preliminary findings of a scoping review, Computing Patient Knowledge
+    'I presented the preliminary findings of a systematic review, Computing Patient Knowledge
     in AI Chatbots, conducted as part of the DTI Seminar taught by [Professor Daniel Amyot](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/daniel-amyot), at the uOttawa
     research seminar De l’engagement des patient·es à la simulation : Regards croisés sur la recherche
     et la formation en santé (French).'
@@ -276,8 +255,8 @@
     - '[Sylvie Grosjean](https://www.uottawa.ca/commtech-innovation-lab/people/grosjean-sylvie)'
 - date: July 2026
   description:
-    Based on the patient workshop and ideation session, I developed a low-fidelity prototype for
-    visualising self-care journeys that was implemented in e-Care PD by [Wen Qi](https://www.linkedin.com/in/wenqi-debugging/).
+    Based on patient workshop and ideation session, I developped a low-fidelity prototype for
+    visualising self-care journeys that was implemented in the e-Care PD by Wen Qui.
   title: 'Translating workshop results: A low-fidelity prototype for visualising self-care journeys'
   type: Creative Output
   institution: Com&Tech Innovations Lab, University of Ottawa
@@ -293,7 +272,6 @@
     into a new version of e-Care PD. This demo will be developed with enhanced security support and other
     requirements provided by an external vendor.'
   title: e-Care PD Prototype full workflow
-  institution: Com&Tech Innovations Lab, University of Ottawa
   type: Creative Output
   link: https://ecare-pd-frontend.onrender.com/
   people:
@@ -320,7 +298,7 @@
 
 - date: Nov 2026
   description:
-    'I will present a poster at the [Québec Seminar on Parkinson’s Research (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA) by [Parkinson Québec](https://parkinsonquebec.ca/) entitled
+    'I will present a poster at the [Québec Seminar on Parkinson’s Research (Q-Dopa)](https://cyberimpact.page/mz9x6yet/Q-DOPA) by [Parkinson Quebec](https://parkinsonquebec.ca/) entitled
     PD-TIPS.AI: From Needs Identification to a Conversational Recommendation System for people Living
     with Parkinson’s Disease.'
   title:

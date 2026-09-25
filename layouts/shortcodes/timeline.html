@@ -105,11 +105,12 @@
                 {{ if $isLong }}<button type="button" class="contrib-readmore" data-target="{{ $descId }}">{{ i18n "readMore" }}</button>{{ end }}
               {{ end }}
 
+              {{/* event, institution and location accept Markdown, e.g. [Name](https://...) */}}
               {{ $ctxParts := slice }}
-              {{ if $e.event }}{{ $ctxParts = $ctxParts | append $e.event }}{{ end }}
-              {{ if $e.institution }}{{ $ctxParts = $ctxParts | append $e.institution }}{{ end }}
-              {{ if $e.location }}{{ $ctxParts = $ctxParts | append $e.location }}{{ end }}
-              {{ if $ctxParts }}<p class="contrib-context">{{ delimit $ctxParts ". " }}.</p>{{ end }}
+              {{ range slice $e.event $e.institution $e.location }}
+                {{ with . }}{{ $ctxParts = $ctxParts | append (. | markdownify | string) }}{{ end }}
+              {{ end }}
+              {{ if $ctxParts }}<p class="contrib-context">{{ delimit $ctxParts ". " | safeHTML }}.</p>{{ end }}
 
               {{ if $e.img }}
               {{ $caption := $e.title | default $e.img }}
@@ -127,7 +128,10 @@
               {{ end }}
 
               {{ if $e.people }}
-              <p class="contrib-people">{{ i18n "contribWithPrefix" }} {{ delimit $e.people ", " (printf " %s " (i18n "andSeparator")) | safeHTML }}</p>
+              {{/* each name accepts Markdown, e.g. - '[Name](https://...)' */}}
+              {{ $people := slice }}
+              {{ range $e.people }}{{ $people = $people | append (. | markdownify | string) }}{{ end }}
+              <p class="contrib-people">{{ i18n "contribWithPrefix" }} {{ delimit $people ", " (printf " %s " (i18n "andSeparator")) | safeHTML }}</p>
               {{ end }}
 
               {{ if $e.link }}
@@ -263,6 +267,7 @@
   .contrib-readmore:hover{ opacity:.7; }
   .contrib-context{ font-size:.85em; color:var(--gray); margin:.8rem 0 0; }
   .contrib-people{ font-size:.85em; font-style:italic; color:var(--gray); margin:.9rem 0 0; }
+  .contrib-context a, .contrib-people a{ color:inherit; text-decoration:underline; text-underline-offset:2px; }
   .contrib-cta{
     display:inline-block; margin-top:1rem; font-size:.85em; font-weight:600;
     color:var(--primary); background:transparent; border:1px solid var(--primary);
