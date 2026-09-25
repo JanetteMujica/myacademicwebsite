@@ -17,7 +17,7 @@ Micro-enseignement — 20 novembre 2025, Université d’Ottawa
 
 Séance de micro-enseignement de 20 minutes sur la théorie des objets frontières et son application à l’inclusion pédagogique, donnée dans le cadre du Certificat en pédagogie universitaire. Les personnes apprenantes ont suivi une séquence d’apprentissage actif [(modèle BOPPPS)](https://libguides.usask.ca/boppps) : réflexion individuelle, puis synthèse et partage en groupe, afin de co-construire des stratégies d’inclusion ancrées dans le concept d’objet frontière.
 
-> *« Vous êtes une instructrice accueillante, attentionnée, bien centrée sur vos apprenants et apprenantes. Lors du micro-enseignement, vous avez utilisé plusieurs techniques et méthodes gagnantes, dont l’emploi d’exemples concrets, multiples moyens d’engagement et de participation ainsi que la vulgarisation de concepts qui sont d’excellentes stratégies à avoir dans votre boîte à outils d’instructrice. »*
+> _« Vous êtes une instructrice accueillante, attentionnée, bien centrée sur vos apprenants et apprenantes. Lors du micro-enseignement, vous avez utilisé plusieurs techniques et méthodes gagnantes, dont l’emploi d’exemples concrets, multiples moyens d’engagement et de participation ainsi que la vulgarisation de concepts qui sont d’excellentes stratégies à avoir dans votre boîte à outils d’instructrice. »_
 > — [Maryse Sullivan, instructrice](https://www.linkedin.com/in/maryse-sullivan?originalSubdomain=ca), Certificat en pédagogie universitaire
 
 ---
@@ -26,11 +26,11 @@ Séance de micro-enseignement de 20 minutes sur la théorie des objets frontièr
 
 Le [**Certificat en pédagogie universitaire**](https://saea-tlss.uottawa.ca/en/training-and-events/certificate-in-university-teaching/certificate-for-students) de l’Université d’Ottawa (Service d’appui à l’enseignement et à l’apprentissage) : un programme de trois cours alliant théorie pédagogique et pratique de l’enseignement.
 
-| Cours   | Description                                                        | Statut                                              |
-| ------- | ------------------------------------------------------------------ | --------------------------------------------------- |
-| ESG5500 | Théorie et pratique de l’enseignement universitaire au 1er cycle   | Terminé — décembre 2025                             |
-| ESG6500 | Technologie et enseignement universitaire                          | Terminé — avril 2026                                |
-| ESG8500 | Stage en enseignement universitaire                                | En cours — à terminer avant la fin de mon doctorat  |
+| Cours   | Description                                                      | Statut                                   |
+| ------- | ---------------------------------------------------------------- | ---------------------------------------- |
+| ESG5500 | Théorie et pratique de l’enseignement universitaire au 1er cycle | Compléter en décembre 2025               |
+| ESG6500 | Technologie et enseignement universitaire                        | Compléter en avril 2026                  |
+| ESG8500 | Stage en enseignement universitaire                              | À compléter avant la fin de mon doctorat |
 
-> *« Grâce à une écoute active et des interventions ciblées, Janette a joué un rôle déterminant dans la stimulation des échanges au sein du groupe de patients, favorisant une atmosphère de confiance et d’ouverture. Elle a veillé lors de son animation à ce que tous les participants aient l'espace nécessaire pour partager leur perspective et à ce que les objectifs de chaque session de co-design soient atteints efficacement. »*
+> _« Grâce à une écoute active et des interventions ciblées, Janette a joué un rôle déterminant dans la stimulation des échanges au sein du groupe de patients, favorisant une atmosphère de confiance et d’ouverture. Elle a veillé lors de son animation à ce que tous les participants aient l'espace nécessaire pour partager leur perspective et à ce que les objectifs de chaque session de co-design soient atteints efficacement. »_
 > — [Sylvie Grosjean, professeure titulaire](https://uniweb.uottawa.ca/view/profile/members/721)
