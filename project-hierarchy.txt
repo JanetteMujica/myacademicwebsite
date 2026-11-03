@@ -8,27 +8,32 @@ myacademicwebsite
 │  ├─ paper.md
 │  └─ teaching.md
 ├─ assets
-│  └─ css
-│     ├─ common
-│     │  ├─ 404.css
-│     │  ├─ archive.css
-│     │  ├─ footer.css
-│     │  ├─ funding.css
-│     │  ├─ header.css
-│     │  ├─ main.css
-│     │  ├─ post-entry.css
-│     │  ├─ post-single.css
-│     │  ├─ profile-mode.css
-│     │  ├─ search.css
-│     │  └─ terms.css
-│     └─ core
-│        └─ theme-vars.css
+│  ├─ css
+│  │  ├─ common
+│  │  │  ├─ 404.css
+│  │  │  ├─ archive.css
+│  │  │  ├─ footer.css
+│  │  │  ├─ funding.css
+│  │  │  ├─ header.css
+│  │  │  ├─ main.css
+│  │  │  ├─ post-entry.css
+│  │  │  ├─ post-single.css
+│  │  │  ├─ profile-mode.css
+│  │  │  ├─ search.css
+│  │  │  └─ terms.css
+│  │  ├─ core
+│  │  │  └─ theme-vars.css
+│  │  └─ ecarepd-timeline.css
+│  └─ js
+│     └─ ecarepd-timeline.js
 ├─ cheatsheet.md
 ├─ config.yml
 ├─ content
 │  ├─ archive.fr.md
 │  ├─ archive.md
 │  ├─ contribution
+│  │  ├─ ecarepdtimeline
+│  │  │  └─ index.md
 │  │  ├─ _index.fr.md
 │  │  └─ _index.md
 │  ├─ enseignement
@@ -46,15 +51,15 @@ myacademicwebsite
 │  └─ teaching
 │     └─ _index.md
 ├─ data
-│  └─ contributions
-│     ├─ en.yaml
-│     └─ fr.yaml
+│  ├─ contributions
+│  │  ├─ en.yaml
+│  │  ├─ en_old.yaml
+│  │  ├─ fr.yaml
+│  │  └─ fr_old.yaml
+│  └─ ecarepd_timeline.json
 ├─ i18n
 │  ├─ en.yaml
-│  ├─ fr.yaml
-│  └─ i18n
-│     ├─ en.yaml
-│     └─ fr.yaml
+│  └─ fr.yaml
 ├─ layouts
 │  ├─ 404.html
 │  ├─ partials
@@ -79,6 +84,7 @@ myacademicwebsite
 │  └─ _default
 │     ├─ archives.html
 │     ├─ baseof.html
+│     ├─ ecarepdtimeline.html
 │     ├─ list.html
 │     ├─ search.html
 │     ├─ single.html
@@ -94,22 +100,31 @@ myacademicwebsite
 │  │  └─ index.html
 │  ├─ assets
 │  │  └─ css
-│  │     ├─ stylesheet.4fe4748204a025c04ff03aa16b0d6cad9c84733038b7b0a70960c16335e26416.css
-│  │     ├─ stylesheet.531135b0511ba35a342abb7f5a6552e6094705bd05f58cba478f55f0dc42319e.css
-│  │     ├─ stylesheet.b99bb107120eccd96496d0eb15a5e8b4af1012f9613c76433480c224f54ee298.css
 │  │     └─ stylesheet.cdbaf0e8b619532e1f61c527d4909f1fd5cc2666a2e3897a6dd1a344b6f037d4.css
 │  ├─ contribution
+│  │  ├─ ecarepdtimeline
+│  │  │  └─ index.html
 │  │  ├─ index.html
 │  │  ├─ index.xml
 │  │  └─ page
 │  │     └─ 1
 │  │        └─ index.html
-│  ├─ contributions
-│  │  ├─ index.html
-│  │  ├─ index.xml
-│  │  └─ page
-│  │     └─ 1
-│  │        └─ index.html
+│  ├─ css
+│  │  ├─ ecarepd-timeline.min.112538074c7e2368a05389066b2e21273ec806855158d262ffb02676e1d303c6.css
+│  │  ├─ ecarepd-timeline.min.18cb2b9784627eac4cde9a16918dd8427a109d43dcd7315a80a77d1b2f2d5974.css
+│  │  ├─ ecarepd-timeline.min.1bfb91f1780460ddd6b07ca55049ed74af0f8a71f711ce4216e009d961f3df30.css
+│  │  ├─ ecarepd-timeline.min.30eb21836269024da38f7663e50c1ae23dd23e8195226e0a9ede90e7d97b1a1b.css
+│  │  ├─ ecarepd-timeline.min.6e9850d5f78bce2bb8d03d9663575c36da8b3d787389823c1b5c533e6bebe556.css
+│  │  ├─ ecarepd-timeline.min.815f8ea96dfab00cf1c0d4d7e22d1e22fad629c07f9cae74faf031c6ab9f5586.css
+│  │  ├─ ecarepd-timeline.min.89f902ffaf7ec1db43fb241dc11388e0a16e8bae8c96c1e3038c5d5e72786a54.css
+│  │  ├─ ecarepd-timeline.min.a5586cb119ca121c0efcbd54e71d9ef0da04e1ead28c75cbba4e7d979cd4c318.css
+│  │  ├─ ecarepd-timeline.min.ad93a32a42dfc17d5ad8f5403db3d4a35a9584bd909e487a5ae065a9f5fb260e.css
+│  │  ├─ ecarepd-timeline.min.c96529ca1204ac996def61ed813dc34edb86dfd77b772eb211ff76b57bed1b57.css
+│  │  ├─ ecarepd-timeline.min.d1d8474945a29cb92b1130715d0d4b69d35c6a9091ed1b96ae84081fa6b39113.css
+│  │  ├─ ecarepd-timeline.min.ec6f526e068acdc7fcf94d3a927478782c759cf0c354a4371cbe4c643c3df57d.css
+│  │  ├─ ecarepd-timeline.min.f7233001efe162bf74e730538f8b663c7a4e4b1924a54d40ed9dfea5d2ecae5d.css
+│  │  ├─ ecarepd-timeline.min.f7361500980b8c927946a9278eb47b810ae93fc2bc9cafe382b0f1cb046a229c.css
+│  │  └─ ecarepd-timeline.min.fb92632b08e048b72020b02657c6378467fb740701d0d6ce3dd81bd2bf996bd4.css
 │  ├─ cv.pdf
 │  ├─ en
 │  │  ├─ index.html
@@ -127,12 +142,6 @@ myacademicwebsite
 │  │  │  └─ page
 │  │  │     └─ 1
 │  │  │        └─ index.html
-│  │  ├─ contributions
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  └─ page
-│  │  │     └─ 1
-│  │  │        └─ index.html
 │  │  ├─ enseignement
 │  │  │  ├─ index.html
 │  │  │  ├─ index.xml
@@ -141,18 +150,6 @@ myacademicwebsite
 │  │  │        └─ index.html
 │  │  ├─ index.html
 │  │  ├─ index.xml
-│  │  ├─ location
-│  │  │  └─ index.html
-│  │  ├─ officehours
-│  │  │  └─ index.html
-│  │  ├─ papers
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  ├─ page
-│  │  │  │  └─ 1
-│  │  │  │     └─ index.html
-│  │  │  └─ paper1
-│  │  │     └─ index.html
 │  │  ├─ publication
 │  │  │  ├─ index.html
 │  │  │  ├─ index.xml
@@ -162,78 +159,97 @@ myacademicwebsite
 │  │  │  └─ publication1
 │  │  │     └─ index.html
 │  │  ├─ sitemap.xml
-│  │  ├─ tags
-│  │  │  ├─ co-design
-│  │  │  │  ├─ index.html
-│  │  │  │  ├─ index.xml
-│  │  │  │  └─ page
-│  │  │  │     └─ 1
-│  │  │  │        └─ index.html
-│  │  │  ├─ dialogue-interface
-│  │  │  │  ├─ index.html
-│  │  │  │  ├─ index.xml
-│  │  │  │  └─ page
-│  │  │  │     └─ 1
-│  │  │  │        └─ index.html
-│  │  │  ├─ index.html
-│  │  │  ├─ index.xml
-│  │  │  ├─ parkinson
-│  │  │  │  ├─ index.html
-│  │  │  │  ├─ index.xml
-│  │  │  │  └─ page
-│  │  │  │     └─ 1
-│  │  │  │        └─ index.html
-│  │  │  ├─ self-care-technology
-│  │  │  │  ├─ index.html
-│  │  │  │  ├─ index.xml
-│  │  │  │  └─ page
-│  │  │  │     └─ 1
-│  │  │  │        └─ index.html
-│  │  │  └─ usage-diary-study
-│  │  │     ├─ index.html
-│  │  │     ├─ index.xml
-│  │  │     └─ page
-│  │  │        └─ 1
-│  │  │           └─ index.html
-│  │  └─ teaching
+│  │  └─ tags
+│  │     ├─ co-design
+│  │     │  ├─ index.html
+│  │     │  ├─ index.xml
+│  │     │  └─ page
+│  │     │     └─ 1
+│  │     │        └─ index.html
+│  │     ├─ dialogue-interface
+│  │     │  ├─ index.html
+│  │     │  ├─ index.xml
+│  │     │  └─ page
+│  │     │     └─ 1
+│  │     │        └─ index.html
 │  │     ├─ index.html
 │  │     ├─ index.xml
-│  │     └─ page
-│  │        └─ 1
-│  │           └─ index.html
+│  │     ├─ parkinson
+│  │     │  ├─ index.html
+│  │     │  ├─ index.xml
+│  │     │  └─ page
+│  │     │     └─ 1
+│  │     │        └─ index.html
+│  │     ├─ self-care-technology
+│  │     │  ├─ index.html
+│  │     │  ├─ index.xml
+│  │     │  └─ page
+│  │     │     └─ 1
+│  │     │        └─ index.html
+│  │     └─ usage-diary-study
+│  │        ├─ index.html
+│  │        ├─ index.xml
+│  │        └─ page
+│  │           └─ 1
+│  │              └─ index.html
 │  ├─ img
-│  │  └─ contributions
-│  │     ├─ 1eCarePD.png
-│  │     ├─ 2eCarePD.png
-│  │     ├─ 3e_Ember.png
-│  │     ├─ 4e_CarePD.png
-│  │     ├─ 5e_CarePD.png
-│  │     ├─ 6e_CarePD.png
-│  │     ├─ 7e_CarePD.png
-│  │     ├─ CAFY_CRS.png
-│  │     ├─ DataToAction_PreliminaryFindings.png
-│  │     ├─ lowFiPrototype.png
-│  │     └─ posterCAFY.png
+│  │  ├─ contributions
+│  │  │  ├─ 12_ComputingPatientKnowledge.png
+│  │  │  ├─ 13_ChatbotEnvisioning.png
+│  │  │  ├─ 1eCarePD.png
+│  │  │  ├─ 2eCarePD.png
+│  │  │  ├─ 3e_Ember.png
+│  │  │  ├─ 4e_CarePD.png
+│  │  │  ├─ 5e_CarePD.png
+│  │  │  ├─ 6e_CarePD.png
+│  │  │  ├─ 7e_CarePD.png
+│  │  │  ├─ CAFY_CRS.png
+│  │  │  ├─ DataToAction_PreliminaryFindings.png
+│  │  │  ├─ lowFiPrototype.png
+│  │  │  ├─ posterCAFY.png
+│  │  │  └─ ScopingReview.png
+│  │  ├─ ecarepdtimeline
+│  │  │  ├─ biggareselfcare.png
+│  │  │  ├─ neurologist-blurred.png
+│  │  │  ├─ patient-blurred.png
+│  │  │  └─ patient-blurred_2.png
+│  │  ├─ integrated-care
+│  │  │  ├─ IC02_trajectories-canada.png
+│  │  │  ├─ IC03_components-integrated-care.jpg
+│  │  │  └─ IC04_journey-map-canada.png
+│  │  └─ prototypes
+│  │     ├─ PR01.jpg
+│  │     ├─ PR02.jpg
+│  │     ├─ PR03_1.jpg
+│  │     ├─ PR03_2.jpg
+│  │     ├─ PR04.jpg
+│  │     ├─ PR05_1.jpg
+│  │     ├─ PR05_2.jpg
+│  │     ├─ PR06.png
+│  │     ├─ PR07.png
+│  │     ├─ PR08.png
+│  │     ├─ PR09.png
+│  │     ├─ PR10.png
+│  │     ├─ PR11.png
+│  │     ├─ PR12.png
+│  │     ├─ PR13.png
+│  │     ├─ PR14.png
+│  │     └─ PR15.jpeg
 │  ├─ index.html
 │  ├─ index.xml
-│  ├─ location
-│  │  └─ index.html
-│  ├─ officehours
-│  │  └─ index.html
-│  ├─ papers
-│  │  ├─ index.html
-│  │  ├─ index.xml
-│  │  ├─ page
-│  │  │  └─ 1
-│  │  │     └─ index.html
-│  │  └─ paper1
-│  │     ├─ appendix1.pdf
-│  │     ├─ index.html
-│  │     ├─ paper1.pdf
-│  │     ├─ paper1.png
-│  │     ├─ paper1_hu_33161f93f9444a9b.png
-│  │     ├─ paper1_hu_8ff464393dee4b9e.png
-│  │     └─ presentation1.pdf
+│  ├─ js
+│  │  ├─ ecarepd-timeline.min.0605d6e839d848f67af4d9dfb771f903553da70c6eafec0e3fc07c15c8113672.js
+│  │  ├─ ecarepd-timeline.min.0b59e82521e19ddb97737070b5f96e50f3b92b196fb0e68098cc05ec392d47dd.js
+│  │  ├─ ecarepd-timeline.min.2fe6a7ae3fa28f6ca152b437d3f6ae05773840ad26ebe61f712144490f447720.js
+│  │  ├─ ecarepd-timeline.min.4029a7600b57eef1edbe29579cc14b2008388a43adeaf5231673c4d969da7a89.js
+│  │  ├─ ecarepd-timeline.min.76a181f98b70256f0fd0fe283386dc02515d8cac2c8be3081d9d3ae3d6b09b96.js
+│  │  ├─ ecarepd-timeline.min.830428fd1259aa9e1399def39241eec45b2445281951d95b87017b4384c72d26.js
+│  │  ├─ ecarepd-timeline.min.98050b2f54f7c36670e039c8e7ae4a99a912dcb210d1608de19cdd0d1c9a4219.js
+│  │  ├─ ecarepd-timeline.min.9bdba3533d54d89a46b086aa4b9dd4b5a015060c9182f45000fee81b7f74bd57.js
+│  │  ├─ ecarepd-timeline.min.9c5c504b981b373cead7658e3774eedd5c53fee662cede47083b6d4a73492bff.js
+│  │  ├─ ecarepd-timeline.min.b9acaf51f45182dde3c8451260c1bfbd477a92e10eb737f30d62ca20f6c0fac1.js
+│  │  ├─ ecarepd-timeline.min.d8eba9caf1a286d9f286622a88c6898aaed858cafeb776509d26d0902746e3a7.js
+│  │  └─ ecarepd-timeline.min.dced25f579bf38711f90f39c07e4dc5fe0de5865875e515a4a0a80987fba363a.js
 │  ├─ picture.jpeg
 │  ├─ publication
 │  │  ├─ index.html
@@ -285,14 +301,9 @@ myacademicwebsite
 │     └─ page
 │        └─ 1
 │           └─ index.html
+├─ README-ecarepd-timeline.md
 ├─ README.md
 ├─ resources
-│  └─ _gen
-│     └─ images
-│        └─ papers
-│           └─ paper1
-│              ├─ paper1_hu_33161f93f9444a9b.png
-│              └─ paper1_hu_8ff464393dee4b9e.png
 ├─ static
 │  ├─ apple-touch-icon.png
 │  ├─ cv.pdf
@@ -300,156 +311,188 @@ myacademicwebsite
 │  ├─ favicon-32x32.png
 │  ├─ favicon.ico
 │  ├─ img
-│  │  └─ contributions
-│  │     ├─ 1eCarePD.png
-│  │     ├─ 2eCarePD.png
-│  │     ├─ 3e_Ember.png
-│  │     ├─ 4e_CarePD.png
-│  │     ├─ 5e_CarePD.png
-│  │     ├─ 6e_CarePD.png
-│  │     ├─ 7e_CarePD.png
-│  │     ├─ CAFY_CRS.png
-│  │     ├─ DataToAction_PreliminaryFindings.png
-│  │     ├─ lowFiPrototype.png
-│  │     └─ posterCAFY.png
+│  │  ├─ contributions
+│  │  │  ├─ 12_ComputingPatientKnowledge.png
+│  │  │  ├─ 13_ChatbotEnvisioning.png
+│  │  │  ├─ 1eCarePD.png
+│  │  │  ├─ 2eCarePD.png
+│  │  │  ├─ 3e_Ember.png
+│  │  │  ├─ 4e_CarePD.png
+│  │  │  ├─ 5e_CarePD.png
+│  │  │  ├─ 6e_CarePD.png
+│  │  │  ├─ 7e_CarePD.png
+│  │  │  ├─ CAFY_CRS.png
+│  │  │  ├─ DataToAction_PreliminaryFindings.png
+│  │  │  ├─ lowFiPrototype.png
+│  │  │  ├─ posterCAFY.png
+│  │  │  └─ ScopingReview.png
+│  │  ├─ ecarepdtimeline
+│  │  │  ├─ biggareselfcare.png
+│  │  │  ├─ neurologist-blurred.png
+│  │  │  ├─ patient-blurred.png
+│  │  │  └─ patient-blurred_2.png
+│  │  ├─ integrated-care
+│  │  │  ├─ IC02_trajectories-canada.png
+│  │  │  ├─ IC03_components-integrated-care.jpg
+│  │  │  └─ IC04_journey-map-canada.png
+│  │  └─ prototypes
+│  │     ├─ PR01.jpg
+│  │     ├─ PR02.jpg
+│  │     ├─ PR03_1.jpg
+│  │     ├─ PR03_2.jpg
+│  │     ├─ PR04.jpg
+│  │     ├─ PR05_1.jpg
+│  │     ├─ PR05_2.jpg
+│  │     ├─ PR06.png
+│  │     ├─ PR07.png
+│  │     ├─ PR08.png
+│  │     ├─ PR09.png
+│  │     ├─ PR10.png
+│  │     ├─ PR11.png
+│  │     ├─ PR12.png
+│  │     ├─ PR13.png
+│  │     ├─ PR14.png
+│  │     └─ PR15.jpeg
 │  └─ picture.jpeg
-└─ themes
-   └─ PaperMod
-      ├─ .github
-      │  ├─ ISSUE_TEMPLATE
-      │  │  ├─ bug.yaml
-      │  │  ├─ config.yml
-      │  │  └─ enhancement.yaml
-      │  ├─ PULL_REQUEST_TEMPLATE.md
-      │  └─ workflows
-      │     └─ gh-pages.yml
-      ├─ assets
-      │  ├─ css
-      │  │  ├─ common
-      │  │  │  ├─ 404.css
-      │  │  │  ├─ archive.css
-      │  │  │  ├─ footer.css
-      │  │  │  ├─ header.css
-      │  │  │  ├─ main.css
-      │  │  │  ├─ post-entry.css
-      │  │  │  ├─ post-single.css
-      │  │  │  ├─ profile-mode.css
-      │  │  │  ├─ search.css
-      │  │  │  └─ terms.css
-      │  │  ├─ core
-      │  │  │  ├─ license.css
-      │  │  │  ├─ reset.css
-      │  │  │  ├─ theme-vars.css
-      │  │  │  └─ zmedia.css
-      │  │  ├─ extended
-      │  │  │  └─ blank.css
-      │  │  └─ includes
-      │  │     ├─ chroma-mod.css
-      │  │     ├─ chroma-styles.css
-      │  │     └─ scroll-bar.css
-      │  └─ js
-      │     ├─ fastsearch.js
-      │     ├─ fuse.basic.min.js
-      │     └─ license.js
-      ├─ go.mod
-      ├─ i18n
-      │  ├─ ar.yaml
-      │  ├─ be.yaml
-      │  ├─ bg.yaml
-      │  ├─ bn.yaml
-      │  ├─ ca.yaml
-      │  ├─ ckb.yaml
-      │  ├─ cs.yaml
-      │  ├─ da.yaml
-      │  ├─ de.yaml
-      │  ├─ el.yaml
-      │  ├─ en.yaml
-      │  ├─ eo.yaml
-      │  ├─ es.yaml
-      │  ├─ fa.yaml
-      │  ├─ fr.yaml
-      │  ├─ he.yaml
-      │  ├─ hi.yaml
-      │  ├─ hr.yaml
-      │  ├─ hu.yaml
-      │  ├─ id.yaml
-      │  ├─ it.yaml
-      │  ├─ ja.yaml
-      │  ├─ ko.yaml
-      │  ├─ ku.yaml
-      │  ├─ mn.yaml
-      │  ├─ ms.yaml
-      │  ├─ nl.yaml
-      │  ├─ no.yaml
-      │  ├─ oc.yaml
-      │  ├─ pa.yaml
-      │  ├─ pl.yaml
-      │  ├─ pnb.yaml
-      │  ├─ pt.yaml
-      │  ├─ ro.yaml
-      │  ├─ ru.yaml
-      │  ├─ sk.yaml
-      │  ├─ sv.yaml
-      │  ├─ sw.yaml
-      │  ├─ th.yaml
-      │  ├─ tr.yaml
-      │  ├─ uk.yaml
-      │  ├─ uz.yaml
-      │  ├─ vi.yaml
-      │  ├─ zh-tw.yaml
-      │  └─ zh.yaml
-      ├─ images
-      │  ├─ screenshot.png
-      │  └─ tn.png
-      ├─ layouts
-      │  ├─ 404.html
-      │  ├─ partials
-      │  │  ├─ anchored_headings.html
-      │  │  ├─ author.html
-      │  │  ├─ breadcrumbs.html
-      │  │  ├─ comments.html
-      │  │  ├─ cover.html
-      │  │  ├─ edit_post.html
-      │  │  ├─ extend_footer.html
-      │  │  ├─ extend_head.html
-      │  │  ├─ footer.html
-      │  │  ├─ head.html
-      │  │  ├─ header.html
-      │  │  ├─ home_info.html
-      │  │  ├─ index_profile.html
-      │  │  ├─ post_canonical.html
-      │  │  ├─ post_meta.html
-      │  │  ├─ post_nav_links.html
-      │  │  ├─ share_icons.html
-      │  │  ├─ social_icons.html
-      │  │  ├─ svg.html
-      │  │  ├─ templates
-      │  │  │  ├─ opengraph.html
-      │  │  │  ├─ schema_json.html
-      │  │  │  ├─ twitter_cards.html
-      │  │  │  └─ _funcs
-      │  │  │     └─ get-page-images.html
-      │  │  ├─ toc.html
-      │  │  └─ translation_list.html
-      │  ├─ robots.txt
-      │  ├─ shortcodes
-      │  │  ├─ collapse.html
-      │  │  ├─ figure.html
-      │  │  ├─ inTextImg.html
-      │  │  ├─ ltr.html
-      │  │  ├─ rawhtml.html
-      │  │  └─ rtl.html
-      │  └─ _default
-      │     ├─ archives.html
-      │     ├─ baseof.html
-      │     ├─ index.json
-      │     ├─ list.html
-      │     ├─ rss.xml
-      │     ├─ search.html
-      │     ├─ single.html
-      │     ├─ terms.html
-      │     └─ _markup
-      │        └─ render-image.html
-      ├─ LICENSE
-      ├─ README.md
-      └─ theme.toml
+├─ themes
+│  └─ PaperMod
+│     ├─ .github
+│     │  ├─ ISSUE_TEMPLATE
+│     │  │  ├─ bug.yaml
+│     │  │  ├─ config.yml
+│     │  │  └─ enhancement.yaml
+│     │  ├─ PULL_REQUEST_TEMPLATE.md
+│     │  └─ workflows
+│     │     └─ gh-pages.yml
+│     ├─ assets
+│     │  ├─ css
+│     │  │  ├─ common
+│     │  │  │  ├─ 404.css
+│     │  │  │  ├─ archive.css
+│     │  │  │  ├─ footer.css
+│     │  │  │  ├─ header.css
+│     │  │  │  ├─ main.css
+│     │  │  │  ├─ post-entry.css
+│     │  │  │  ├─ post-single.css
+│     │  │  │  ├─ profile-mode.css
+│     │  │  │  ├─ search.css
+│     │  │  │  └─ terms.css
+│     │  │  ├─ core
+│     │  │  │  ├─ license.css
+│     │  │  │  ├─ reset.css
+│     │  │  │  ├─ theme-vars.css
+│     │  │  │  └─ zmedia.css
+│     │  │  ├─ extended
+│     │  │  │  └─ blank.css
+│     │  │  └─ includes
+│     │  │     ├─ chroma-mod.css
+│     │  │     ├─ chroma-styles.css
+│     │  │     └─ scroll-bar.css
+│     │  └─ js
+│     │     ├─ fastsearch.js
+│     │     ├─ fuse.basic.min.js
+│     │     └─ license.js
+│     ├─ go.mod
+│     ├─ i18n
+│     │  ├─ ar.yaml
+│     │  ├─ be.yaml
+│     │  ├─ bg.yaml
+│     │  ├─ bn.yaml
+│     │  ├─ ca.yaml
+│     │  ├─ ckb.yaml
+│     │  ├─ cs.yaml
+│     │  ├─ da.yaml
+│     │  ├─ de.yaml
+│     │  ├─ el.yaml
+│     │  ├─ en.yaml
+│     │  ├─ eo.yaml
+│     │  ├─ es.yaml
+│     │  ├─ fa.yaml
+│     │  ├─ fr.yaml
+│     │  ├─ he.yaml
+│     │  ├─ hi.yaml
+│     │  ├─ hr.yaml
+│     │  ├─ hu.yaml
+│     │  ├─ id.yaml
+│     │  ├─ it.yaml
+│     │  ├─ ja.yaml
+│     │  ├─ ko.yaml
+│     │  ├─ ku.yaml
+│     │  ├─ mn.yaml
+│     │  ├─ ms.yaml
+│     │  ├─ nl.yaml
+│     │  ├─ no.yaml
+│     │  ├─ oc.yaml
+│     │  ├─ pa.yaml
+│     │  ├─ pl.yaml
+│     │  ├─ pnb.yaml
+│     │  ├─ pt.yaml
+│     │  ├─ ro.yaml
+│     │  ├─ ru.yaml
+│     │  ├─ sk.yaml
+│     │  ├─ sv.yaml
+│     │  ├─ sw.yaml
+│     │  ├─ th.yaml
+│     │  ├─ tr.yaml
+│     │  ├─ uk.yaml
+│     │  ├─ uz.yaml
+│     │  ├─ vi.yaml
+│     │  ├─ zh-tw.yaml
+│     │  └─ zh.yaml
+│     ├─ images
+│     │  ├─ screenshot.png
+│     │  └─ tn.png
+│     ├─ layouts
+│     │  ├─ 404.html
+│     │  ├─ partials
+│     │  │  ├─ anchored_headings.html
+│     │  │  ├─ author.html
+│     │  │  ├─ breadcrumbs.html
+│     │  │  ├─ comments.html
+│     │  │  ├─ cover.html
+│     │  │  ├─ edit_post.html
+│     │  │  ├─ extend_footer.html
+│     │  │  ├─ extend_head.html
+│     │  │  ├─ footer.html
+│     │  │  ├─ head.html
+│     │  │  ├─ header.html
+│     │  │  ├─ home_info.html
+│     │  │  ├─ index_profile.html
+│     │  │  ├─ post_canonical.html
+│     │  │  ├─ post_meta.html
+│     │  │  ├─ post_nav_links.html
+│     │  │  ├─ share_icons.html
+│     │  │  ├─ social_icons.html
+│     │  │  ├─ svg.html
+│     │  │  ├─ templates
+│     │  │  │  ├─ opengraph.html
+│     │  │  │  ├─ schema_json.html
+│     │  │  │  ├─ twitter_cards.html
+│     │  │  │  └─ _funcs
+│     │  │  │     └─ get-page-images.html
+│     │  │  ├─ toc.html
+│     │  │  └─ translation_list.html
+│     │  ├─ robots.txt
+│     │  ├─ shortcodes
+│     │  │  ├─ collapse.html
+│     │  │  ├─ figure.html
+│     │  │  ├─ inTextImg.html
+│     │  │  ├─ ltr.html
+│     │  │  ├─ rawhtml.html
+│     │  │  └─ rtl.html
+│     │  └─ _default
+│     │     ├─ archives.html
+│     │     ├─ baseof.html
+│     │     ├─ index.json
+│     │     ├─ list.html
+│     │     ├─ rss.xml
+│     │     ├─ search.html
+│     │     ├─ single.html
+│     │     ├─ terms.html
+│     │     └─ _markup
+│     │        └─ render-image.html
+│     ├─ LICENSE
+│     ├─ README.md
+│     └─ theme.toml
+└─ tools
+   └─ update_timeline.py

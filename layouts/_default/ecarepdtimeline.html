@@ -1,0 +1,155 @@
+{{- /*
+  eCARE-PD co-design timeline
+  Used by content/contribution/ecarepdtimeline/index.md (front matter: layout: ecarepdtimeline)
+  Data:   data/ecarepd_timeline.json   (refresh with tools/update_timeline.py)
+  Styles: assets/css/ecarepd-timeline.css (scoped under .ecp)
+  Script: assets/js/ecarepd-timeline.js  (no external libraries)
+  Views:  #story (4 slides) · #timeline · #prototypes · #taxonomy
+*/ -}}
+{{- define "main" }}
+{{- $cssSrc := resources.Get "css/ecarepd-timeline.css" }}
+{{- if not $cssSrc }}{{ errorf "eCARE-PD timeline: missing assets/css/ecarepd-timeline.css (it must sit directly in assets/css/)" }}{{ end }}
+{{- with $cssSrc }}{{ $css := . | resources.Minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+{{- end }}
+
+<div class="ecp"
+     data-image-base="{{ .Params.imageBase | default "img/ecarepdtimeline/" | relURL }}"
+     data-img-riggare="{{ .Params.images.riggare | default "biggareselfcare.png" }}"
+     data-img-patient="{{ .Params.images.patient | default "patient-blurred.jpg" }}"
+     data-img-neurologist="{{ .Params.images.neurologist | default "neurologist-blurred.jpg" }}"
+     data-img-patient2="{{ .Params.images.patient2 | default "patient-blurred_2.png" }}">
+
+  <div class="wide">
+    <header class="ecp-head">
+      <div>
+        <a class="back" href="{{ "contribution/" | relLangURL }}">← Contribution</a>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<p class="sub">{{ . }}</p>{{ end }}
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button type="button" role="tab" id="ecp-tab-story" data-view="story" aria-controls="ecp-view-story">Story</button>
+        <button type="button" role="tab" id="ecp-tab-timeline" data-view="timeline" aria-controls="ecp-view-timeline">Timeline</button>
+        <button type="button" role="tab" id="ecp-tab-prototypes" data-view="prototypes" aria-controls="ecp-view-prototypes">Prototypes</button>
+        <button type="button" role="tab" id="ecp-tab-taxonomy" data-view="taxonomy" aria-controls="ecp-view-taxonomy">Taxonomy</button>
+      </nav>
+    </header>
+
+    <!-- ===================== STORY (4 slides) ===================== -->
+    <section class="view" id="ecp-view-story" role="tabpanel" aria-labelledby="ecp-tab-story">
+      <div class="deck" id="ecp-deck" aria-roledescription="carousel" aria-label="Introduction" tabindex="0">
+        <div class="track" id="ecp-track">
+
+          <article class="slide" aria-roledescription="slide" aria-label="1 of 4: The project">
+            <p class="kicker">1 · The project</p>
+            <div class="s-grid s-top">
+              <div>
+                <h2>Almost a decade of co-design with people living with Parkinson’s</h2>
+                <p><b>Professor Tiago Mestre</b>, clinician & neurologist, and <b>Professor Sylvie Grosjean</b>, communication & codesign expert, have led a team of researchers to co-design a digital companion for self-care with people living with Parkinson’s.</p>
+                <p>It began with <b>iCARE-PD</b>, a multinational project on integrated care networks. Within it grew <b>eCARE-PD</b>, a digital companion for self-care, which is now becoming <b>PD-TIPS.AI</b>, an AI-driven, bilingual recommender of tailored care tips.</p>
+                <div class="track-path" aria-label="Project tracks"><span class="t">iCARE-PD</span><span class="arr">→</span><span class="t">eCARE-PD</span><span class="arr">→</span><span class="t">PD-TIPS.AI</span></div>
+              </div>
+              <div class="glance" id="ecp-glance"></div>
+            </div>
+            <section class="coauthors" id="ecp-coauthors" aria-labelledby="ecp-coauthors-h">
+              <!-- the script adds the "Co-authors" title and subtitle above this paragraph and the list of names below it -->
+              <p class="ca-stage">Each stage of the timeline is one co-design iteration: what we built, who we built it with, and what we learned.</p>
+            </section>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="2 of 4: The problem">
+            <div class="s-grid">
+              <div>
+                <p class="kicker">2 · The problem</p>
+                <p class="big-contrast">About <em class="c-neuro">1 hour</em> a year with a neurologist.<br>About <em class="c-self">8,765 hours</em> on your own.</p>
+                <p>Sara Riggare, who lives with Parkinson’s, sees her neurologist once or twice a year, for about 30 minutes. The rest of the year is self-care. The decisions that shape daily life with Parkinson’s are made at home, and most of that work is invisible to the care team.</p>
+                <p class="small muted">Illustration and figures: Sara Riggare, <a href="https://www.riggare.se/saras-self-tracking/" target="_blank" rel="noopener">riggare.se</a></p>
+              </div>
+              <figure class="s-fig" data-img="riggare"></figure>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="3 of 4: Self-tracking and voices">
+            <p class="kicker">3 · Why self-tracking matters</p>
+            <p class="s-lead">For Riggare, self-tracking is <i>“the most powerful weapon”</i> she has against Parkinson’s: noticing how an activity, a food or a treatment affects you shows what the neurologist cannot see. Participants in our studies describe the same gap from both sides of the consultation.</p>
+            <div class="voices" id="ecp-voices"></div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="4 of 4: The rationale">
+            <p class="kicker">4 · The rationale</p>
+            <div class="s-grid s-top">
+              <div>
+                <h2>A technology for everyday self-care</h2>
+                <p class="s-lead">People living with Parkinson’s are left to <i>“do their homework on their own”</i>. Clinicians want a short snapshot of the months between visits. eCARE-PD is designed for the 8,765 hours. It helps people to:</p>
+                <ol class="aims aims-v">
+                  <li><b>Choose what matters today</b><span>and turn it into a goal they can act on</span></li>
+                  <li><b>Track as needed</b><span>self-tracking that makes sense to the person doing it</span></li>
+                  <li><b>Get tailored care tips</b><span>and resources, instead of a generic list of symptoms</span></li>
+                  <li><b>See their journey</b><span>a synthetic portrait to bring to the next appointment</span></li>
+                </ol>
+              </div>
+              <div class="voices one" id="ecp-voice-rationale"></div>
+            </div>
+          </article>
+
+        </div>
+        <div class="deck-nav">
+          <button type="button" class="nav-btn back" id="ecp-prev"><span aria-hidden="true">←</span> Back</button>
+          <div class="dots" id="ecp-dots" role="group" aria-label="Choose slide"></div>
+          <div class="nav-right">
+            <button type="button" class="nav-btn next" id="ecp-next"><span class="lbl-long" id="ecp-next-long">Next</span><span class="lbl-short" id="ecp-next-short">Next</span> <span class="ar" aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TIMELINE ===================== -->
+    <section class="view" id="ecp-view-timeline" role="tabpanel" aria-labelledby="ecp-tab-timeline" hidden>
+      <div class="tl-bar">
+        <div class="chips" id="ecp-filters" role="group" aria-label="Show categories"></div>
+        <div class="stagenav" id="ecp-stagenav" hidden>
+          <button type="button" id="ecp-sprev" aria-label="Previous stage">←</button>
+          <span id="ecp-sopen" aria-live="polite"></span>
+          <button type="button" id="ecp-snext" aria-label="Next stage">→</button>
+          <button type="button" id="ecp-sclose" class="close">Back to overview</button>
+        </div>
+      </div>
+      <p class="hint">Click a stage to open it. Its full text appears in the column.</p>
+      <div class="tg-wrap" id="ecp-tgwrap">
+        <div class="tg" id="ecp-grid"></div>
+      </div>
+      <p class="hint scroll-hint">Scroll sideways to see all stages →</p>
+    </section>
+
+    <!-- ===================== PROTOTYPES ===================== -->
+    <section class="view" id="ecp-view-prototypes" role="tabpanel" aria-labelledby="ecp-tab-prototypes" hidden>
+      <div class="v-head">
+        <h2>Prototype iterations</h2>
+        <p class="muted">Each version of the technology, who tested it and what we learned.</p>
+      </div>
+      <div id="ecp-protos"></div>
+    </section>
+
+    <!-- ===================== TAXONOMY ===================== -->
+    <section class="view" id="ecp-view-taxonomy" role="tabpanel" aria-labelledby="ecp-tab-taxonomy" hidden>
+      <div class="v-head">
+        <h2>Evolution of the taxonomy</h2>
+        <p class="muted">From a list of symptoms to intentions to act. The taxonomy is how eCARE-PD organises self-care priorities: it was regrouped, tested and re-sorted with participants at each iteration, and now serves as the data model of the conversational recommender.</p>
+      </div>
+      <div class="steps" id="ecp-txsteps" aria-label="Taxonomy versions: click one to go to its card"></div>
+      <div class="pgrid txgrid" id="ecp-taxcards"></div>
+    </section>
+  </div>
+
+</div>
+
+{{- $data := "" }}
+{{- if ge hugo.Version "0.156.0" }}{{ $data = hugo.Data.ecarepd_timeline }}{{ else }}{{ $data = site.Data.ecarepd_timeline }}{{ end }}
+{{- if not $data }}{{ errorf "eCARE-PD timeline: missing data/ecarepd_timeline.json (run tools/update_timeline.py)" }}{{ end }}
+<script type="application/json" id="ecp-data">{{ $data | jsonify | safeJS }}</script>
+{{- $jsSrc := resources.Get "js/ecarepd-timeline.js" }}
+{{- if not $jsSrc }}{{ errorf "eCARE-PD timeline: missing assets/js/ecarepd-timeline.js (the js folder must be directly under assets/, not inside assets/css/)" }}{{ end }}
+{{- with $jsSrc }}{{ $js := . | resources.Minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end }}
+{{- end }}

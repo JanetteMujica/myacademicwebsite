@@ -7,6 +7,8 @@ description: 'Presentations, posters, creative outputs, and knowledge mobilizati
 
 This timeline shows my research journey. It all started with the task of redesigning [eCare-PD](https://icare-pd.ca/ecare-pd-a-virtual-coach-to-support-self-care-at-home/), a self-care companion for people living with Parkinson's.
 
+For the full story of the project since 2017 (stages, participants' voices, publications, prototypes and how the self-care taxonomy evolved), explore the [interactive eCARE-PD timeline](ecarepdtimeline/).
+
 ---
 
 ##### Timeline
