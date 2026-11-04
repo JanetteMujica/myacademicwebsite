@@ -229,13 +229,13 @@
 /* slide 2: same colours as Sara Riggare's picture (red dot = 1 hour with the neurologist, blue = hours on your own).
    Replace the two values below with the exact colours of biggareselfcare.png. */
 .ecp {
-	--riggare-red: #e0262b;
-	--riggare-blue: #1f6fb8;
+	--riggare-red: #f2294e;
+	--riggare-blue: #04b2d9;
 }
 .dark .ecp,
 :root[data-theme='dark'] .ecp {
-	--riggare-red: #ff5a5f;
-	--riggare-blue: #5aa2ef;
+	--riggare-red: #f2294e;
+	--riggare-blue: #04b2d9;
 }
 .ecp .big-contrast em.c-neuro {
 	color: var(--riggare-red);
@@ -252,8 +252,8 @@
 	font-size: 13px;
 }
 .ecp .track-path .t {
-	border: 1px solid var(--border);
-	background: var(--bg);
+	border: 1px solid var(--tx-line);
+	background: var(--tx-bg);
 	padding: 3px 10px;
 	border-radius: 999px;
 	color: var(--primary);
@@ -271,8 +271,8 @@
 	gap: 8px;
 }
 .ecp .glance div {
-	background: var(--bg);
-	border: 1px solid var(--border);
+	background: var(--tx-bg);
+	border: 1px solid var(--tx-line);
 	border-radius: 8px;
 	padding: 9px 12px;
 }
@@ -289,7 +289,7 @@
 .ecp .glance span {
 	display: block;
 	font-size: 12.5px;
-	color: var(--secondary);
+	color: var(--content);
 	line-height: 1.35;
 	margin-top: 2px;
 }
@@ -299,7 +299,7 @@
 	padding-top: 16px;
 	border-top: 1px solid var(--border);
 }
-.ecp .coauthors h3 {
+.ecp .coauthors h2 {
 	font-size: 15px;
 	display: flex;
 	align-items: center;
@@ -319,11 +319,6 @@
 	font-size: 13px;
 	color: var(--secondary);
 	margin: 0 0 8px;
-}
-.ecp .slide .ca-stage {
-	margin: 0 0 12px;
-	font-weight: 700;
-	font-style: italic;
 }
 .ecp .ca-list {
 	list-style: none;

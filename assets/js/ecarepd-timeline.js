@@ -144,7 +144,7 @@ window.addEventListener("hashchange", ()=>showView(location.hash.slice(1)));
     .sort((a,b)=>String(a.key).localeCompare(String(b.key), "fr", {sensitivity:"base"}));
   const nCo = DATA.co_authors_count ?? CO.length;
   const g = [
-    ["2017 – 2026", `3 linked projects, ${STAGES.length} stages`],
+    ["2017 – 2026", `3 linked projects, ${STAGES.length} stages of co-design iteration in a timeline`],
     [moneyShort(tot("funding_cad")), `in research funding (${DATA.funding.length} grants)`],
     [DATA.publications.length, "publications"],
     [(DATA.talks||[]).length, "talks, posters and workshops"],
@@ -155,7 +155,6 @@ window.addEventListener("hashchange", ()=>showView(location.hash.slice(1)));
   // with an odd number of boxes, the first one spans the full width so the grid has no gap
   $("#ecp-glance").innerHTML = g.map(([n,l],i)=>`<div${i===0 && g.length%2 ? ' class="span"' : ""}><b>${esc(n)}</b><span>${esc(l)}</span></div>`).join("");
   const ca = $("#ecp-coauthors");
-  // title + subtitle go above the paragraph already in the layout (.ca-stage), the names below it
   if(ca && CO.length){
     ca.insertAdjacentHTML("afterbegin", `<h3 id="ecp-coauthors-h">Co-authors <span class="n">${esc(nCo)}</span></h3>
       <p class="ca-note">Researchers who co-authored the project’s papers and talks with Tiago Mestre and Sylvie Grosjean, in alphabetical order of last name.</p>`);
