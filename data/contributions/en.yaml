@@ -330,6 +330,8 @@
     - Poster
     - Abstract
   event: "Q-Dopa: Québec Seminar on Parkinson's Research"
+  img: Poster_ParkinsonQuebec
+  id: posterParkinsonQuebec
   institution: Parkinson Québec
   location: Montréal, Canada
   people:

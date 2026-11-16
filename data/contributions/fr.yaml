@@ -301,6 +301,8 @@
     - Affiche
     - Résumé
   event: 'Q-Dopa : Séminaire québécois de recherche en Parkinson'
+  img: Poster_ParkinsonQuebec
+  id: posterParkinsonQuebec
   institution: Parkinson Québec
   location: Montréal, Canada
   people:

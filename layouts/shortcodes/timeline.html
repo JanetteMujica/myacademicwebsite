@@ -10,7 +10,14 @@
   end of the list (or wherever it belongs chronologically) — no HTML
   editing needed. Fields (all optional except "date"):
     date, description, img, title, type, event, institution, location,
-    link, people (a list of names).
+    link, people (a list of names), id.
+
+  "id" gives the entry a shareable link, e.g. id: posterParkinsonQuebec
+    -> /contribution/#posterParkinsonQuebec  (EN)
+    -> /fr/contribution/#posterParkinsonQuebec (FR)
+  Use the SAME id in en.yaml and fr.yaml so the link works in both
+  languages. Without an id, one is built from the date + title (it changes
+  if you edit the title, so set an id on anything you share).
 
   "type" can be a single badge:
     type: Presentation
@@ -34,6 +41,11 @@
 {{ $items := index site.Data.contributions .Page.Lang }}
 {{ if not $items }}{{ $items = site.Data.contributions.en }}{{ end }}
 {{ $n := len $items }}
+{{ $copyLabel := i18n "copyLink" | default (cond (eq .Page.Lang "fr") "Copier le lien" "Copy link") }}
+{{ $copiedLabel := i18n "linkCopied" | default (cond (eq .Page.Lang "fr") "Lien copié !" "Link copied!") }}
+{{ $zoomLabel := i18n "zoomIn" | default (cond (eq .Page.Lang "fr") "Agrandir" "Zoom in") }}
+{{ $unzoomLabel := i18n "zoomOut" | default (cond (eq .Page.Lang "fr") "Réduire" "Zoom out") }}
+{{ $fullLabel := i18n "openFullSize" | default (cond (eq .Page.Lang "fr") "Ouvrir en plein format" "Open full size") }}
 
 {{ $allTypes := slice }}
 {{ range $items }}
@@ -81,7 +93,12 @@
         {{ end }}
 
         {{ $isPlain := and (not $e.title) (not $types) (not $e.img) (not $e.event) (not $e.institution) (not $e.location) }}
-        <article class="contrib-entry" data-types="{{ delimit $types "|" }}">
+        {{ $anchor := "" }}
+        {{ with $e.id }}{{ $anchor = . }}{{ else }}
+          {{ $label := $e.title | default $e.description | default "entry" | plainify | truncate 40 "" }}
+          {{ $anchor = printf "%s-%s" $e.date $label | anchorize }}
+        {{ end }}
+        <article class="contrib-entry" id="{{ $anchor }}" data-types="{{ delimit $types "|" }}">
           <aside class="contrib-aside">
             <div class="contrib-dot"></div>
             <div class="contrib-line"></div>
@@ -114,7 +131,7 @@
 
               {{ if $e.img }}
               {{ $caption := $e.title | default $e.img }}
-              <div class="contrib-thumb" data-caption="{{ $caption }}" role="button" tabindex="0" aria-label="View image: {{ $caption }}">
+              <div class="contrib-thumb" data-caption="{{ $caption }}" data-anchor="{{ $anchor }}" role="button" tabindex="0" aria-label="View image: {{ $caption }}">
                 <div class="contrib-thumb-placeholder">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>
                   <span>{{ $e.img }}.png</span>
@@ -134,9 +151,17 @@
               <p class="contrib-people">{{ i18n "contribWithPrefix" }} {{ delimit $people ", " (printf " %s " (i18n "andSeparator")) | safeHTML }}</p>
               {{ end }}
 
-              {{ if $e.link }}
-              <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">{{ i18n "viewDetails" }}</a>
-              {{ end }}
+              <div class="contrib-actions">
+                {{ if $e.link }}
+                <a class="contrib-cta" href="{{ $e.link }}" target="_blank" rel="noopener">{{ i18n "viewDetails" }}</a>
+                {{ end }}
+                {{ if not $isPlain }}
+                <a class="contrib-share" href="#{{ $anchor }}" data-anchor="{{ $anchor }}" title="{{ $copyLabel }}" aria-label="{{ $copyLabel }}">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+                  <span>{{ $copyLabel }}</span>
+                </a>
+                {{ end }}
+              </div>
 
             </div>
           </main>
@@ -276,6 +301,27 @@
   }
   .contrib-cta:hover{ background:var(--primary); color:var(--theme); }
 
+  /* "View details" + "Copy link" row */
+  .contrib-actions{ display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1rem; }
+  .contrib-actions:empty{ display:none; }
+  .contrib-actions .contrib-cta{ margin-top:1rem; }
+  .contrib-share{
+    display:inline-flex; align-items:center; gap:.35rem; margin-top:1rem;
+    font-size:.8em; color:var(--gray); text-decoration:none; cursor:pointer;
+    background:none; border:none; padding:0; font-family:inherit;
+  }
+  .contrib-share svg{ width:14px; height:14px; flex:0 0 auto; }
+  .contrib-share:hover{ color:var(--primary); }
+  .contrib-share.is-copied{ color:var(--primary); font-weight:600; }
+
+  /* entry reached through a shared link */
+  .contrib-entry{ scroll-margin-top:5rem; }
+  .contrib-entry.contrib-target .contrib-card{
+    border-color:var(--primary);
+    box-shadow:0 0 0 2px var(--primary);
+    transition:box-shadow .6s ease, border-color .6s ease;
+  }
+
   /* image sits under the text, full width, prominent */
   .contrib-thumb{
     position:relative; margin-top:1rem; width:100%;
@@ -313,15 +359,31 @@
   }
   .contrib-lightbox.contrib-open{ display:flex; }
   .contrib-lightbox-box{
-    background:var(--entry); border-radius:10px; max-width:640px;
-    width:100%; padding:1.5rem; text-align:center; position:relative;
+    background:var(--entry); border-radius:10px; max-width:min(1200px, 96vw);
+    width:100%; max-height:96vh; padding:1.5rem 1.5rem 1rem; text-align:center; position:relative;
+    display:flex; flex-direction:column;
   }
   .contrib-lightbox-visual{
     width:100%; border-radius:8px; overflow:hidden; margin-bottom:.9rem;
     background:var(--code-bg); display:flex; align-items:center; justify-content:center;
-    aspect-ratio:4/3;
+    height:min(80vh, 900px); min-height:200px; flex:1 1 auto;
   }
-  .contrib-lightbox-visual img{ width:100%; height:100%; object-fit:contain; margin:0; max-width:none; display:block; }
+  .contrib-lightbox-visual img{
+    max-width:100%; max-height:100%; width:auto; height:auto;
+    object-fit:contain; margin:0; display:block; cursor:zoom-in;
+  }
+  /* zoomed: image at full resolution, drag the scrollbars / swipe to pan */
+  .contrib-lightbox-visual.is-zoomed{ overflow:auto; display:block; text-align:left; }
+  .contrib-lightbox-visual.is-zoomed img{ max-width:none; max-height:none; cursor:zoom-out; }
+  .contrib-lightbox-tools{
+    display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:.4rem 1.2rem;
+  }
+  .contrib-lightbox-tools .contrib-share{ margin-top:.6rem; }
+  .contrib-lightbox-hint{ font-size:.75em; color:var(--gray); margin:.6rem 0 0; }
+  @media (max-width:600px){
+    .contrib-lightbox{ padding:.5rem; }
+    .contrib-lightbox-box{ padding:2.2rem .7rem .7rem; }
+  }
   .contrib-lightbox-visual svg{ width:36px; height:36px; opacity:.5; color:var(--gray); }
   .contrib-lightbox-caption{ font-size:.9em; color:var(--content); margin:0; }
   .contrib-lightbox-close{
@@ -337,14 +399,78 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>
     </div>
     <p class="contrib-lightbox-caption" id="contrib-lightbox-caption"></p>
+    <div class="contrib-lightbox-tools">
+      <button type="button" class="contrib-share" id="contrib-lightbox-zoom">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+        <span>{{ $zoomLabel }}</span>
+      </button>
+      <a class="contrib-share" id="contrib-lightbox-full" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>
+        <span>{{ $fullLabel }}</span>
+      </a>
+      <button type="button" class="contrib-share" id="contrib-lightbox-share">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+        <span>{{ $copyLabel }}</span>
+      </button>
+    </div>
   </div>
 </div>
 
 <script>
 (function(){
   // i18n strings (resolved server-side by Hugo, per current site language)
-  var i18nReadMore = {{ i18n "readMore" | jsonify }};
-  var i18nShowLess = {{ i18n "showLess" | jsonify }};
+  var i18nReadMore = {{ i18n "readMore" }};
+  var i18nShowLess = {{ i18n "showLess" }};
+  var i18nCopy = {{ $copyLabel }};
+  var i18nCopied = {{ $copiedLabel }};
+  var i18nZoom = {{ $zoomLabel }};
+  var i18nUnzoom = {{ $unzoomLabel }};
+
+  // ---- Shareable links -------------------------------------------------
+  function linkFor(anchor){
+    return location.origin + location.pathname + location.search + '#' + encodeURIComponent(anchor);
+  }
+  function setHash(anchor){
+    // update the address bar without jumping the page
+    if(history.replaceState){ history.replaceState(null, '', '#' + encodeURIComponent(anchor)); }
+  }
+  function copyText(text){
+    if(navigator.clipboard && window.isSecureContext){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy') ? resolve() : reject(); } catch(e){ reject(e); }
+      document.body.removeChild(ta);
+    });
+  }
+  function flashCopied(btn){
+    var label = btn.querySelector('span');
+    btn.classList.add('is-copied');
+    if(label){ label.textContent = i18nCopied; }
+    clearTimeout(btn._t);
+    btn._t = setTimeout(function(){
+      btn.classList.remove('is-copied');
+      if(label){ label.textContent = i18nCopy; }
+    }, 1800);
+  }
+  function shareAnchor(anchor, btn){
+    if(!anchor) return;
+    setHash(anchor);
+    copyText(linkFor(anchor))
+      .then(function(){ flashCopied(btn); })
+      .catch(function(){ window.prompt(i18nCopy, linkFor(anchor)); });
+  }
+
+  document.querySelectorAll('.contrib-entry .contrib-share').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      shareAnchor(btn.dataset.anchor, btn);
+    });
+  });
 
   // Read more toggles
   document.querySelectorAll('.contrib-readmore').forEach(function(btn){
@@ -366,14 +492,61 @@
   var visual = document.getElementById('contrib-lightbox-visual');
   var caption = document.getElementById('contrib-lightbox-caption');
   var closeBtn = document.getElementById('contrib-lightbox-close');
+  var lbShare = document.getElementById('contrib-lightbox-share');
+  lbShare.addEventListener('click', function(){ shareAnchor(lbShare.dataset.anchor, lbShare); });
+  var zoomBtn = document.getElementById('contrib-lightbox-zoom');
+  var fullLink = document.getElementById('contrib-lightbox-full');
+
+  function setZoom(on, e){
+    var img = visual.querySelector('img');
+    if(!img){ return; }
+    // where the click landed, as a fraction of the image, to keep that spot in view
+    var fx = .5, fy = .5;
+    if(e && e.target === img){
+      var r = img.getBoundingClientRect();
+      fx = (e.clientX - r.left) / r.width; fy = (e.clientY - r.top) / r.height;
+    }
+    // full resolution, but at least 2x the fitted size for small images
+    var fitted = img.getBoundingClientRect().width || 1;
+    visual.classList.toggle('is-zoomed', on);
+    if(on){
+      var w = Math.max(img.naturalWidth, fitted * 2);
+      img.style.width = w + 'px';
+      visual.scrollLeft = fx * w - visual.clientWidth / 2;
+      visual.scrollTop = fy * img.offsetHeight - visual.clientHeight / 2;
+    } else {
+      img.style.width = '';
+    }
+    zoomBtn.querySelector('span').textContent = on ? i18nUnzoom : i18nZoom;
+  }
+  zoomBtn.addEventListener('click', function(){ setZoom(!visual.classList.contains('is-zoomed')); });
+  visual.addEventListener('click', function(e){
+    if(e.target.tagName === 'IMG'){ setZoom(!visual.classList.contains('is-zoomed'), e); }
+  });
 
   function openLightbox(thumb){
+    // clicking an image also puts its shareable link in the address bar
+    lbShare.dataset.anchor = thumb.dataset.anchor || '';
+    lbShare.style.display = thumb.dataset.anchor ? '' : 'none';
+    if(thumb.dataset.anchor){ setHash(thumb.dataset.anchor); }
     var img = thumb.querySelector('img');
     var text = thumb.dataset.caption || '';
-    if(img && img.style.display !== 'none' && img.complete && img.naturalWidth > 0){
-      visual.innerHTML = '<img src="' + img.src + '" alt="' + text.replace(/"/g,'&quot;') + '">';
+    var placeholder = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>';
+    visual.classList.remove('is-zoomed');
+    zoomBtn.querySelector('span').textContent = i18nZoom;
+    // the thumbnail is lazy-loaded, so don't require it to be loaded already
+    if(img && !thumb.classList.contains('contrib-thumb--missing')){
+      var big = new Image();
+      big.alt = text;
+      big.onerror = function(){ visual.innerHTML = placeholder; zoomBtn.style.display = fullLink.style.display = 'none'; };
+      big.src = img.src;
+      visual.innerHTML = '';
+      visual.appendChild(big);
+      fullLink.href = img.src;
+      zoomBtn.style.display = fullLink.style.display = '';
     } else {
-      visual.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"/></svg>';
+      visual.innerHTML = placeholder;
+      zoomBtn.style.display = fullLink.style.display = 'none';
     }
     caption.textContent = text;
     lightbox.classList.add('contrib-open');
@@ -432,5 +605,31 @@
   } else {
     items.forEach(function(el){ el.classList.add('contrib-visible'); });
   }
+
+  // ---- Arriving through a shared link: show, scroll to and highlight ----
+  function goToHash(){
+    var raw = location.hash.slice(1);
+    if(!raw) return;
+    var id; try { id = decodeURIComponent(raw); } catch(e){ id = raw; }
+    var entry = document.getElementById(id);
+    if(!entry || !entry.classList.contains('contrib-entry')) return;
+
+    // make sure a type filter isn't hiding it
+    if(entry.style.display === 'none'){
+      filterBtns.forEach(function(b){ b.classList.toggle('is-active', b.dataset.filter === 'all'); });
+      applyFilter('all');
+    }
+    var main = entry.querySelector('.contrib-main');
+    if(main){ main.classList.add('contrib-visible'); }
+
+    document.querySelectorAll('.contrib-entry.contrib-target').forEach(function(el){ el.classList.remove('contrib-target'); });
+    entry.classList.add('contrib-target');
+    // wait for images above it to lay out before scrolling
+    setTimeout(function(){ entry.scrollIntoView({ behavior:'smooth', block:'start' }); }, 150);
+    setTimeout(function(){ entry.classList.remove('contrib-target'); }, 4000);
+  }
+  if(document.readyState === 'complete'){ goToHash(); }
+  else { window.addEventListener('load', goToHash); }
+  window.addEventListener('hashchange', goToHash);
 })();
 </script>

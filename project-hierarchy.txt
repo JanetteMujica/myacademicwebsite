@@ -111,19 +111,37 @@ myacademicwebsite
 │  │        └─ index.html
 │  ├─ css
 │  │  ├─ ecarepd-timeline.min.112538074c7e2368a05389066b2e21273ec806855158d262ffb02676e1d303c6.css
+│  │  ├─ ecarepd-timeline.min.1317f5e2b898a5049479938951aecde6ae18dbc1d81195c6e3682734cf886fb3.css
 │  │  ├─ ecarepd-timeline.min.18cb2b9784627eac4cde9a16918dd8427a109d43dcd7315a80a77d1b2f2d5974.css
+│  │  ├─ ecarepd-timeline.min.198f51af433dba6d6511627d07f5d2e2f95e8240cd62cd69864575492b5a5bce.css
 │  │  ├─ ecarepd-timeline.min.1bfb91f1780460ddd6b07ca55049ed74af0f8a71f711ce4216e009d961f3df30.css
+│  │  ├─ ecarepd-timeline.min.2224c10a2902ce59d617537005dacba559c5cb8a8437aa6bd7938ffbe1b6da0f.css
+│  │  ├─ ecarepd-timeline.min.2b61e42ef08a62c4551b94b4495fdc773fb5ad8f8639f19e15ebf77bef13266c.css
 │  │  ├─ ecarepd-timeline.min.30eb21836269024da38f7663e50c1ae23dd23e8195226e0a9ede90e7d97b1a1b.css
+│  │  ├─ ecarepd-timeline.min.317dc100a6b2b8e5bccba334028ee837a335e6cd4fc22ed49d9440dfcbe1f782.css
+│  │  ├─ ecarepd-timeline.min.4af5b7ebdc7e917639b6027e164a5f3583117a54b1c8ec6d49d3fed9ce9e4652.css
+│  │  ├─ ecarepd-timeline.min.53b2108d8a1937e7aa0bf5f75b1c29fc310134481a2ee98e1dd6254164593f05.css
+│  │  ├─ ecarepd-timeline.min.6281c594916b84344c56839d5cf3cc70b3ac8f049c29256507f582bb982224ef.css
+│  │  ├─ ecarepd-timeline.min.6d6e3aefb3e112807c12d416ef10ae3f7e4457ed927f7eaaf1b9a9819212e189.css
 │  │  ├─ ecarepd-timeline.min.6e9850d5f78bce2bb8d03d9663575c36da8b3d787389823c1b5c533e6bebe556.css
+│  │  ├─ ecarepd-timeline.min.703454451aa2311371ae1763ce9d9375265ae6ed044ae6c84233da7e1efe7056.css
+│  │  ├─ ecarepd-timeline.min.70ab6c83b11927a1cdfe7e346dfdade727056a6aedf14f1bbbdfe99a5e4d4776.css
 │  │  ├─ ecarepd-timeline.min.815f8ea96dfab00cf1c0d4d7e22d1e22fad629c07f9cae74faf031c6ab9f5586.css
 │  │  ├─ ecarepd-timeline.min.89f902ffaf7ec1db43fb241dc11388e0a16e8bae8c96c1e3038c5d5e72786a54.css
+│  │  ├─ ecarepd-timeline.min.a21a0df5535e9f1e1498781871c0bd9a5179cf495763f7fec0985b1b91c550f9.css
 │  │  ├─ ecarepd-timeline.min.a5586cb119ca121c0efcbd54e71d9ef0da04e1ead28c75cbba4e7d979cd4c318.css
 │  │  ├─ ecarepd-timeline.min.ad93a32a42dfc17d5ad8f5403db3d4a35a9584bd909e487a5ae065a9f5fb260e.css
+│  │  ├─ ecarepd-timeline.min.aeef2ff46b0979d31d229543acf5347b7daccba9a6614b82b50ba9ff824440d1.css
+│  │  ├─ ecarepd-timeline.min.b64ee85143a3034e021ec8cf1b5210f71248bd2760e3fc0b78fe4eec8afb4049.css
+│  │  ├─ ecarepd-timeline.min.b780ba6820f18c7b1bb6cd0d49e3a38839bedbe68bdce1b5887e76ab306022b0.css
+│  │  ├─ ecarepd-timeline.min.c3877404c708e67e88fd28dbc9933741b367dcb6f876d53e384848304ab23725.css
 │  │  ├─ ecarepd-timeline.min.c96529ca1204ac996def61ed813dc34edb86dfd77b772eb211ff76b57bed1b57.css
 │  │  ├─ ecarepd-timeline.min.d1d8474945a29cb92b1130715d0d4b69d35c6a9091ed1b96ae84081fa6b39113.css
 │  │  ├─ ecarepd-timeline.min.ec6f526e068acdc7fcf94d3a927478782c759cf0c354a4371cbe4c643c3df57d.css
+│  │  ├─ ecarepd-timeline.min.ed4289635cde7d3f9997c0e26eaccebcfc198aa0f6c68c468fed2aa0761ce62f.css
 │  │  ├─ ecarepd-timeline.min.f7233001efe162bf74e730538f8b663c7a4e4b1924a54d40ed9dfea5d2ecae5d.css
 │  │  ├─ ecarepd-timeline.min.f7361500980b8c927946a9278eb47b810ae93fc2bc9cafe382b0f1cb046a229c.css
+│  │  ├─ ecarepd-timeline.min.f9930697d51a7b041f7577e8526f4fc57155132443e0e9e14d855e9e2c69507e.css
 │  │  └─ ecarepd-timeline.min.fb92632b08e048b72020b02657c6378467fb740701d0d6ce3dd81bd2bf996bd4.css
 │  ├─ cv.pdf
 │  ├─ en
@@ -243,13 +261,23 @@ myacademicwebsite
 │  │  ├─ ecarepd-timeline.min.2fe6a7ae3fa28f6ca152b437d3f6ae05773840ad26ebe61f712144490f447720.js
 │  │  ├─ ecarepd-timeline.min.4029a7600b57eef1edbe29579cc14b2008388a43adeaf5231673c4d969da7a89.js
 │  │  ├─ ecarepd-timeline.min.76a181f98b70256f0fd0fe283386dc02515d8cac2c8be3081d9d3ae3d6b09b96.js
+│  │  ├─ ecarepd-timeline.min.7db17840d9e76f55c2eac75a7ab8e842241cac9148e0b89c631e49cc27591919.js
 │  │  ├─ ecarepd-timeline.min.830428fd1259aa9e1399def39241eec45b2445281951d95b87017b4384c72d26.js
+│  │  ├─ ecarepd-timeline.min.8481e304abf8e712805a07e132f236b2b011490ce77fb6bfa1c7e5dd4e31f6c4.js
+│  │  ├─ ecarepd-timeline.min.94a580ba3c172bcfd05da3e949665238336c021378dff984954cd471581155da.js
 │  │  ├─ ecarepd-timeline.min.98050b2f54f7c36670e039c8e7ae4a99a912dcb210d1608de19cdd0d1c9a4219.js
 │  │  ├─ ecarepd-timeline.min.9bdba3533d54d89a46b086aa4b9dd4b5a015060c9182f45000fee81b7f74bd57.js
 │  │  ├─ ecarepd-timeline.min.9c5c504b981b373cead7658e3774eedd5c53fee662cede47083b6d4a73492bff.js
+│  │  ├─ ecarepd-timeline.min.b2b8ac52c06bd304e217b7e2eec413cccb4f03788c4fe501dc91483b1b4d3499.js
+│  │  ├─ ecarepd-timeline.min.b3123337febaee253fbd11ed021444fd6c389b6724c4cda5b56cd2de3e50b1a6.js
 │  │  ├─ ecarepd-timeline.min.b9acaf51f45182dde3c8451260c1bfbd477a92e10eb737f30d62ca20f6c0fac1.js
+│  │  ├─ ecarepd-timeline.min.c58f3f970a8dc1129ba139de839fedbfcbe09559b793f30ae67898bd7a83f02f.js
 │  │  ├─ ecarepd-timeline.min.d8eba9caf1a286d9f286622a88c6898aaed858cafeb776509d26d0902746e3a7.js
-│  │  └─ ecarepd-timeline.min.dced25f579bf38711f90f39c07e4dc5fe0de5865875e515a4a0a80987fba363a.js
+│  │  ├─ ecarepd-timeline.min.dced25f579bf38711f90f39c07e4dc5fe0de5865875e515a4a0a80987fba363a.js
+│  │  ├─ ecarepd-timeline.min.e91f08d6e7e81a8a74008a21d4d817a3626a755f688e583de06e759ffce457b2.js
+│  │  ├─ ecarepd-timeline.min.eaa5988658260673095522398a1a50eabdba349b57dee895c087d42791ae6ddc.js
+│  │  ├─ ecarepd-timeline.min.f1c7a51d04b521ef689820eaf1ecffa3446eadcc866d84c655fd2bc41b412bcb.js
+│  │  └─ ecarepd-timeline.min.ff3eea1f44f80aad60ac7432cd77461154a1db9ee9f99e2bd1f09f67763c4ead.js
 │  ├─ picture.jpeg
 │  ├─ publication
 │  │  ├─ index.html
@@ -325,6 +353,7 @@ myacademicwebsite
 │  │  │  ├─ DataToAction_PreliminaryFindings.png
 │  │  │  ├─ lowFiPrototype.png
 │  │  │  ├─ posterCAFY.png
+│  │  │  ├─ Poster_ParkinsonQuebec.png
 │  │  │  └─ ScopingReview.png
 │  │  ├─ ecarepdtimeline
 │  │  │  ├─ biggareselfcare.png
